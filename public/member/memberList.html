@@ -230,12 +230,12 @@
 				
 				<!-- 여기서부터 표 시작 -->
 				<hr>
-				<table class="table table-striped">
+				<table class="table table-striped" id="sTable">
 					<thead>
 						<tr>
 							<th>
 								<div class="form-check">
-			  						<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+			  						<input class="form-check-input" type="checkbox" name="chk_box" onclick="allcheck();" value="" id="flexCheckDefault">
 			  					</div>
 							</th>
 							<th>이름</th>
@@ -254,7 +254,7 @@
 						<tr>
 							<td>
 								<div class="form-check">
-			  						<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+			  						<input class="form-check-input" type="checkbox" name="chk_box" onclick="check();" value="" id="flexCheckDefault">
 			  					</div>
 			  				</td>
 			  				<td>이가나</td>
@@ -271,7 +271,7 @@
 		  				<tr>
 							<td>
 								<div class="form-check">
-			  						<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+			  						<input class="form-check-input" type="checkbox" name="chk_box" onclick="check();" value="" id="flexCheckDefault">
 			  					</div>
 			  				</td>
 			  				<td>이다라</td>
@@ -288,7 +288,7 @@
 		  				<tr>
 							<td>
 								<div class="form-check">
-			  						<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+			  						<input class="form-check-input" type="checkbox" name="chk_box" onclick="check();" value="" id="flexCheckDefault">
 			  					</div>
 			  				</td>
 			  				<td>이마바</td>
@@ -305,7 +305,7 @@
 		  				<tr>
 							<td>
 								<div class="form-check">
-			  						<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+			  						<input class="form-check-input" type="checkbox" name="chk_box" onclick="check();" value="" id="flexCheckDefault">
 			  					</div>
 			  				</td>
 			  				<td>이사아</td>
@@ -322,7 +322,7 @@
 		  				<tr>
 							<td>
 								<div class="form-check">
-			  						<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+			  						<input class="form-check-input" type="checkbox" name="chk_box" onclick="check();" value="" id="flexCheckDefault">
 			  					</div>
 			  				</td>
 			  				<td>이자차</td>
@@ -339,7 +339,7 @@
 		  				<tr>
 							<td>
 								<div class="form-check">
-			  						<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+			  						<input class="form-check-input" type="checkbox" name="chk_box" onclick="check();" value="" id="flexCheckDefault">
 			  					</div>
 			  				</td>
 			  				<td>이카타</td>
@@ -356,7 +356,7 @@
 		  				<tr>
 							<td>
 								<div class="form-check">
-			  						<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+			  						<input class="form-check-input" type="checkbox" name="chk_box" onclick="check();" value="" id="flexCheckDefault">
 			  					</div>
 			  				</td>
 			  				<td>이파하</td>
@@ -373,7 +373,7 @@
 		  				<tr>
 							<td>
 								<div class="form-check">
-			  						<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+			  						<input class="form-check-input" type="checkbox" name="chk_box" onclick="check();" value="" id="flexCheckDefault">
 			  					</div>
 			  				</td>
 			  				<td>이기니</td>
@@ -390,7 +390,7 @@
 		  				<tr>
 							<td>
 								<div class="form-check">
-			  						<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+			  						<input class="form-check-input" type="checkbox" name="chk_box" onclick="check();" value="" id="flexCheckDefault">
 			  					</div>
 			  				</td>
 			  				<td>이디리</td>
@@ -407,7 +407,7 @@
 		  				<tr>
 							<td>
 								<div class="form-check">
-			  						<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+			  						<input class="form-check-input" type="checkbox" name="chk_box" onclick="check();" value="" id="flexCheckDefault">
 			  					</div>
 			  				</td>
 			  				<td>이미비</td>
@@ -426,7 +426,7 @@
 				<div class="row">
 					<div class="col-2" style="text-align:left;">
 						<button type="button" class="btn btn-primary"><i class="fa-solid fa-square-plus"></i></button>
-						<button type="button" class="btn btn-danger"><i class="fa-solid fa-square-minus"></i></button>
+						<button type="button" class="btn btn-danger" id="removeButton" name="removeButton" value="삭제" onclick="delRow()"><i class="fa-solid fa-square-minus"></i></button>
 					</div>
 					<div class="col-8">
 						<nav aria-label="Page navigation example">
@@ -468,5 +468,45 @@
 	
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/20c294a34b.js" crossorigin="anonymous"></script>
+<script type="text/javascript">
+	function allcheck(){
+	    var chk_box = document.getElementsByName("chk_box");
+	    var checkItem="";
+	    for(var i = 0; i < chk_box.length; i++){
+	       if(chk_box[0].checked == true){
+	    	   chk_box[i].checked = true;
+	       } else {
+	    	   chk_box[i].checked = false;
+	       }
+	    }
+	 }
+	function check(){
+	    var chk_box = document.getElementsByName("chk_box");
+	    var checkItem="";
+		    for(var i = 0 ; i < chk_box.length; i++){
+		       if(chk_box[i].checked == false){
+		          checkItem = false;
+	       }
+	    }
+	    chk_box[0].checked = checkItem;
+ 	}
+	function delRow(){       
+		   var sTable = document.getElementById('sTable');
+		   var lastRow = sTable.rows.length;
+		   
+		   if(confirm("정말 삭제 하시겠습니까?]")){        
+		       for( var i=1 ; i < lastRow ; i++ ){
+		            // 가장 중요한 부분이다.
+		            // getElementsByTagName("tr")을 이용해서 tag가 "tr"인 모든 것들을 배열로 받는다.
+		            // for문을 돌면서 각 "tr"라인의 cells[0].firstChild가 check되어 있는지 확인
+		            // 체크가 되어 있다면 deleteRow를 이용해서 삭제 한다.
+		           if( document.getElementsByTagName("tr")[i].cells[0].firstChild.checked){
+		               sTable.deleteRow(i);
+		           }
+		       }        
+		   }    
+		   return;
+		}
+</script>
 </body>
 </html>

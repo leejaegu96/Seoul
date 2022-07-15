@@ -6,16 +6,12 @@
 	<title>Bootstrap demo</title>
 
 	<style type="text/css">
-		#aaa {
-			background-color: #F4E4E4;
+		table {
 			text-align:center;
-			width:20%;
-			float: left;
 		}
-		
 		ul li {
 			list-style-type:none;
-			margin: 20px 10px;
+			margin: 0px 10px;
 		}
 		
 	</style>
@@ -24,115 +20,445 @@
 </head>
 <body>
 <!-- start -->
-	<nav class="navbar navbar-expand-lg bg-light">
-		<div class="container-fluid">
-			<a class="navbar-brand" href="#">OO회사</a>
+	
+	<!-- 위에 네비게이션 바 -->
+	
+	<div class="fixed-top">
+		<nav class="navbar navbar-expand-fluid bg-light">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">
+					<i class="fa-solid fa-building"> 아주 좋은 회사</i>
+				</a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav me-auto mb-2 mb-lg-0"">
-					<li class="nav-item">
-						<a class="nav-link active" aria-current="page" href="#">홈</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">사이트 운영</a>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-							회원관리
-						</a>
-						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<li><a class="dropdown-item" href="#">회원목록</a></li>
-							<li><a class="dropdown-item" href="#">메세지 보내기</a></li>
-							<li><a class="dropdown-item" href="#">메일 발송 설정</a></li>
-							<li><a class="dropdown-item" href="#">SMS 발송 설정</a></li>
-						</ul>
-					</li>
-					
-					<li class="nav-item">
-						<a class="nav-link" href="#">SMS/메일</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">디자인 관리</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">통계</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">환경설정</a>
-					</li>
-					
-				</ul>
-				<form class="d-flex" role="search">
-					<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-					<button class="btn btn-outline-success" type="submit">Search</button>
-				</form>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0"">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="#">홈</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">코드 그룹 관리</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">코드 관리</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								회원관리
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<li><a class="dropdown-item" href="#">회원목록</a></li>
+								<li><a class="dropdown-item" href="#">메세지 보내기</a></li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								SMS/메일
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<li><a class="dropdown-item" href="#">SMS 전송 관리</a></li>
+								<li><a class="dropdown-item" href="#">메일 전송 관리</a></li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								환경설정
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<li><a class="dropdown-item" href="#">웹 화면</a></li>
+								<li><a class="dropdown-item" href="#">모바일 화면</a></li>
+							</ul>
+						</li>
+					</ul>
+					<form class="d-flex" role="search">
+						<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+						<button class="btn btn-outline-success" type="submit">Search</button>
+					</form>
+				</div>
 			</div>
-		</div>
-	</nav>
+		</nav>
+	</div>
+	
+	<!-- 왼쪽 토글바 -->
 	
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-2">
-				<div class="container">
-				 	<div class="col p-4">
-						회원관리
-				 	</div>
-				 	<div class="col p-4">
-						환경설정
-				 	</div>
-				 	<div class="col p-4">
-						고객지원	
-				 	</div>
-				 </div>
-				 
-				 
-			
-			
-			
-		
-			
-				<!-- <ul class="nav flex-column">
-					<li class="nav-item">
-						<a class="nav-link active" aria-current="page" href="#">회원관리</a>
-						<ul class="nav flex-column">
-							<li class="nav-item">
-								<a class="nav-link" href="#">회원리스트</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">가입대기 회원</a>
-							</li>
-						</ul>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">환경설정</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">고객지원</a>
-					</li>
-				</ul> -->
-				
-				
+				<br><br><br>
+				<div class="accordion" id="accordionPanelsStayOpenExample">
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="panelsStayOpen-headingThree">
+							<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+								<i class="fa-solid fa-bars-progress"> 코드 그룹 관리</i>
+							</button>
+						</h2>
+						<div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingThree">
+							<div class="accordion-body">
+								<span style="font-size: 14px;">----</span>
+								<hr>
+								<span style="font-size: 14px;">----</span>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="panelsStayOpen-headingFour">
+							<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+								<i class="fa-solid fa-bars-progress"> 코드 관리</i>
+							</button>
+						</h2>
+						<div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingFour">
+							<div class="accordion-body">
+								<span style="font-size: 14px;">----</span>
+								<hr>
+								<span style="font-size: 14px;">----</span>
+								<hr>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="panelsStayOpen-headingOne">
+							<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+								<i class="fa-solid fa-people-group"> 회원관리</i>
+							</button>
+						</h2>
+						<div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+							<div class="accordion-body">
+								<span style="font-size: 14px;">회원목록</span>
+								<hr>
+								<span style="font-size: 14px;">메세지 보내기</span>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+							<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+								<i class="fa-solid fa-paper-plane"> SMS/메일</i>
+							</button>
+						</h2>
+						<div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingTwo">
+							<div class="accordion-body">
+								<span style="font-size: 14px;">SMS 전송 관리</span>
+								<hr>
+								<span style="font-size: 14px;">메일 전송 관리</span>
+							</div>
+						</div>
+					</div>
+					
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="panelsStayOpen-headingFive">
+							<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+								<i class="fa-solid fa-gear"> 환경설정</i>
+							</button>
+						</h2>
+						<div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingFive">
+							<div class="accordion-body">
+								<span style="font-size: 14px;">웹 화면</span>
+								<hr>
+								<span style="font-size: 14px;">모바일 화면</span>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 			<div class="col-10">
+			
+			<!-- 여기서부터 오른쪽 메인 시작 --> 
+			
+				<br><br><br>
+				<div style="text-align:center;">
+					<img alt="" src="../image/background_1.png">
+				</div>
+				<div class="row gx-3 gy-2">
+					<div class="col-3">
+						<select class="form-select" aria-label="Default select example">
+							<option selected>성별</option>
+							<option value="1">남</option>
+							<option value="2">여</option>
+						</select>
+					</div>
+					<div class="col-3">
+						<select class="form-select" aria-label="Default select example">
+							<option selected>지원분야</option>
+							<option value="1">백엔드 개발자</option>
+							<option value="2">프론트엔드 개발자</option>
+							<option value="3">ios 개발자</option>
+							<option value="4">안드로이드 개발자</option>
+						</select>
+					</div>
+					<div class="col-3">
+						<select class="form-select" aria-label="Default select example">
+							<option selected>경력</option>
+							<option value="1">신입</option>
+							<option value="2">경력</option>
+						</select>
+					</div>
+					<div class="col-3">
+						<select class="form-select" aria-label="Default select example">
+							<option selected>전공</option>
+							<option value="1">컴퓨터공학과</option>
+							<option value="2">정보통신공학과</option>
+							<option value="3">소프트웨어공학과</option>
+							<option value="4">기타</option>
+						</select>
+					</div>
+					<div class="col-4">
+						<select class="form-select" aria-label="Default select example">
+							<option selected>선택</option>
+							<option value="1">--</option>
+							<option value="2">--</option>
+							<option value="3">--</option>
+							<option value="4">--</option>
+						</select>
+					</div>
+					<div class="col-4">
+						<select class="form-select" aria-label="Default select example">
+							<option selected>선택</option>
+							<option value="1">--</option>
+							<option value="2">--</option>
+							<option value="3">--</option>
+							<option value="4">--</option>
+						</select>
+					</div>
+					<div class="col-4">
+						<form class="d-flex" role="search">
+							<input class="form-control me-2" type="search" placeholder="이름" aria-label="Search">
+							<button class="btn btn-outline-success" type="submit">Search</button>
+						</form>
+					</div>
+				</div>
+				
+				<!-- 여기서부터 표 시작 -->
+				
 				<table class="table table-striped">
-					<tr>
-						<thead>
+					<thead>
+						<tr>
 							<th>
 								<div class="form-check">
-			  					<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+			  						<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
 			  					</div>
 							</th>
 							<th>이름</th>
 							<th>성별</th>
 							<th>이메일주소</th>
 							<th>휴대폰번호</th>
-							<th>E-mail 동의여부</th>
-							<th>SMS 동의여부</th>
-						</thead>
-					</tr>
+							<th>주소</th>
+							<th>지원분야</th>
+							<th>경력</th>
+							<th>희망연봉</th>
+							<th>전공</th>
+							<th>접수일자</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<div class="form-check">
+			  						<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+			  					</div>
+			  				</td>
+			  				<td>이가나</td>
+			  				<td>남</td>
+			  				<td>gana@naver.com</td>
+			  				<td>010-0000-0000</td>
+			  				<td>서울시 광진구</td>
+			  				<td>백엔드 개발자</td>
+			  				<td>신입</td>
+			  				<td>3,400만원</td>
+			  				<td>산업경영학과</td>
+			  				<td>2022.07.15</td>
+		  				</tr>
+		  				<tr>
+							<td>
+								<div class="form-check">
+			  						<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+			  					</div>
+			  				</td>
+			  				<td>이다라</td>
+			  				<td>여</td>
+			  				<td>dara@naver.com</td>
+			  				<td>010-1111-1111</td>
+			  				<td>서울시 은평구</td>
+			  				<td>ios 개발자</td>
+			  				<td>신입</td>
+			  				<td>3,800만원</td>
+			  				<td>컴퓨터공학과</td>
+			  				<td>2022.07.15</td>
+		  				</tr>
+		  				<tr>
+							<td>
+								<div class="form-check">
+			  						<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+			  					</div>
+			  				</td>
+			  				<td>이마바</td>
+			  				<td>남</td>
+			  				<td>maba@naver.com</td>
+			  				<td>010-2222-2222</td>
+			  				<td>서울시 서대문구</td>
+			  				<td>안드로이드 개발자</td>
+			  				<td>경력</td>
+			  				<td>5,000만원</td>
+			  				<td>컴퓨터공학과</td>
+			  				<td>2022.07.15</td>
+		  				</tr>
+		  				<tr>
+							<td>
+								<div class="form-check">
+			  						<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+			  					</div>
+			  				</td>
+			  				<td>이사아</td>
+			  				<td>여</td>
+			  				<td>saa@naver.com</td>
+			  				<td>010-3333-3333</td>
+			  				<td>서울시 마포구</td>
+			  				<td>프론트엔드 개발자</td>
+			  				<td>신입</td>
+			  				<td>3,900만원</td>
+			  				<td>소프트웨어공학과</td>
+			  				<td>2022.07.15</td>
+		  				</tr>
+		  				<tr>
+							<td>
+								<div class="form-check">
+			  						<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+			  					</div>
+			  				</td>
+			  				<td>이자차</td>
+			  				<td>남</td>
+			  				<td>jacha@naver.com</td>
+			  				<td>010-4444-4444</td>
+			  				<td>서울시 용산구</td>
+			  				<td>백엔드 개발자</td>
+			  				<td>경력</td>
+			  				<td>5,500만원</td>
+			  				<td>컴퓨터공학과</td>
+			  				<td>2022.07.15</td>
+		  				</tr>
+		  				<tr>
+							<td>
+								<div class="form-check">
+			  						<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+			  					</div>
+			  				</td>
+			  				<td>이카타</td>
+			  				<td>여</td>
+			  				<td>kata@naver.com</td>
+			  				<td>010-5555-5555</td>
+			  				<td>서울시 은평구</td>
+			  				<td>ios 개발자</td>
+			  				<td>신입</td>
+			  				<td>3,800만원</td>
+			  				<td>소프트웨어공학과</td>
+			  				<td>2022.07.15</td>
+		  				</tr>
+		  				<tr>
+							<td>
+								<div class="form-check">
+			  						<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+			  					</div>
+			  				</td>
+			  				<td>이파하</td>
+			  				<td>여</td>
+			  				<td>paha@naver.com</td>
+			  				<td>010-6666-6666</td>
+			  				<td>서울시 중구</td>
+			  				<td>백엔드 개발자</td>
+			  				<td>신입</td>
+			  				<td>3,400만원</td>
+			  				<td>정보통신공학과</td>
+			  				<td>2022.07.15</td>
+		  				</tr>
+		  				<tr>
+							<td>
+								<div class="form-check">
+			  						<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+			  					</div>
+			  				</td>
+			  				<td>이기니</td>
+			  				<td>남</td>
+			  				<td>gini@naver.com</td>
+			  				<td>010-7777-7777</td>
+			  				<td>서울시 종로구</td>
+			  				<td>프론트엔드 개발자</td>
+			  				<td>신입</td>
+			  				<td>3,700만원</td>
+			  				<td>컴퓨터공학과</td>
+			  				<td>2022.07.15</td>
+		  				</tr>
+		  				<tr>
+							<td>
+								<div class="form-check">
+			  						<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+			  					</div>
+			  				</td>
+			  				<td>이디리</td>
+			  				<td>남</td>
+			  				<td>diri@naver.com</td>
+			  				<td>010-8888-8888</td>
+			  				<td>서울시 성북구</td>
+			  				<td>안드로이드 개발자</td>
+			  				<td>신입</td>
+			  				<td>4,000만원</td>
+			  				<td>컴퓨터공학과</td>
+			  				<td>2022.07.15</td>
+		  				</tr>
+		  				<tr>
+							<td>
+								<div class="form-check">
+			  						<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+			  					</div>
+			  				</td>
+			  				<td>이미비</td>
+			  				<td>남</td>
+			  				<td>mibi@naver.com</td>
+			  				<td>010-9999-9999</td>
+			  				<td>서울시 강북구</td>
+			  				<td>ios 개발자</td>
+			  				<td>신입</td>
+			  				<td>3,500만원</td>
+			  				<td>컴퓨터공학과</td>
+			  				<td>2022.07.15</td>
+		  				</tr>
+					</tbody>
 				</table>
+				<div class="row">
+					<div class="col-2" style="text-align:left;">
+						<button type="button" class="btn btn-primary"><i class="fa-solid fa-square-plus"></i></button>
+						<button type="button" class="btn btn-danger"><i class="fa-solid fa-square-minus"></i></button>
+					</div>
+					<div class="col-8">
+						<nav aria-label="Page navigation example">
+							<ul class="pagination justify-content-center">
+								<li class="page-item">
+									<a class="page-link" href="#">Previous</a>
+								</li>
+								<li class="page-item active"><a class="page-link" href="#">1</a></li>
+								<li class="page-item"><a class="page-link" href="#">2</a></li>
+								<li class="page-item"><a class="page-link" href="#">3</a></li>
+								<li class="page-item"><a class="page-link" href="#">┅</a></li>
+								<li class="page-item">
+									<a class="page-link" href="#">Next</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="col-2" style="text-align:right;">
+						<div class="btn-group dropstart">
+							<button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+								보기
+							</button>
+							<ul class="dropdown-menu">
+								<li><button class="dropdown-item" type="button">5개</button></li>
+								<li><button class="dropdown-item" type="button">10개</button></li>
+								<li><button class="dropdown-item" type="button">15개</button></li>
+								<li><button class="dropdown-item" type="button">20개</button></li>
+							</ul>
+						</div>
+						<button type="button" class="btn btn-success"><i class="fa-solid fa-file-csv"></i></button>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -142,9 +468,9 @@
 	
 	
 	
-	
 <!-- end -->
 	
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/20c294a34b.js" crossorigin="anonymous"></script>
 </body>
 </html>

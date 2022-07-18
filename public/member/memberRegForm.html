@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bootstrap demo</title>
+
+	<style type="text/css">
+		table {
+			text-align:center;
+		}
+		ul li {
+			list-style-type:none;
+			margin: 0px 10px;
+		}
+		
+	</style>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+<!-- start -->
+	
+	<!-- 위에 네비게이션 바 -->
+	
+	<div class="fixed-top">
+		<nav class="navbar navbar-expand-fluid bg-light">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">
+					<i class="fa-solid fa-building"> 아주 좋은 회사</i>
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0"">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="#">홈</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">코드 그룹 관리</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">코드 관리</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								회원관리
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<li><a class="dropdown-item" href="#">회원목록</a></li>
+								<li><a class="dropdown-item" href="#">메세지 보내기</a></li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								SMS/메일
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<li><a class="dropdown-item" href="#">SMS 전송 관리</a></li>
+								<li><a class="dropdown-item" href="#">메일 전송 관리</a></li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								환경설정
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<li><a class="dropdown-item" href="#">웹 화면</a></li>
+								<li><a class="dropdown-item" href="#">모바일 화면</a></li>
+							</ul>
+						</li>
+					</ul>
+					<form class="d-flex" role="search">
+						<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+						<button class="btn btn-outline-success" type="submit">Search</button>
+					</form>
+				</div>
+			</div>
+		</nav>
+	</div>
+	
+	<!-- 왼쪽 토글바 -->
+	
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-2">
+				<br><br><br>
+				<div class="accordion" id="accordionPanelsStayOpenExample">
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="panelsStayOpen-headingThree">
+							<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+								<i class="fa-solid fa-bars-progress"> 코드 그룹 관리</i>
+							</button>
+						</h2>
+						<div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingThree">
+							<div class="accordion-body">
+								<table class ="table table-hover">
+									<tr>
+										<td>----</td>
+									</tr>
+									<tr>
+										<td>----</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="panelsStayOpen-headingFour">
+							<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+								<i class="fa-solid fa-bars-progress"> 코드 관리</i>
+							</button>
+						</h2>
+						<div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingFour">
+							<div class="accordion-body">
+								<table class ="table table-hover">
+									<tr>
+										<td>----</td>
+									</tr>
+									<tr>
+										<td>----</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="panelsStayOpen-headingOne">
+							<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+								<i class="fa-solid fa-people-group"> 회원관리</i>
+							</button>
+						</h2>
+						<div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+							<div class="accordion-body">
+								<table class ="table table-hover">
+									<tr>
+										<td>회원목록</td>
+									</tr>
+									<tr>
+										<td>메세지 보내기</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+							<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+								<i class="fa-solid fa-paper-plane"> SMS/메일</i>
+							</button>
+						</h2>
+						<div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingTwo">
+							<div class="accordion-body">
+								<table class ="table table-hover">
+									<tr>
+										<td>SMS 전송 관리</td>
+									</tr>
+									<tr>
+										<td>메일 전송 관리</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+					
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="panelsStayOpen-headingFive">
+							<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+								<i class="fa-solid fa-gear"> 환경설정</i>
+							</button>
+						</h2>
+						<div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingFive">
+							<div class="accordion-body">
+								<table class ="table table-hover">
+									<tr>
+										<td>웹 화면</td>
+									</tr>
+									<tr>
+										<td>모바일 화면</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-10">
+			
+			<!-- 여기서부터 오른쪽 메인 시작 --> 
+			
+				<br><br><br>
+				<div class="row gy-3">
+					<div class="col-12">
+						<i class="fa-solid fa-users"><span style="font-size:20px;"> 회원 추가</span></i>
+					</div>
+					<div class="col-12">
+						<form>
+							<div class="row mb-3">
+								<label for="inputName" class="col-sm-2 col-form-label">이름</label>
+								<div class="col-sm-4">
+									<input type="text" class="form-control" id="inputName">
+								</div>
+							</div>
+							<div class="row mb-3">
+								<label for="inputgender" class="col-sm-2 col-form-label">성별</label>
+								<div class="col-sm-4">
+									<select class="form-select" id="validationCustom04" required>
+										<option selected disabled value="">성별</option>
+										<option>
+											<span>남</span>
+										</option>
+										<option>
+											<span>여</span>
+										</option>
+									</select>
+								</div>
+							</div>
+							<div class="row mb-3">
+								<label for="inputEmail" class="col-sm-2 col-form-label">이메일주소</label>
+								<div class="col-sm-9">
+									<input type="email" class="form-control" id="inputEmail3">
+								</div>
+							</div>
+							<div class="row mb-3">
+								<label for="inputPhone" class="col-sm-2 col-form-label">휴대폰 번호</label>
+								<div class="col-sm-9">
+									<input type="text" class="form-control" id="inputPhone">
+								</div>
+							</div>
+							<div class="row mb-3">
+								<label for="inputAdress" class="col-sm-2 col-form-label">주소</label>
+								<div class="col-sm-9">
+									<input type="text" class="form-control" id="inputAderess">
+								</div>
+							</div>
+							<div class="row mb-3">
+								<label for="inputAdress" class="col-sm-2 col-form-label">최종학력</label>
+								<div class="col-sm-6">
+									<input type="text" class="form-control" id="inputAderess">
+								</div>
+								<div class="col-sm-3">
+									<select class="form-select" id="validationCustom04" required>
+										<option selected disabled value="">학력</option>
+										<option>
+											<span>고졸</span>
+										</option>
+										<option>
+											<span>대졸</span>
+										</option>
+										<option>
+											<span>석사</span>
+										</option>
+										<option>
+											<span>박사</span>
+										</option>
+									</select>
+								</div>
+							</div>
+							<div class="row mb-3">
+								<label for="inputPart" class="col-sm-2 col-form-label">지원분야</label>
+								<div class="col-sm-4">
+									<select class="form-select" id="validationCustom04" required>
+										<option selected disabled value="">지원분야</option>
+										<option>
+											<span>백엔드 개발자</span>
+										</option>
+										<option>
+											<span>프론트엔드 개발자</span>
+										</option>
+										<option>
+											<span>안드로이드 개발자</span>
+										</option>
+										<option>
+											<span>ios 개발자</span>
+										</option>
+									</select>
+								</div>
+							</div>
+							<div class="row mb-3">
+								<label for="inputPart" class="col-sm-2 col-form-label">경력</label>
+								<div class="col-sm-4">
+									<select class="form-select" id="validationCustom04" required>
+										<option selected disabled value="">경력사항</option>
+										<option>
+											<span>신입</span>
+										</option>
+										<option>
+											<span>경력</span>
+										</option>
+									</select>
+								</div>
+							</div>
+							<div class="row mb-3">
+								<label for="inputHope" class="col-sm-2 col-form-label">희망연봉</label>
+								<div class="col-sm-4">
+									<input type="text" class="form-control" id="inputhope">
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+					
+					
+					
+					<!-- <div>
+						
+					</div>
+					<div class="col-3">
+						<div class="row gy-1">
+							<div class="col">
+								<span>이름</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-9">
+					<form class="row needs-validation" novalidate>
+						<div class="row gy-1">
+							<div class="col-md-4">
+								<input type="text" class="form-control" id="validationCustom01" value="이름" required>
+								<div class="valid-feedback">
+									Looks good!
+								</div>
+							</div>
+						</div>
+						<div class="row gy-1">
+							<div class="col-md-4">
+								<select class="form-select" id="validationCustom04" required>
+									<option selected disabled value="">성별</option>
+									<option>
+										<span>남</span>
+									</option>
+									<option>
+										<span>여</span>
+									</option>
+								</select>
+								<div class="invalid-feedback">
+									Please select a valid state.
+								</div>
+							</div>
+						</div>
+						<div class="row gy-1">
+							<div class="col-md-10">
+								<input type="text" class="form-control" id="validationCustom03" required>
+								<div class="invalid-feedback">
+									Please provide a valid city.
+								</div>
+							</div>
+						</div>
+  					</form>
+	 -->				
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+<!-- end -->
+	
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/20c294a34b.js" crossorigin="anonymous"></script>
+</body>
+</html>

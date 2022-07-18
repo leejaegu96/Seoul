@@ -95,9 +95,14 @@
 						</h2>
 						<div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingThree">
 							<div class="accordion-body">
-								<span style="font-size: 14px;">----</span>
-								<hr>
-								<span style="font-size: 14px;">----</span>
+								<table class ="table table-hover">
+									<tr>
+										<td>----</td>
+									</tr>
+									<tr>
+										<td>----</td>
+									</tr>
+								</table>
 							</div>
 						</div>
 					</div>
@@ -109,10 +114,14 @@
 						</h2>
 						<div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingFour">
 							<div class="accordion-body">
-								<span style="font-size: 14px;">----</span>
-								<hr>
-								<span style="font-size: 14px;">----</span>
-								<hr>
+								<table class ="table table-hover">
+									<tr>
+										<td>----</td>
+									</tr>
+									<tr>
+										<td>----</td>
+									</tr>
+								</table>
 							</div>
 						</div>
 					</div>
@@ -124,9 +133,14 @@
 						</h2>
 						<div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
 							<div class="accordion-body">
-								<span style="font-size: 14px;">회원목록</span>
-								<hr>
-								<span style="font-size: 14px;">메세지 보내기</span>
+								<table class ="table table-hover">
+									<tr>
+										<td>회원목록</td>
+									</tr>
+									<tr>
+										<td>메세지 보내기</td>
+									</tr>
+								</table>
 							</div>
 						</div>
 					</div>
@@ -138,9 +152,14 @@
 						</h2>
 						<div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingTwo">
 							<div class="accordion-body">
-								<span style="font-size: 14px;">SMS 전송 관리</span>
-								<hr>
-								<span style="font-size: 14px;">메일 전송 관리</span>
+								<table class ="table table-hover">
+									<tr>
+										<td>SMS 전송 관리</td>
+									</tr>
+									<tr>
+										<td>메일 전송 관리</td>
+									</tr>
+								</table>
 							</div>
 						</div>
 					</div>
@@ -153,9 +172,14 @@
 						</h2>
 						<div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingFive">
 							<div class="accordion-body">
-								<span style="font-size: 14px;">웹 화면</span>
-								<hr>
-								<span style="font-size: 14px;">모바일 화면</span>
+								<table class ="table table-hover">
+									<tr>
+										<td>웹 화면</td>
+									</tr>
+									<tr>
+										<td>모바일 화면</td>
+									</tr>
+								</table>
 							</div>
 						</div>
 					</div>
@@ -424,11 +448,7 @@
 					</tbody>
 				</table>
 				<div class="row">
-					<div class="col-2" style="text-align:left;">
-						<button type="button" class="btn btn-primary"><i class="fa-solid fa-square-plus"></i></button>
-						<button type="button" class="btn btn-danger" id="removeButton" name="removeButton" value="삭제" onclick="delRow()"><i class="fa-solid fa-square-minus"></i></button>
-					</div>
-					<div class="col-8">
+					<div class="col">
 						<nav aria-label="Page navigation example">
 							<ul class="pagination justify-content-center">
 								<li class="page-item">
@@ -444,6 +464,13 @@
 							</ul>
 						</nav>
 					</div>
+					
+				<div class="row">
+					<div class="col-2" style="text-align:left;">
+						<button type="button" class="btn btn-primary"><i class="fa-solid fa-square-plus"></i></button>
+						<button type="button" class="btn btn-danger" id="removeButton" name="removeButton" value="삭제" onclick="delRow()"><i class="fa-solid fa-square-minus"></i></button>
+					</div>
+					<div class="col-8"></div>
 					<div class="col-2" style="text-align:right;">
 						<div class="btn-group dropstart">
 							<button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
@@ -458,6 +485,7 @@
 						</div>
 						<button type="button" class="btn btn-success"><i class="fa-solid fa-file-csv"></i></button>
 					</div>
+				</div>
 				</div>
 			</div>
 		</div>
@@ -505,8 +533,8 @@
 		           }
 		       }        
 		   }    
-		   return;
-		}
+		return;
+	}
 </script>
 </body>
 </html>

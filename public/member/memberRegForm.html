@@ -24,57 +24,50 @@
 	<!-- 위에 네비게이션 바 -->
 	
 	<div class="fixed-top">
-		<nav class="navbar navbar-expand-fluid bg-light">
+		<nav class="navbar bg-light fixed-top">
 			<div class="container-fluid">
-				<a class="navbar-brand" href="#">
-					<i class="fa-solid fa-building"> 아주 좋은 회사</i>
-				</a>
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<a class="navbar-brand" href="#" onClick="location.href='memberList.html'"><i class="fa-solid fa-building"> 아주 좋은 회사</i></a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
 					<span class="navbar-toggler-icon"></span>
 				</button>
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav me-auto mb-2 mb-lg-0"">
-						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="#">홈</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">코드 그룹 관리</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">코드 관리</a>
-						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-								회원관리
-							</a>
-							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<li><a class="dropdown-item" href="#">회원목록</a></li>
-								<li><a class="dropdown-item" href="#">메세지 보내기</a></li>
-							</ul>
-						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-								SMS/메일
-							</a>
-							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<li><a class="dropdown-item" href="#">SMS 전송 관리</a></li>
-								<li><a class="dropdown-item" href="#">메일 전송 관리</a></li>
-							</ul>
-						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-								환경설정
-							</a>
-							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<li><a class="dropdown-item" href="#">웹 화면</a></li>
-								<li><a class="dropdown-item" href="#">모바일 화면</a></li>
-							</ul>
-						</li>
-					</ul>
-					<form class="d-flex" role="search">
-						<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-						<button class="btn btn-outline-success" type="submit">Search</button>
-					</form>
+				<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+					<div class="offcanvas-header">
+						<h5 class="offcanvas-title" id="offcanvasNavbarLabel"><i class="fa-solid fa-building"> 아주 좋은 회사</i></h5>
+						<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+					</div>
+					<div class="offcanvas-body">
+						<!-- 
+						<form>
+							<div class="row mb-3">
+								<label for="inputEmail3" class="col-sm-3 col-form-label">Email</label>
+								<div class="col-sm-9">
+									<input type="email" class="form-control" id="inputEmail3">
+								</div>
+							</div>
+							<div class="row mb-3">
+								<label for="inputPassword3" class="col-sm-3 col-form-label">Password</label>
+								<div class="col-sm-9">
+									<input type="password" class="form-control" id="inputPassword3">
+								</div>
+							</div>
+							<button type="submit" class="btn btn-primary">Sign in</button>
+						</form>
+						 -->
+						
+						<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+				      		<li class="nav-item" style="text-align:center;">
+								<a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-user" style="font-size:100px;"></i></a>
+								<a class="nav-link" href="#">OOO 관리자</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">사용자 정보 수정</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Logout</a>
+							</li>
+						</ul>
+						
+					</div>
 				</div>
 			</div>
 		</nav>
@@ -128,14 +121,14 @@
 					<div class="accordion-item">
 						<h2 class="accordion-header" id="panelsStayOpen-headingOne">
 							<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-								<i class="fa-solid fa-people-group"> 회원관리</i>
+								<i class="fa-solid fa-people-group"> 지원서 관리</i>
 							</button>
 						</h2>
 						<div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
 							<div class="accordion-body">
 								<table class ="table table-hover">
 									<tr>
-										<td>회원목록</td>
+										<td>지원서 목록</td>
 									</tr>
 									<tr>
 										<td>메세지 보내기</td>
@@ -190,21 +183,28 @@
 			<!-- 여기서부터 오른쪽 메인 시작 --> 
 			
 				<br><br><br>
+				
 				<div class="row gy-3">
 					<div class="col-12">
-						<i class="fa-solid fa-users"><span style="font-size:20px;"> 회원 추가</span></i>
+						<i class="fa-solid fa-users"><span style="font-size:20px;"> 지원자 추가</span></i>
 					</div>
 					<div class="col-12">
 						<form>
 							<div class="row mb-3">
 								<label for="inputName" class="col-sm-2 col-form-label">이름</label>
-								<div class="col-sm-4">
+								<div class="col-sm-4 border-start">
+									<input type="text" class="form-control" id="inputName">
+								</div>
+							</div>
+							<div class="row mb-3">
+								<label for="inputName" class="col-sm-2 col-form-label">지원서사진</label>
+								<div class="col-sm-4 border-start">
 									<input type="text" class="form-control" id="inputName">
 								</div>
 							</div>
 							<div class="row mb-3">
 								<label for="inputgender" class="col-sm-2 col-form-label">성별</label>
-								<div class="col-sm-4">
+								<div class="col-sm-4 border-start">
 									<select class="form-select" id="validationCustom04" required>
 										<option selected disabled value="">성별</option>
 										<option>
@@ -218,48 +218,83 @@
 							</div>
 							<div class="row mb-3">
 								<label for="inputEmail" class="col-sm-2 col-form-label">이메일주소</label>
-								<div class="col-sm-9">
-									<input type="email" class="form-control" id="inputEmail3">
+								<div class="col-2 border-start">
+									<label class="visually-hidden" for="autoSizingInput">nickname</label>
+									<input type="text" class="form-control" id="autoSizingInput" placeholder="nickname">
+								</div>
+								<div class="col-4">
+									<label class="visually-hidden" for="autoSizingInputGroup">email</label>
+									<div class="input-group">
+										<div class="input-group-text">@</div>
+										<select class="form-select" id="validationCustom04" required>
+											<option selected value="">naver.com</option>
+											<option>
+												<span>google.com</span>
+											</option>
+											<option>
+												<span>hanmail.net</span>
+											</option>
+										</select>
+									</div>
 								</div>
 							</div>
 							<div class="row mb-3">
 								<label for="inputPhone" class="col-sm-2 col-form-label">휴대폰 번호</label>
-								<div class="col-sm-9">
-									<input type="text" class="form-control" id="inputPhone">
+								<div class="col-2 border-start">
+									<select class="form-select" id="validationCustom04" required>
+										<option selected value="">010</option>
+										<option>
+											<span>011</span>
+										</option>
+										<option>
+											<span>019</span>
+										</option>
+									</select>
+								</div>
+								<div class="col-2">
+									<label class="visually-hidden" for="autoSizingInputGroup">email</label>
+									<div class="input-group">
+										<div class="input-group-text">-</div>
+										<input type="text" class="form-control" id="autoSizingInput" placeholder="">
+									</div>
+								</div>
+								<div class="col-2">
+									<label class="visually-hidden" for="autoSizingInputGroup">email</label>
+									<div class="input-group">
+										<div class="input-group-text">-</div>
+										<input type="text" class="form-control" id="autoSizingInput" placeholder="">
+									</div>
 								</div>
 							</div>
 							<div class="row mb-3">
 								<label for="inputAdress" class="col-sm-2 col-form-label">주소</label>
-								<div class="col-sm-9">
+								<div class="col-sm-9 border-start">
 									<input type="text" class="form-control" id="inputAderess">
 								</div>
 							</div>
 							<div class="row mb-3">
 								<label for="inputAdress" class="col-sm-2 col-form-label">최종학력</label>
-								<div class="col-sm-6">
+								<div class="col-sm-6 border-start">
 									<input type="text" class="form-control" id="inputAderess">
 								</div>
 								<div class="col-sm-3">
 									<select class="form-select" id="validationCustom04" required>
-										<option selected disabled value="">학력</option>
+										<option selected disabled value="">구분</option>
 										<option>
-											<span>고졸</span>
+											<span>졸업</span>
 										</option>
 										<option>
-											<span>대졸</span>
+											<span>수료</span>
 										</option>
 										<option>
-											<span>석사</span>
-										</option>
-										<option>
-											<span>박사</span>
+											<span>재적</span>
 										</option>
 									</select>
 								</div>
 							</div>
 							<div class="row mb-3">
 								<label for="inputPart" class="col-sm-2 col-form-label">지원분야</label>
-								<div class="col-sm-4">
+								<div class="col-sm-4 border-start">
 									<select class="form-select" id="validationCustom04" required>
 										<option selected disabled value="">지원분야</option>
 										<option>
@@ -279,7 +314,7 @@
 							</div>
 							<div class="row mb-3">
 								<label for="inputPart" class="col-sm-2 col-form-label">경력</label>
-								<div class="col-sm-4">
+								<div class="col-sm-4 border-start">
 									<select class="form-select" id="validationCustom04" required>
 										<option selected disabled value="">경력사항</option>
 										<option>
@@ -293,7 +328,7 @@
 							</div>
 							<div class="row mb-3">
 								<label for="inputHope" class="col-sm-2 col-form-label">희망연봉</label>
-								<div class="col-sm-4">
+								<div class="col-sm-4 border-start">
 									<input type="text" class="form-control" id="inputhope">
 								</div>
 							</div>

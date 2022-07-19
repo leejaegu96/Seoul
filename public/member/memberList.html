@@ -24,7 +24,58 @@
 	<!-- 위에 네비게이션 바 -->
 	
 	<div class="fixed-top">
-		<nav class="navbar navbar-expand-fluid bg-light">
+		<nav class="navbar bg-light fixed-top">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#" onClick="location.href='memberList.html'"><i class="fa-solid fa-building"> 아주 좋은 회사</i></a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+					<div class="offcanvas-header">
+						<h5 class="offcanvas-title" id="offcanvasNavbarLabel"><i class="fa-solid fa-building"> 아주 좋은 회사</i></h5>
+						<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+					</div>
+					<div class="offcanvas-body">
+						<!-- 
+						<form>
+							<div class="row mb-3">
+								<label for="inputEmail3" class="col-sm-3 col-form-label">Email</label>
+								<div class="col-sm-9">
+									<input type="email" class="form-control" id="inputEmail3">
+								</div>
+							</div>
+							<div class="row mb-3">
+								<label for="inputPassword3" class="col-sm-3 col-form-label">Password</label>
+								<div class="col-sm-9">
+									<input type="password" class="form-control" id="inputPassword3">
+								</div>
+							</div>
+							<button type="submit" class="btn btn-primary">Sign in</button>
+						</form>
+						 -->
+						
+						<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+				      		<li class="nav-item" style="text-align:center;">
+								<a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-user" style="font-size:100px;"></i></a>
+								<a class="nav-link" href="#">OOO 관리자</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">사용자 정보 수정</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Logout</a>
+							</li>
+						</ul>
+						
+					</div>
+				</div>
+			</div>
+		</nav>
+	</div>
+	
+	
+	
+		<!-- <nav class="navbar navbar-expand-fluid bg-light">
 			<div class="container-fluid">
 				<a class="navbar-brand" href="#">
 					<i class="fa-solid fa-building"> 아주 좋은 회사</i>
@@ -78,7 +129,7 @@
 				</div>
 			</div>
 		</nav>
-	</div>
+	</div> -->
 	
 	<!-- 왼쪽 토글바 -->
 	
@@ -128,14 +179,14 @@
 					<div class="accordion-item">
 						<h2 class="accordion-header" id="panelsStayOpen-headingOne">
 							<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-								<i class="fa-solid fa-people-group"> 회원관리</i>
+								<i class="fa-solid fa-people-group"> 지원서 관리</i>
 							</button>
 						</h2>
 						<div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
 							<div class="accordion-body">
 								<table class ="table table-hover">
 									<tr>
-										<td>회원목록</td>
+										<td>지원서 목록</td>
 									</tr>
 									<tr>
 										<td>메세지 보내기</td>
@@ -467,7 +518,7 @@
 					
 				<div class="row">
 					<div class="col-2" style="text-align:left;">
-						<button type="button" class="btn btn-primary"><i class="fa-solid fa-square-plus"></i></button>
+						<button type="button" class="btn btn-primary" onClick="location.href='memberRegForm.html'"><i class="fa-solid fa-square-plus"></i></button>
 						<button type="button" class="btn btn-danger" id="removeButton" name="removeButton" value="삭제" onclick="delRow()"><i class="fa-solid fa-square-minus"></i></button>
 					</div>
 					<div class="col-8"></div>

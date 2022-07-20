@@ -13,6 +13,13 @@
 			list-style-type:none;
 			margin: 0px 10px;
 		}
+		#aaa {
+			text-align: center;
+			align-self: center;
+		}
+		#bbb {
+			text-align: left;
+		}
 		
 	</style>
 
@@ -190,22 +197,40 @@
 					</div>
 					<div class="col-12">
 						<form>
-							<div class="row mb-3">
+							<div class="row mb-3" id="aaa" height="400px;">
+								<label for="inputPhoto" class="col-sm-2 col-form-label align-self-center" height="400px;">
+									<span>지원서사진</span><br><br>
+									<span class="form-text">
+										가로 3cm * 세로 3.5cm / JPG 파일 / 500kb 이하
+									</span>
+								</label>
+								<div class="col-sm-3 border-start">
+									<div class="row g-2">
+										<div class="col">
+										
+											<!-- 이미지 들어가는 곳 사이즈 조절 가능한지 알아보기 -->
+											<div id="image_container"></div>
+											
+											
+											<!-- <img src="../image/recruit.png" class="img-thumbnail" alt="..." width="300px;" height="350px;"> -->
+										</div>
+									</div>
+									<div class="row g-2">
+										<input type="file" class="form-control" aria-label="file example" required id="image" accept="image/*" onchange="setThumbnail(event);"/>
+										<!-- <input type="file" class="form-control" aria-label="file example" required> -->
+									</div>
+								</div>
+							</div>
+							<div class="row mb-3" id="aaa">
 								<label for="inputName" class="col-sm-2 col-form-label">이름</label>
 								<div class="col-sm-4 border-start">
 									<input type="text" class="form-control" id="inputName">
 								</div>
 							</div>
-							<div class="row mb-3">
-								<label for="inputName" class="col-sm-2 col-form-label">지원서사진</label>
-								<div class="col-sm-4 border-start">
-									<input type="text" class="form-control" id="inputName">
-								</div>
-							</div>
-							<div class="row mb-3">
+							<div class="row mb-3" id="aaa">
 								<label for="inputgender" class="col-sm-2 col-form-label">성별</label>
 								<div class="col-sm-4 border-start">
-									<select class="form-select" id="validationCustom04" required>
+									<select class="form-select" id="inputgender" required>
 										<option selected disabled value="">성별</option>
 										<option>
 											<span>남</span>
@@ -216,16 +241,12 @@
 									</select>
 								</div>
 							</div>
-							<div class="row mb-3">
+							<div class="row mb-3" id="aaa">
 								<label for="inputEmail" class="col-sm-2 col-form-label">이메일주소</label>
-								<div class="col-2 border-start">
-									<label class="visually-hidden" for="autoSizingInput">nickname</label>
-									<input type="text" class="form-control" id="autoSizingInput" placeholder="nickname">
-								</div>
-								<div class="col-4">
-									<label class="visually-hidden" for="autoSizingInputGroup">email</label>
-									<div class="input-group">
-										<div class="input-group-text">@</div>
+								<div class="col-sm-6 border-start">
+									<div class="input-group" >
+										<input type="text" id="inputEmail" class="form-control" placeholder="Username" aria-label="Username">
+										<span class="input-group-text">@</span>
 										<select class="form-select" id="validationCustom04" required>
 											<option selected value="">naver.com</option>
 											<option>
@@ -238,64 +259,63 @@
 									</div>
 								</div>
 							</div>
-							<div class="row mb-3">
+							<div class="row mb-3" id="aaa">
 								<label for="inputPhone" class="col-sm-2 col-form-label">휴대폰 번호</label>
-								<div class="col-2 border-start">
-									<select class="form-select" id="validationCustom04" required>
-										<option selected value="">010</option>
-										<option>
-											<span>011</span>
-										</option>
-										<option>
-											<span>019</span>
-										</option>
-									</select>
-								</div>
-								<div class="col-2">
-									<label class="visually-hidden" for="autoSizingInputGroup">email</label>
-									<div class="input-group">
-										<div class="input-group-text">-</div>
-										<input type="text" class="form-control" id="autoSizingInput" placeholder="">
-									</div>
-								</div>
-								<div class="col-2">
-									<label class="visually-hidden" for="autoSizingInputGroup">email</label>
-									<div class="input-group">
-										<div class="input-group-text">-</div>
-										<input type="text" class="form-control" id="autoSizingInput" placeholder="">
-									</div>
-								</div>
-							</div>
-							<div class="row mb-3">
-								<label for="inputAdress" class="col-sm-2 col-form-label">주소</label>
-								<div class="col-sm-9 border-start">
-									<input type="text" class="form-control" id="inputAderess">
-								</div>
-							</div>
-							<div class="row mb-3">
-								<label for="inputAdress" class="col-sm-2 col-form-label">최종학력</label>
 								<div class="col-sm-6 border-start">
-									<input type="text" class="form-control" id="inputAderess">
-								</div>
-								<div class="col-sm-3">
-									<select class="form-select" id="validationCustom04" required>
-										<option selected disabled value="">구분</option>
-										<option>
-											<span>졸업</span>
-										</option>
-										<option>
-											<span>수료</span>
-										</option>
-										<option>
-											<span>재적</span>
-										</option>
-									</select>
+									<div class="input-group" >
+										<select class="form-select" id="inputPhone" required>
+											<option selected value="">010</option>
+											<option>
+												<span>011</span>
+											</option>
+											<option>
+												<span>019</span>
+											</option>
+										</select>
+										<span class="input-group-text">-</span>
+										<input type="text" id="inputEmail" class="form-control" aria-label="Username">
+										<span class="input-group-text">-</span>
+										<input type="text" id="inputEmail" class="form-control" aria-label="Username">
+									</div>
 								</div>
 							</div>
-							<div class="row mb-3">
+							<div class="row mb-3" id="aaa">
+								<label for="inputAdress" class="col-sm-2 col-form-label">주소</label>
+								<div class="col-sm-6 border-start">
+									<div class="input-group">
+										<input type="text" id="inputAdress" class="form-control" placeholder="시/군/구" aria-label="Username">
+										<input type="text" id="inputAdress" class="form-control" placeholder="동/읍/면/리" aria-label="Username">
+										<input type="text" id="inputAdress" class="form-control" placeholder="상세주소" aria-label="Username">
+									</div>
+								</div>
+							</div>
+							<div class="row mb-3" id="aaa">
+								<label for="inputGrade" class="col-sm-2 col-form-label">최종학력</label>
+								<div class="col-sm-6 border-start">
+									<div class="input-group" >
+										<input type="text" id="inputGrade" class="form-control" aria-label="Username">
+										<span class="input-group-text">학교</span>
+										<input type="text" id="inputGrade" class="form-control" aria-label="Username">
+										<span class="input-group-text">학과</span>
+										<select class="form-select" id="inputGrade" required>
+											<option selected disabled value="">구분</option>
+											<option>
+												<span>졸업</span>
+											</option>
+											<option>
+												<span>수료</span>
+											</option>
+											<option>
+												<span>재적</span>
+											</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="row mb-3" id="aaa">
 								<label for="inputPart" class="col-sm-2 col-form-label">지원분야</label>
 								<div class="col-sm-4 border-start">
-									<select class="form-select" id="validationCustom04" required>
+									<select class="form-select" id="inputPart" required>
 										<option selected disabled value="">지원분야</option>
 										<option>
 											<span>백엔드 개발자</span>
@@ -312,10 +332,10 @@
 									</select>
 								</div>
 							</div>
-							<div class="row mb-3">
-								<label for="inputPart" class="col-sm-2 col-form-label">경력</label>
+							<div class="row mb-3" id="aaa">
+								<label for="inputCarrer" class="col-sm-2 col-form-label">경력</label>
 								<div class="col-sm-4 border-start">
-									<select class="form-select" id="validationCustom04" required>
+									<select class="form-select" id="inputCarrer" required>
 										<option selected disabled value="">경력사항</option>
 										<option>
 											<span>신입</span>
@@ -326,64 +346,18 @@
 									</select>
 								</div>
 							</div>
-							<div class="row mb-3">
-								<label for="inputHope" class="col-sm-2 col-form-label">희망연봉</label>
+							<div class="row mb-3" id="aaa">
+								<label for="inputSalary" class="col-sm-2 col-form-label">희망연봉</label>
 								<div class="col-sm-4 border-start">
-									<input type="text" class="form-control" id="inputhope">
+									<input type="text" class="form-control" id="inputSalary">
 								</div>
 							</div>
 						</form>
-					</div>
-				</div>
-					
-					
-					
-					<!-- <div>
-						
-					</div>
-					<div class="col-3">
-						<div class="row gy-1">
-							<div class="col">
-								<span>이름</span>
-							</div>
+						<div id="aaa">
+							<button type="button" class="btn btn-primary btn-sm">저장하기</button>
+							<button type="button" class="btn btn-secondary btn-sm">취소하기</button>
 						</div>
 					</div>
-					<div class="col-9">
-					<form class="row needs-validation" novalidate>
-						<div class="row gy-1">
-							<div class="col-md-4">
-								<input type="text" class="form-control" id="validationCustom01" value="이름" required>
-								<div class="valid-feedback">
-									Looks good!
-								</div>
-							</div>
-						</div>
-						<div class="row gy-1">
-							<div class="col-md-4">
-								<select class="form-select" id="validationCustom04" required>
-									<option selected disabled value="">성별</option>
-									<option>
-										<span>남</span>
-									</option>
-									<option>
-										<span>여</span>
-									</option>
-								</select>
-								<div class="invalid-feedback">
-									Please select a valid state.
-								</div>
-							</div>
-						</div>
-						<div class="row gy-1">
-							<div class="col-md-10">
-								<input type="text" class="form-control" id="validationCustom03" required>
-								<div class="invalid-feedback">
-									Please provide a valid city.
-								</div>
-							</div>
-						</div>
-  					</form>
-	 -->				
 				</div>
 			</div>
 		</div>
@@ -394,5 +368,18 @@
 	
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/20c294a34b.js" crossorigin="anonymous"></script>
+<script type="text/javascript">
+	function setThumbnail(event) {
+	    var reader = new FileReader();
+	
+	    reader.onload = function(event) {
+	      var img = document.createElement("img");
+	      img.setAttribute("src", event.target.result);
+	      document.querySelector("div#image_container").appendChild(img);
+	    };
+	
+	    reader.readAsDataURL(event.target.files[0]);
+	 }
+</script>
 </body>
 </html>

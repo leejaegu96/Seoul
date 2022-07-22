@@ -278,7 +278,7 @@
 						</select>
 					</div>
 					<div class="col-4">
-						<select class="form-select" aria-label="Default select example">
+						<select class="form-select" aria-label="Default select example" >
 							<option selected>선택</option>
 							<option value="1">--</option>
 							<option value="2">--</option>
@@ -297,7 +297,11 @@
 					</div>
 					<div class="col-4">
 						<form class="d-flex" role="search">
-							<input class="form-control me-2" type="search" placeholder="이름" aria-label="Search">
+							
+							<input class="form-control me-2" type="text" id="myInput" onkeyup="myFunction()">
+							
+							<!-- <input class="form-control me-2" type="search" placeholder="이름" aria-label="Search"> -->
+							
 							<button class="btn btn-outline-success" type="submit">Search</button>
 						</form>
 					</div>
@@ -305,9 +309,9 @@
 				
 				<!-- 여기서부터 표 시작 -->
 				<hr>
-				<table class="table table-striped" id="sTable">
+				<table class="table table-striped" id="myTable">
 					<thead>
-						<tr>
+						<tr class="header">
 							<th>
 								<div class="form-check">
 			  						<input class="form-check-input" type="checkbox" name="chk_box" onclick="allcheck();" value="" id="flexCheckDefault">
@@ -586,6 +590,22 @@
 		   }    
 		return;
 	}
+	
+	const myFunction = () => {
+		  const trs = document.querySelectorAll('#myTable tr:not(.header)')
+		  const filter = document.querySelector('#myInput').value
+		  const regex = new RegExp(filter, 'i')
+		  const isFoundInTds = td => regex.test(td.innerHTML)
+		  const isFound = childrenArr => childrenArr.some(isFoundInTds)
+		  const setTrStyleDisplay = ({ style, children }) => {
+		    style.display = isFound([
+		      ...children // <-- All columns
+		    ]) ? '' : 'none' 
+		  }
+		  
+		  trs.forEach(setTrStyleDisplay)
+		}
+	
 </script>
 </body>
 </html>

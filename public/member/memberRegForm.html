@@ -17,10 +17,7 @@
 			text-align: center;
 			align-self: center;
 		}
-		#bbb {
-			width: 400px;
-		    margin: 0px 20px;
-		}
+
 	</style>
 
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -186,11 +183,8 @@
 				</div>
 			</div>
 			<div class="col-10">
-			
 			<!-- 여기서부터 오른쪽 메인 시작 --> 
-			
 				<br><br><br>
-				
 				<div class="row gy-3">
 					<div class="col-12">
 						<i class="fa-solid fa-users"><span style="font-size:20px;"> 지원자 추가</span></i>
@@ -198,74 +192,16 @@
 					<div class="col-12">
 						<div class="container-floud">
 							<form class="row">
-								<div class="col-5">
-									<div class="row border" id="aaa">
-										<!-- 지원자 사진 -->
-										<label for="inputPhoto" class="col-3 col-form-label" style="height:400px;">
-											<span>지원서사진</span><br><br>
-											<span class="form-text">
-												가로 3cm * 세로 3.5cm / JPG 파일 / 500kb 이하
-											</span>
-										</label>
-										
-										
-										
-										
-										<div class="col-9 border-start">
-											<div class="row">
-												<input type="file" class="form-control" id="upload_file" accept="image/*" required=true>
-												<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" >미리보기</button>
-											</div>
-											<div class="row">
-											
-												<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-													<div class="modal-dialog">
-														<div class="modal-content">
-															<div class="modal-body">
-																<form>
-																	<div class="mb-3" style="text-align:center;">
-																		<img src="" id="img_section" style="width: 250px; height: 300px;">
-																    </div>
-																</form>
-															</div>
-															<div class="modal-footer">
-																<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-															</div>
-														</div>
-													</div>
-												</div>
-												
-											</div>
-											
-											<!-- 
-											<div class="row g-2">
-												<div class="col" style="padding:4px;">
-													<img src="" id="img_section" style="width: 250px; height: 300px;">
-												</div>
-											</div>
-											<div class="row g-1">
-												<div class="col" style="padding:4px;">
-													<input type="file" class="form-control" id="upload_file" accept="image/*" required=true>
-												</div>
-											</div>
-											 -->
-											
-										</div>
-										
-										
-										
-									</div>
-								</div>
-								<div class="col-5 border">
+								<div class="col-6">
 									<!-- 지원자 이름 -->
-									<div class="row border" id="aaa">
+									<div class="row" id="aaa">
 										<label for="validationCustomUsername" class="col-3 col-form-label" style="height:50px;">이름</label>
 										<div class="col-9 border-start" style="padding:3px;">
 											<input type="text" class="form-control" id="validationCustomUsername" required>
 										</div>
 									</div>
 									<!-- 지원자 성별 -->
-									<div class="row border" id="aaa">
+									<div class="row" id="aaa">
 										<label for="inputgender" class="col-3 col-form-label" style="height:50px;">성별</label>
 										<div class="col-9 border-start" style="padding:3px;">
 											<select class="form-select" id="inputgender" required>
@@ -280,7 +216,7 @@
 										</div>
 									</div>
 									<!-- 지원자 이메일 -->
-									<div class="row border" >
+									<div class="row" >
 										<label for="inputEmail" class="col-3 col-form-label" id="aaa" style="height:75px;">이메일주소</label>
 										<div class="col-9 border-start" style="padding:3px;">
 											<div class="input-group">
@@ -307,7 +243,7 @@
 										</div>
 									</div>
 									<!-- 지원자 전화번호 -->
-									<div class="row border" >
+									<div class="row" >
 										<label for="inputPhone" class="col-3 col-form-label" id="aaa" style="height:75px;">휴대폰 번호</label>
 										<div class="col-9 border-start" style="padding:3px;">
 											<div class="input-group">
@@ -336,7 +272,7 @@
 										</div>
 									</div>
 									<!-- 지원자 주소 -->
-									<div class="row border" id="aaa">
+									<div class="row" id="aaa">
 										<label for="inputAdress" class="col-3 col-form-label" style="height:140px;">주소</label>
 										<div class="col-9 border-start" style="padding:3px;">
 											<div class="input-group">
@@ -357,204 +293,174 @@
 											</div>
 										</div>
 									</div>
-								</div>
-							</form>
-						</div>
-					</div>
-						
-						
-						
-						<!-- <form class="row">
-							<div class="row mb-3" id="aaa">
-								<label for="inputPhoto" class="col-sm-2 col-form-label align-self-center" height="400px;">
-									<span>지원서사진</span><br><br>
-									<span class="form-text">
-										가로 3cm * 세로 3.5cm / JPG 파일 / 500kb 이하
-									</span>
-								</label>
-								<div class="col-sm-3 border-start">
-									<div class="row g-2">
-										<div class="col" style="padding:4px;">
-											<img src="" id="img_section" style="width: 300px; height: 350px;">
-											<div id="image_container"></div>
-											<img src="../image/recruit.png" class="img-thumbnail" alt="..." width="300px;" height="350px;">
-										</div>
-									</div>
-									<div class="row g-1">
-										<input type="file" class="form-control" id="upload_file" accept="image/*" required=true>
-										<input type="file" class="form-control" aria-label="file example" required id="image" accept="image/*" onchange="setThumbnail(event);"/>
-										<input type="file" class="form-control" aria-label="file example" required>
-									</div>
-								</div>
-							</div>
-							<div class="row mb-3" id="aaa">
-								<label for="validationCustomUsername" class="col-sm-2 col-form-label">이름</label>
-								<div class="col-sm-3 border-start">
-									<input type="text" class="form-control" id="validationCustomUsername" required>
-								</div>
-								
-							</div>
-							<div class="row mb-3" id="aaa">
-								<label for="inputgender" class="col-sm-2 col-form-label">성별</label>
-								<div class="col-sm-3 border-start">
-									<select class="form-select" id="inputgender" required>
-										<option selected disabled value="">성별</option>
-										<option>
-											<span>남</span>
-										</option>
-										<option>
-											<span>여</span>
-										</option>
-									</select>
-								</div>
-							</div>
-							<div class="row mb-3" >
-								<label for="inputEmail" class="col-sm-2 col-form-label" id="aaa">이메일주소</label>
-								<div class="col-sm-6 border-start">
-									<div class="input-group" >
-										<input type="text" id="inputEmail" class="form-control" placeholder="Username" aria-label="Username">
-										<span class="input-group-text">@</span>
-										<select class="form-select" id="validationCustom04" required>
-											<option selected value="">naver.com</option>
-											<option>
-												<span>google.com</span>
-											</option>
-											<option>
-												<span>hanmail.net</span>
-											</option>
-										</select>
-									</div>
-									<div class="col-auto">
-										<div class="form-check">
-											<input class="form-text" type="checkbox" id="autoSizingCheck_1">
-											<label class="form-text" for="autoSizingCheck_1">
-												E-mail을 통한 소식/정보 수신을 동의하시겠습니까? 
-											</label>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="row mb-3" >
-								<label for="inputPhone" class="col-sm-2 col-form-label" id="aaa">휴대폰 번호</label>
-								<div class="col-sm-6 border-start">
-									<div class="input-group" >
-										<select class="form-select" id="inputPhone" required>
-											<option selected value="">010</option>
-											<option>
-												<span>011</span>
-											</option>
-											<option>
-												<span>019</span>
-											</option>
-										</select>
-										<span class="input-group-text">-</span>
-										<input type="text" id="inputEmail" class="form-control" aria-label="Username">
-										<span class="input-group-text">-</span>
-										<input type="text" id="inputEmail" class="form-control" aria-label="Username">
-									</div>
-									<div class="col-auto">
-										<div class="form-check">
-											<input class="form-text" type="checkbox" id="autoSizingCheck">
-											<label class="form-text" for="autoSizingCheck">
-												SMS을 통한 소식/정보 수신을 동의하시겠습니까? 
-											</label>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="row mb-3" id="aaa">
-								<label for="inputAdress" class="col-sm-2 col-form-label align-self-center">주소</label>
-								<div class="col-sm-6 border-start">
-									<div class="input-group">
-										<div class="input-group" style="padding:2px;">
+									
+									<!-- 
+									<div class="row border" id="aaa">
+										지원자 사진
+										<label for="inputPhoto" class="col-3 col-form-label" style="height:400px;">
+											<span>지원서사진</span><br><br>
+											<span class="form-text">
+												가로 3cm * 세로 3.5cm / JPG 파일 / 500kb 이하
+											</span>
+										</label>
+										
+										
+										
+										
+										<div class="col-9 border-start">
 											<div class="row">
-												<div class="col-12">
-													<div class="input-group">
-														<input type="text" id="inputAdress" class="form-control input-lg" aria-label="Recipient's username" aria-describedby="button-addon2">
-														<button class="btn btn-outline-secondary" type="button" id="button-addon2">주소 검색</button>
+												<div class="col-8" style="padding:3px;">
+													<input type="file" class="form-control" id="upload_file" accept="image/*" required=true>
+												</div>
+												<div class="col-4" style="padding:3px;">
+													<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" >미리보기</button>
+												</div>
+											</div>
+											<div class="row">
+												
+												<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+													<div class="modal-dialog">
+														<div class="modal-content">
+															<div class="modal-body">
+																<form>
+																	<div class="mb-3" style="text-align:center;">
+																		<img src="" id="img_section" style="width: 250px; height: 300px;">
+																    </div>
+																</form>
+															</div>
+															<div class="modal-footer">
+																<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+															</div>
+														</div>
+													</div>
+												</div>
+												
+											</div>
+											
+											
+											<div class="row g-2">
+												<div class="col" style="padding:4px;">
+													<img src="" id="img_section" style="width: 250px; height: 300px;">
+												</div>
+											</div>
+											<div class="row g-1">
+												<div class="col" style="padding:4px;">
+													<input type="file" class="form-control" id="upload_file" accept="image/*" required=true>
+												</div>
+											</div>
+											
+											
+										</div>
+									</div> -->
+									
+									
+								</div>
+								<div class="col-6">
+									<!-- 지원자 이름 -->
+									<div class="row" id="aaa">
+										<label for="inputGrade" class="col-3 col-form-label" style="height:50px;">최종학력</label>
+										<div class="col-9 border-start" style="padding:3px;">
+											<div class="input-group" >
+												<input type="text" id="inputGrade" class="form-control input" aria-label="Username">
+												<span class="input-group-text">학교</span>
+												<input type="text" id="inputGrade" class="form-control" aria-label="Username">
+												<span class="input-group-text">학과</span>
+												<select class="form-select" id="inputGrade" required>
+													<option selected disabled value="">구분</option>
+													<option>
+														<span>졸업</span>
+													</option>
+													<option>
+														<span>수료</span>
+													</option>
+													<option>
+														<span>제적</span>
+													</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<div class="row" id="aaa">
+										<label for="inputPart" class="col-3 col-form-label" style="height:50px;">지원분야</label>
+										<div class="col-9 border-start" style="padding:3px;">
+											<select class="form-select" id="inputPart" required>
+												<option selected disabled value="">지원분야</option>
+												<option>
+													<span>백엔드 개발자</span>
+												</option>
+												<option>
+													<span>프론트엔드 개발자</span>
+												</option>
+												<option>
+													<span>안드로이드 개발자</span>
+												</option>
+												<option>
+													<span>ios 개발자</span>
+												</option>
+											</select>
+										</div>
+									</div>
+									<div class="row" id="aaa">
+										<label for="inputCarrer" class="col-3 col-form-label" style="height:50px;">경력</label>
+										<div class="col-9 border-start" style="padding:3px;">
+											<select class="form-select" id="inputCarrer" required>
+												<option selected disabled value="">경력사항</option>
+												<option>
+													<span>신입</span>
+												</option>
+												<option>
+													<span>경력</span>
+												</option>
+											</select>
+										</div>
+									</div>
+									<div class="row" id="aaa">
+										<label for="inputSalary" class="col-3 col-form-label" style="height:50px;">희망연봉</label>
+										<div class="col-9 border-start" style="padding:3px;">
+											<input type="text" class="form-control" id="inputSalary">
+										</div>
+									</div>
+									<div class="row" id="aaa">
+										<label for="inputPhoto" class="col-3 col-form-label" style="height:170px;">
+											<span>지원서사진</span><br><br>
+											<span class="form-text">
+												가로 3cm * 세로 3.5cm / JPG 파일 / 500kb 이하
+											</span>
+										</label>
+										<div class="col-9 border-start" style="padding:3px;">
+											<div class="row" style="padding:5px;">
+												<div class="col-9" style="padding:7px;">
+													<input type="file" class="form-control" id="upload_file" accept="image/*" required=true>
+												</div>
+												<div class="col-3" style="padding:3px;">
+													<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" >미리보기</button>
+												</div>
+											</div>
+											<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+												<div class="modal-dialog">
+													<div class="modal-content">
+														<div class="modal-body">
+															<form>
+																<div class="mb-3" style="text-align:center;">
+																	<img src="" id="img_section" style="width: 300px; height: 350px;">
+															    </div>
+															</form>
+														</div>
+														<div class="modal-footer">
+															<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+														</div>
 													</div>
 												</div>
 											</div>
 										</div>
-										<div class="input-group" style="padding:2px;">
-											<input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="button-addon2">
-										</div>
-										<div class="input-group" style="padding:2px;">
-											<input type="text" class="form-control" placeholder="상세 주소" aria-label="Recipient's username" aria-describedby="button-addon2">
-										</div>
 									</div>
 								</div>
-							</div>
-							<div class="row mb-3" id="aaa">
-								<label for="inputGrade" class="col-sm-2 col-form-label">최종학력</label>
-								<div class="col-sm-6 border-start">
-									<div class="input-group" >
-										<input type="text" id="inputGrade" class="form-control input" aria-label="Username">
-										<span class="input-group-text">학교</span>
-										<input type="text" id="inputGrade" class="form-control" aria-label="Username">
-										<span class="input-group-text">학과</span>
-										<select class="form-select" id="inputGrade" required>
-											<option selected disabled value="">구분</option>
-											<option>
-												<span>졸업</span>
-											</option>
-											<option>
-												<span>수료</span>
-											</option>
-											<option>
-												<span>제적</span>
-											</option>
-										</select>
-									</div>
-								</div>
-							</div>
-							<div class="row mb-3" id="aaa">
-								<label for="inputPart" class="col-sm-2 col-form-label">지원분야</label>
-								<div class="col-sm-4 border-start">
-									<select class="form-select" id="inputPart" required>
-										<option selected disabled value="">지원분야</option>
-										<option>
-											<span>백엔드 개발자</span>
-										</option>
-										<option>
-											<span>프론트엔드 개발자</span>
-										</option>
-										<option>
-											<span>안드로이드 개발자</span>
-										</option>
-										<option>
-											<span>ios 개발자</span>
-										</option>
-									</select>
-								</div>
-							</div>
-							<div class="row mb-3" id="aaa">
-								<label for="inputCarrer" class="col-sm-2 col-form-label">경력</label>
-								<div class="col-sm-4 border-start">
-									<select class="form-select" id="inputCarrer" required>
-										<option selected disabled value="">경력사항</option>
-										<option>
-											<span>신입</span>
-										</option>
-										<option>
-											<span>경력</span>
-										</option>
-									</select>
-								</div>
-							</div>
-							<div class="row mb-3" id="aaa">
-								<label for="inputSalary" class="col-sm-2 col-form-label">희망연봉</label>
-								<div class="col-sm-4 border-start">
-									<input type="text" class="form-control" id="inputSalary">
-								</div>
-							</div>
-						</form>
+							</form>
+						</div>
 						<div id="aaa">
 							<button type="button" class="btn btn-primary btn-sm" type="submit">저장하기</button>
 							<button type="button" class="btn btn-secondary btn-sm" onClick="location.href='memberList.html'">취소하기</button>
 						</div>
-						 -->
-						 					
 					</div>
 				</div>
 			</div>

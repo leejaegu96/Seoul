@@ -298,7 +298,9 @@
 					<div class="col-4">
 						<form class="d-flex" role="search">
 							
-							<input class="form-control me-2" type="text" id="myInput" onkeyup="myFunction()">
+							<input class="form-control me-2" type="text" id="searchInput" onkeyup="myFunction()" title="Type in a name">
+							
+							<!-- <input class="form-control me-2" type="text" id="myInput" onkeyup="myFunction()"> -->
 							
 							<!-- <input class="form-control me-2" type="search" placeholder="이름" aria-label="Search"> -->
 							
@@ -309,10 +311,14 @@
 				
 				<!-- 여기서부터 표 시작 -->
 				<hr>
-				<table class="table table-striped" id="myTable">
+				
+				<table class="table table-striped" id="userTable">
+				
+				<!-- <table class="table table-striped" id="myTable"> -->
 					<thead>
 						<tr class="header">
 							<th>
+							
 								<div class="form-check">
 			  						<input class="form-check-input" type="checkbox" name="chk_box" onclick="allcheck();" value="" id="flexCheckDefault">
 			  					</div>
@@ -590,7 +596,7 @@
 		   }    
 		return;
 	}
-	
+	/* 
 	const myFunction = () => {
 		  const trs = document.querySelectorAll('#myTable tr:not(.header)')
 		  const filter = document.querySelector('#myInput').value
@@ -605,6 +611,26 @@
 		  
 		  trs.forEach(setTrStyleDisplay)
 		}
+	 */
+	
+	function myFunction() {
+		  var input, filter, table, tr, td, cell, i, j;
+		  filter = document.getElementById("searchInput").value.toLowerCase();
+		  table = document.getElementById("userTable");
+		  tr = table.getElementsByTagName("tr");
+		  for (i = 1; i < tr.length; i++) {
+		    tr[i].style.display = "none";
+		    const tdArray = tr[i].getElementsByTagName("td");
+		    for (var j = 0; j < tdArray.length; j++) {
+		      const cellValue = tdArray[j];
+		      if (cellValue && cellValue.innerHTML.toLowerCase().indexOf(filter) > -1) {
+		        tr[i].style.display = "";
+		        break;
+		      }
+		    }
+		  }
+		}
+	 
 	
 </script>
 </body>

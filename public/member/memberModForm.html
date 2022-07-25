@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bootstrap demo</title>
+
+	<style type="text/css">
+		table {
+			text-align:center;
+		}
+		ul li {
+			list-style-type:none;
+			margin: 0px 10px;
+		}
+		#aaa {
+			text-align: center;
+			align-self: center;
+		}
+
+	</style>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+<!-- start -->
+	
+	<!-- 위에 네비게이션 바 -->
+	
+	<div class="fixed-top">
+		<nav class="navbar bg-light fixed-top">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#" onClick="location.href='memberList.html'"><i class="fa-solid fa-building"> 아주 좋은 회사</i></a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+					<div class="offcanvas-header">
+						<h5 class="offcanvas-title" id="offcanvasNavbarLabel"><i class="fa-solid fa-building"> 아주 좋은 회사</i></h5>
+						<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+					</div>
+					<div class="offcanvas-body">
+						<!-- 
+						<form>
+							<div class="row mb-3">
+								<label for="inputEmail3" class="col-sm-3 col-form-label">Email</label>
+								<div class="col-sm-9">
+									<input type="email" class="form-control" id="inputEmail3">
+								</div>
+							</div>
+							<div class="row mb-3">
+								<label for="inputPassword3" class="col-sm-3 col-form-label">Password</label>
+								<div class="col-sm-9">
+									<input type="password" class="form-control" id="inputPassword3">
+								</div>
+							</div>
+							<button type="submit" class="btn btn-primary">Sign in</button>
+						</form>
+						 -->
+						
+						<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+				      		<li class="nav-item" style="text-align:center;">
+								<a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-user" style="font-size:100px;"></i></a>
+								<a class="nav-link" href="#">OOO 관리자</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">사용자 정보 수정</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Logout</a>
+							</li>
+						</ul>
+						
+					</div>
+				</div>
+			</div>
+		</nav>
+	</div>
+	
+	<!-- 왼쪽 토글바 -->
+	
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-2">
+				<br><br><br>
+				<div class="accordion" id="accordionPanelsStayOpenExample">
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="panelsStayOpen-headingThree">
+							<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+								<i class="fa-solid fa-bars-progress"> 코드 그룹 관리</i>
+							</button>
+						</h2>
+						<div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingThree">
+							<div class="accordion-body">
+								<table class ="table table-hover">
+									<tr>
+										<td>----</td>
+									</tr>
+									<tr>
+										<td>----</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="panelsStayOpen-headingFour">
+							<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+								<i class="fa-solid fa-bars-progress"> 코드 관리</i>
+							</button>
+						</h2>
+						<div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingFour">
+							<div class="accordion-body">
+								<table class ="table table-hover">
+									<tr>
+										<td>----</td>
+									</tr>
+									<tr>
+										<td>----</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="panelsStayOpen-headingOne">
+							<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+								<i class="fa-solid fa-people-group"> 지원서 관리</i>
+							</button>
+						</h2>
+						<div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+							<div class="accordion-body">
+								<table class ="table table-hover">
+									<tr>
+										<td>지원서 목록</td>
+									</tr>
+									<tr>
+										<td>메세지 보내기</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+							<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+								<i class="fa-solid fa-paper-plane"> SMS/메일</i>
+							</button>
+						</h2>
+						<div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingTwo">
+							<div class="accordion-body">
+								<table class ="table table-hover">
+									<tr>
+										<td>SMS 전송 관리</td>
+									</tr>
+									<tr>
+										<td>메일 전송 관리</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+					
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="panelsStayOpen-headingFive">
+							<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+								<i class="fa-solid fa-gear"> 환경설정</i>
+							</button>
+						</h2>
+						<div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingFive">
+							<div class="accordion-body">
+								<table class ="table table-hover">
+									<tr>
+										<td>웹 화면</td>
+									</tr>
+									<tr>
+										<td>모바일 화면</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-10">
+			<!-- 여기서부터 오른쪽 메인 시작 --> 
+				<br><br><br>
+				<div class="row gy-3">
+					<div class="col-12">
+						<i class="fa-solid fa-users"><span style="font-size:20px;"> 지원자 추가</span></i>
+					</div>
+					<div class="col-12">
+						<div class="container-floud">
+							<form class="row">
+								<div class="col-6">
+									<!-- 지원자 이름 -->
+									<div class="row" id="aaa">
+										<label for="validationCustomUsername" class="col-3 col-form-label" style="height:50px;">이름</label>
+										<div class="col-9 border-start" style="padding:3px;">
+											<input type="text" class="form-control" id="validationCustomUsername" value="이가나" required>
+										</div>
+									</div>
+									<!-- 지원자 성별 -->
+									<div class="row" id="aaa">
+										<label for="inputgender" class="col-3 col-form-label" style="height:50px;">성별</label>
+										<div class="col-9 border-start" style="padding:3px;">
+											<select class="form-select" id="inputgender" required>
+												<option disabled value="">성별</option>
+												<option selected value="">
+													<span>남</span>
+												</option>
+												<option>
+													<span>여</span>
+												</option>
+											</select>
+										</div>
+									</div>
+									<!-- 지원자 이메일 -->
+									<div class="row" >
+										<label for="inputEmail" class="col-3 col-form-label" id="aaa" style="height:75px;">이메일주소</label>
+										<div class="col-9 border-start" style="padding:3px;">
+											<div class="input-group">
+												<input type="text" id="inputEmail" class="form-control" value="gana" aria-label="Username">
+												<span class="input-group-text">@</span>
+												<select class="form-select" id="validationCustom04">
+													<option selected value="">naver.com</option>
+													<option>
+														<span>google.com</span>
+													</option>
+													<option>
+														<span>hanmail.net</span>
+													</option>
+												</select>
+											</div>
+											<div class="col">
+												<div class="form-check">
+													<input class="form-text" type="checkbox" id="autoSizingCheck_1" checked/>
+													<label class="form-text" for="autoSizingCheck_1">
+														E-mail을 통한 소식/정보 수신을 동의하시겠습니까? 
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- 지원자 전화번호 -->
+									<div class="row" >
+										<label for="inputPhone" class="col-3 col-form-label" id="aaa" style="height:75px;">휴대폰 번호</label>
+										<div class="col-9 border-start" style="padding:3px;">
+											<div class="input-group">
+												<select class="form-select" id="inputPhone" required>
+													<option selected value="">010</option>
+													<option>
+														<span>011</span>
+													</option>
+													<option>
+														<span>019</span>
+													</option>
+												</select>
+												<span class="input-group-text">-</span>
+												<input type="text" id="inputEmail" class="form-control" value="0000" aria-label="Username">
+												<span class="input-group-text">-</span>
+												<input type="text" id="inputEmail" class="form-control" value="0000" aria-label="Username">
+											</div>
+											<div class="col">
+												<div class="form-check">
+													<input class="form-text" type="checkbox" id="autoSizingCheck" checked/>
+													<label class="form-text" for="autoSizingCheck">
+														SMS을 통한 소식/정보 수신을 동의하시겠습니까? 
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- 지원자 주소 -->
+									<div class="row" id="aaa">
+										<label for="inputAdress" class="col-3 col-form-label" style="height:140px;">주소</label>
+										<div class="col-9 border-start" style="padding:3px;">
+											<div class="input-group">
+												<div class="row">
+													<div class="col-12">
+														<div class="input-group">
+															<input type="text" id="inputAdress" class="form-control" placeholder="우편번호" value="04990" aria-label="Recipient's username" aria-describedby="button-addon2" disabled>
+															<button class="btn btn-outline-secondary" type="button" id="button-addon2">주소 검색</button>
+														</div>
+													</div>
+												</div>
+												<div class="input-group">
+													<input type="text" class="form-control" placeholder="상세 주소" value="서울 광진구 능동로26길 30" aria-label="Recipient's username" aria-describedby="button-addon2" disabled>
+												</div>
+												<div class="input-group">
+													<input type="text" class="form-control" placeholder="상세 주소" value="###동 ###호" aria-label="Recipient's username" aria-describedby="button-addon2">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-6">
+									<!-- 지원자 학력 -->
+									<div class="row" id="aaa">
+										<label for="inputGrade" class="col-3 col-form-label" style="height:50px;">최종학력</label>
+										<div class="col-9 border-start" style="padding:3px;">
+											<div class="input-group" >
+												<input type="text" id="inputGrade" class="form-control input" value="OO대" aria-label="Username">
+												<span class="input-group-text">학교</span>
+												<input type="text" id="inputGrade" class="form-control" value="산업경영" aria-label="Username">
+												<span class="input-group-text">학과</span>
+												<select class="form-select" id="inputGrade" required>
+													<option disabled value="">구분</option>
+													<option>
+														<span selected value="">졸업</span>
+													</option>
+													<option>
+														<span>수료</span>
+													</option>
+													<option>
+														<span>제적</span>
+													</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<!-- 지원 분야 -->
+									<div class="row" id="aaa">
+										<label for="inputPart" class="col-3 col-form-label" style="height:50px;">지원분야</label>
+										<div class="col-9 border-start" style="padding:3px;">
+											<select class="form-select" id="inputPart" required>
+												<option disabled value="">지원분야</option>
+												<option selected value="">
+													<span>백엔드 개발자</span>
+												</option>
+												<option>
+													<span>프론트엔드 개발자</span>
+												</option>
+												<option>
+													<span>안드로이드 개발자</span>
+												</option>
+												<option>
+													<span>ios 개발자</span>
+												</option>
+											</select>
+										</div>
+									</div>
+									<!-- 지원자 경력 -->
+									<div class="row" id="aaa">
+										<label for="inputCarrer" class="col-3 col-form-label" style="height:50px;">경력</label>
+										<div class="col-9 border-start" style="padding:3px;">
+											<select class="form-select" id="inputCarrer" required>
+												<option disabled value="">경력사항</option>
+												<option>
+													<span selected value="">신입</span>
+												</option>
+												<option>
+													<span>경력</span>
+												</option>
+											</select>
+										</div>
+									</div>
+									<!-- 지원자 희망연봉 -->
+									<div class="row" id="aaa">
+										<label for="inputSalary" class="col-3 col-form-label" style="height:50px;">희망연봉</label>
+										<div class="col-9 border-start" style="padding:3px;">
+											<input type="text" class="form-control" id="inputSalary" value="3,400만원">
+										</div>
+									</div>
+									<!-- 지원자 사진 -->
+									<div class="row" id="aaa">
+										<label for="inputPhoto" class="col-3 col-form-label" style="height:170px;">
+											<span>지원서사진</span><br><br>
+											<span class="form-text">
+												가로 3cm * 세로 3.5cm / JPG 파일 / 500kb 이하
+											</span>
+										</label>
+										<div class="col-9 border-start" style="padding:3px;">
+											<div class="row" style="padding:5px;">
+												<div class="col-9" style="padding:7px;">
+													<input type="file" class="form-control" id="upload_file" accept="image/*" required=true>
+												</div>
+												<div class="col-3" style="padding:3px;">
+													<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" >미리보기</button>
+												</div>
+											</div>
+											<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+												<div class="modal-dialog">
+													<div class="modal-content">
+														<div class="modal-body">
+															<form>
+																<div class="mb-3" style="text-align:center;">
+																	<img src="../image/recruit.png" id="img_section" style="width: 300px; height: 350px;">
+															    </div>
+															</form>
+														</div>
+														<div class="modal-footer">
+															<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div id="aaa">
+							<button type="button" class="btn btn-primary btn-sm" type="submit"  onClick="location.href='memberList.html'">저장하기</button>
+							<button type="button" class="btn btn-secondary btn-sm" onClick="location.href='memberList.html'">취소하기</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- end -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/20c294a34b.js" crossorigin="anonymous"></script>
+<script type="text/javascript">
+    const reader = new FileReader();
+
+    reader.onload = (readerEvent) => {
+        document.querySelector("#img_section").setAttribute("src", readerEvent.target.result);
+        //파일을 읽는 이벤트가 발생하면 img_section의 src 속성을 readerEvent의 결과물로 대체함
+    };
+
+    document.querySelector("#upload_file").addEventListener("change", (changeEvent) => {
+        //upload_file 에 이벤트리스너를 장착
+
+        const imgFile = changeEvent.target.files[0];
+        reader.readAsDataURL(imgFile);
+        //업로드한 이미지의 URL을 reader에 등록
+    })
+    
+    const exampleModal = document.getElementById('exampleModal')
+		exampleModal.addEventListener('show.bs.modal', event => {
+		// Button that triggered the modal
+	const button = event.relatedTarget
+		// Extract info from data-bs-* attributes
+	const recipient = button.getAttribute('data-bs-whatever')
+		// If necessary, you could initiate an AJAX request here
+		// and then do the updating in a callback.
+		//
+		// Update the modal's content.
+	const modalTitle = exampleModal.querySelector('.modal-title')
+	const modalBodyInput = exampleModal.querySelector('.modal-body input')
+		
+		modalTitle.textContent = `New message to ${recipient}`
+		modalBodyInput.value = recipient
+	})
+</script>
+</body>
+</html>

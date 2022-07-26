@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bootstrap demo</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<style type="text/css">
+		body.home .fixed-tray {
+		    background-image: url("//cdn.vocab.com/images/home/dictionary-search-bg-1920-1fyyt3h.svg");
+		}
+		body.home .fixed-tray {
+		    background-color: var(--dark-blue-1);
+		    min-height: 468px;
+		    color: #fff;
+		    background-repeat: repeat-x;
+		    background-position: bottom -1px center;
+		    background-size: 1920px;
+		    display: flex;
+		    flex-direction: column;
+		}
+		.fixed-tray {
+		    position: relative;
+		    background-color: #2d4d80;
+		    top: 0;
+		    left: 0;
+		    width: 100%;
+		    overflow: hidden;
+		    background-position: 50% 50%;
+		    background-size: cover;
+		    background-repeat: no-repeat;
+		}
+		body {
+		    --page-header-height: 80px;
+		    --top-notes-height-1: 33px;
+		}
+		body.home .fixed-tray {
+    background-size: 480px 196px;
+}
+
+body.home .fixed-tray {
+    background-size: 900px 182px;
+    background-position: right bottom;
+}
+
+body.home .fixed-tray {
+    background-color: var(--dark-blue-1);
+    min-height: 468px;
+    color: #fff;
+    background-repeat: repeat-x;
+    background-position: bottom -1px center;
+    background-size: 1920px;
+    display: flex;
+    flex-direction: column;
+}
+
+.fixed-tray {
+    position: relative;
+    background-color: #2d4d80;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+	</style>
+</head>
+<body>
+<!-- start -->
+	
+<div class="fixed-tray">
+	<div class="dict-top">
+	<form class="dictionary-search">
+		<h2>Look up a word, learn it forever.</h2>
+		<div class="search-box">
+			<input autocapitalize="off" autocomplete="off" autocorrect="off" class="search" id="input-search-word" placeholder="start typing to look up a word..." spellcheck="false" type="text">
+			<span class="icon"></span>
+		</div>
+		<div class="actions">
+			<a href="#advsearch" role="button" title="Show advanced search options" class="advanced-search">Advanced Search</a>
+			<a href="/dictionary/randomword" role="button" title="Show a random vocabulary word" class="random-word">Random Word</a>
+		</div>
+		<div class="autocomplete"></div>
+	</form>
+</div>
+<div id="advancedSearch" data-buttonclass="button" data-searchfieldselector=".dictionary-search input.search"><form id="advancedSearchForm" class="grid grid-2" action="#">
+			<fieldset><dl class="pos"><dt>part of speech:</dt><dd><label><input id="nounPart" type="checkbox" name="noun">noun</label><label><input id="verbPart" type="checkbox" name="verb">verb</label><label><input id="adjPart" type="checkbox" name="adjective">adjective</label><label><input id="advPart" type="checkbox" name="adverb">adverb</label></dd></dl></fieldset>
+			<fieldset class="col syllable-range"><dl><dt>syllable range:</dt><dd><span class="keep-line">between <input type="text" name="minSyllables" size="1" maxlength="2"> and </span><span class="keep-line"><input type="text" name="maxSyllables" size="1" maxlength="2"> syllables</span></dd></dl></fieldset>
+			<fieldset class="col"><dl class="relations"><dt>restrict to:</dt><dd><span class="keep-line"><div class="relationWrapper"><div class="dropdown-wrapper"><div class="dropdown-component"><div class="relation-select">synoynms</div><ul><li name="synonym" class="selected">synonyms</li><li name="antonym">antonyms</li></ul></div></div></div> of </span> <input type="text" name="relationWord" size="10" maxlength="25"></dd></dl></fieldset>
+			<div class="divider"></div>
+			<fieldset class="col"><dl>
+			<dt>rhymes with:</dt> <dd> <input type="text" id="rhymesWith" size="20" placeholder="try: jello"></dd><dt>ends with:</dt><dd><input type="text" id="endsWith" size="20" maxlength="25" placeholder="try: ism"> </dd> <dt>type of:</dt><dd><input type="text" id="typeOf" size="20" placeholder="try: fear, tree, walk"></dd> </dl> </fieldset>
+			<fieldset class="col"><dl><dt>definition contains:</dt><dd><input type="text" id="definitionContains" size="20" maxlength="50" placeholder="try: emotion"></dd><dt>example of:</dt><dd><input type="text" id="egOf" size="20" placeholder="try: president, river"></dd><dt>parts of:</dt><dd><input type="text" id="partsOf" size="20" placeholder="try: bicycle, face"></dd></dl>
+			</fieldset><div class="buttons"><button type="submit" id="advancedSearchButton" class="button">Advanced search</button> <button type="reset" id="resetAdvancedSearchButton" class="button">Close</button></div></form></div>
+<div class="wave-bottom">
+	<div class="looking-for-nav">
+		<em>I am looking for...</em>
+		<ul>
+			<li class="dictionary-for-learning"><a href="#dictionary-for-learning">A <strong>dictionary</strong><br>for learning</a></li>
+			<li class="improve-vocabulary"><a href="#improve-vocabulary"><span class="sci-fun-long">A scientific and fun way<br>to <strong>improve vocabulary</strong></span><span class="sci-fun-short">A fun way to<br><strong>improve vocabulary</strong></span></a></li>
+			<li class="teach-words"><a href="#teach-words">A better way<br>to <strong>teach words</strong></a></li>
+		</ul>
+	</div>
+</div>
+</div>
+
+<!-- end -->
+	
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,113 +1,198 @@
-<!doctype html>
+<!-- <!doctype html>
 <html lang="ko">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Bootstrap demo</title>
+	
+    <link rel="stylesheet" href="css/style.css">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 	<style type="text/css">
-		body.home .fixed-tray {
-		    background-image: url("//cdn.vocab.com/images/home/dictionary-search-bg-1920-1fyyt3h.svg");
-		}
-		body.home .fixed-tray {
-		    background-color: var(--dark-blue-1);
-		    min-height: 468px;
-		    color: #fff;
-		    background-repeat: repeat-x;
-		    background-position: bottom -1px center;
-		    background-size: 1920px;
-		    display: flex;
-		    flex-direction: column;
-		}
-		.fixed-tray {
-		    position: relative;
-		    background-color: #2d4d80;
-		    top: 0;
-		    left: 0;
-		    width: 100%;
-		    overflow: hidden;
-		    background-position: 50% 50%;
-		    background-size: cover;
-		    background-repeat: no-repeat;
-		}
-		body {
-		    --page-header-height: 80px;
-		    --top-notes-height-1: 33px;
-		}
-		body.home .fixed-tray {
-    background-size: 480px 196px;
-}
-
-body.home .fixed-tray {
-    background-size: 900px 182px;
-    background-position: right bottom;
-}
-
-body.home .fixed-tray {
-    background-color: var(--dark-blue-1);
-    min-height: 468px;
-    color: #fff;
-    background-repeat: repeat-x;
-    background-position: bottom -1px center;
-    background-size: 1920px;
-    display: flex;
-    flex-direction: column;
-}
-
-.fixed-tray {
-    position: relative;
-    background-color: #2d4d80;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    background-position: 50% 50%;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+		
+		
 	</style>
 </head>
 <body>
-<!-- start -->
-	
-<div class="fixed-tray">
-	<div class="dict-top">
-	<form class="dictionary-search">
-		<h2>Look up a word, learn it forever.</h2>
-		<div class="search-box">
-			<input autocapitalize="off" autocomplete="off" autocorrect="off" class="search" id="input-search-word" placeholder="start typing to look up a word..." spellcheck="false" type="text">
-			<span class="icon"></span>
-		</div>
-		<div class="actions">
-			<a href="#advsearch" role="button" title="Show advanced search options" class="advanced-search">Advanced Search</a>
-			<a href="/dictionary/randomword" role="button" title="Show a random vocabulary word" class="random-word">Random Word</a>
-		</div>
-		<div class="autocomplete"></div>
-	</form>
-</div>
-<div id="advancedSearch" data-buttonclass="button" data-searchfieldselector=".dictionary-search input.search"><form id="advancedSearchForm" class="grid grid-2" action="#">
-			<fieldset><dl class="pos"><dt>part of speech:</dt><dd><label><input id="nounPart" type="checkbox" name="noun">noun</label><label><input id="verbPart" type="checkbox" name="verb">verb</label><label><input id="adjPart" type="checkbox" name="adjective">adjective</label><label><input id="advPart" type="checkbox" name="adverb">adverb</label></dd></dl></fieldset>
-			<fieldset class="col syllable-range"><dl><dt>syllable range:</dt><dd><span class="keep-line">between <input type="text" name="minSyllables" size="1" maxlength="2"> and </span><span class="keep-line"><input type="text" name="maxSyllables" size="1" maxlength="2"> syllables</span></dd></dl></fieldset>
-			<fieldset class="col"><dl class="relations"><dt>restrict to:</dt><dd><span class="keep-line"><div class="relationWrapper"><div class="dropdown-wrapper"><div class="dropdown-component"><div class="relation-select">synoynms</div><ul><li name="synonym" class="selected">synonyms</li><li name="antonym">antonyms</li></ul></div></div></div> of </span> <input type="text" name="relationWord" size="10" maxlength="25"></dd></dl></fieldset>
-			<div class="divider"></div>
-			<fieldset class="col"><dl>
-			<dt>rhymes with:</dt> <dd> <input type="text" id="rhymesWith" size="20" placeholder="try: jello"></dd><dt>ends with:</dt><dd><input type="text" id="endsWith" size="20" maxlength="25" placeholder="try: ism"> </dd> <dt>type of:</dt><dd><input type="text" id="typeOf" size="20" placeholder="try: fear, tree, walk"></dd> </dl> </fieldset>
-			<fieldset class="col"><dl><dt>definition contains:</dt><dd><input type="text" id="definitionContains" size="20" maxlength="50" placeholder="try: emotion"></dd><dt>example of:</dt><dd><input type="text" id="egOf" size="20" placeholder="try: president, river"></dd><dt>parts of:</dt><dd><input type="text" id="partsOf" size="20" placeholder="try: bicycle, face"></dd></dl>
-			</fieldset><div class="buttons"><button type="submit" id="advancedSearchButton" class="button">Advanced search</button> <button type="reset" id="resetAdvancedSearchButton" class="button">Close</button></div></form></div>
-<div class="wave-bottom">
-	<div class="looking-for-nav">
-		<em>I am looking for...</em>
-		<ul>
-			<li class="dictionary-for-learning"><a href="#dictionary-for-learning">A <strong>dictionary</strong><br>for learning</a></li>
-			<li class="improve-vocabulary"><a href="#improve-vocabulary"><span class="sci-fun-long">A scientific and fun way<br>to <strong>improve vocabulary</strong></span><span class="sci-fun-short">A fun way to<br><strong>improve vocabulary</strong></span></a></li>
-			<li class="teach-words"><a href="#teach-words">A better way<br>to <strong>teach words</strong></a></li>
-		</ul>
-	</div>
-</div>
-</div>
+start
 
-<!-- end -->
+	
+	
+end
 	
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/20c294a34b.js" crossorigin="anonymous"></script>
 </body>
+</html> -->
+
+
+<!DOCTYPE HTML>
+<!--
+	Alpha by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Alpha by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="landing is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header" class="alt">
+					<h1><a href="index.html">Alpha</a> by HTML5 UP</h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li>
+								<a href="#" class="icon solid fa-angle-down">Layouts</a>
+								<ul>
+									<li><a href="generic.html">Generic</a></li>
+									<li><a href="contact.html">Contact</a></li>
+									<li><a href="elements.html">Elements</a></li>
+									<li>
+										<a href="#">Submenu</a>
+										<ul>
+											<li><a href="#">Option One</a></li>
+											<li><a href="#">Option Two</a></li>
+											<li><a href="#">Option Three</a></li>
+											<li><a href="#">Option Four</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li><a href="#" class="button">Sign Up</a></li>
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Banner -->
+				<section id="banner">
+					<h2>Alpha</h2>
+					<p>Another fine responsive site template freebie by HTML5 UP.</p>
+					<ul class="actions special">
+						<li><a href="#" class="button primary">Sign Up</a></li>
+						<li><a href="#" class="button">Learn More</a></li>
+					</ul>
+				</section>
+
+			<!-- Main -->
+				<section id="main" class="container">
+
+					<section class="box special">
+						<header class="major">
+							<h2>Introducing the ultimate mobile app
+							<br />
+							for doing stuff with your phone</h2>
+							<p>Blandit varius ut praesent nascetur eu penatibus nisi risus faucibus nunc ornare<br />
+							adipiscing nunc adipiscing. Condimentum turpis massa.</p>
+						</header>
+						<span class="image featured"><img src="images/pic01.jpg" alt="" /></span>
+					</section>
+
+					<section class="box special features">
+						<div class="features-row">
+							<section>
+								<span class="icon solid major fa-bolt accent2"></span>
+								<h3>Magna etiam</h3>
+								<p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+							</section>
+							<section>
+								<span class="icon solid major fa-chart-area accent3"></span>
+								<h3>Ipsum dolor</h3>
+								<p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+							</section>
+						</div>
+						<div class="features-row">
+							<section>
+								<span class="icon solid major fa-cloud accent4"></span>
+								<h3>Sed feugiat</h3>
+								<p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+							</section>
+							<section>
+								<span class="icon solid major fa-lock accent5"></span>
+								<h3>Enim phasellus</h3>
+								<p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+							</section>
+						</div>
+					</section>
+
+					<div class="row">
+						<div class="col-6 col-12-narrower">
+
+							<section class="box special">
+								<span class="image featured"><img src="images/pic02.jpg" alt="" /></span>
+								<h3>Sed lorem adipiscing</h3>
+								<p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+								<ul class="actions special">
+									<li><a href="#" class="button alt">Learn More</a></li>
+								</ul>
+							</section>
+
+						</div>
+						<div class="col-6 col-12-narrower">
+
+							<section class="box special">
+								<span class="image featured"><img src="images/pic03.jpg" alt="" /></span>
+								<h3>Accumsan integer</h3>
+								<p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+								<ul class="actions special">
+									<li><a href="#" class="button alt">Learn More</a></li>
+								</ul>
+							</section>
+
+						</div>
+					</div>
+
+				</section>
+
+			<!-- CTA -->
+				<section id="cta">
+
+					<h2>Sign up for beta access</h2>
+					<p>Blandit varius ut praesent nascetur eu penatibus nisi risus faucibus nunc.</p>
+
+					<form>
+						<div class="row gtr-50 gtr-uniform">
+							<div class="col-8 col-12-mobilep">
+								<input type="email" name="email" id="email" placeholder="Email Address" />
+							</div>
+							<div class="col-4 col-12-mobilep">
+								<input type="submit" value="Sign Up" class="fit" />
+							</div>
+						</div>
+					</form>
+
+				</section>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+						<li><a href="#" class="icon brands fa-google-plus"><span class="label">Google+</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>

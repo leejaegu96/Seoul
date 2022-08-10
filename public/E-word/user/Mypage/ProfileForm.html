@@ -24,17 +24,17 @@
 			<!-- Header -->
 				
 				<header id="header">
-					<h3 style="color:white; font-size: 20px; margin-top:15px; margin-left:20px; height: 52px; cursor:pointer;" onClick="location.href='HomeForm.html'"><i class="fa-solid fa-book-open"></i>&nbsp;E-WORD</h3>
+					<h3 style="color:white; font-size: 20px; margin-top:15px; margin-left:20px; height: 52px; cursor:pointer;" onClick="location.href='../Main/HomeForm.html'"><i class="fa-solid fa-book-open"></i>&nbsp;E-WORD</h3>
 					<nav id="nav">
 						<ul>
 							<li><a href="../Main/HomeForm.html">Home</a></li>
 							<li>
 								<a href="#" class="icon solid fa-angle-down">Contents</a>
 								<ul>
-									<li><a href="generic.html">Exam</a></li>
-									<li><a href="generic.html">Ranking</a></li>
+									<li><a href="../Main/TestForm.html">Exam</a></li>
+									<li><a href="../Main/Ranking.html">Ranking</a></li>
 									<li><a href="contact.html">Translate</a></li>
-									<li><a href="contact.html">Mypage</a></li>
+									<li><a href="ProfileForm.html">Mypage</a></li>
 									<li>
 										<a href="#">Word</a>
 										<ul>
@@ -157,35 +157,46 @@
 											<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
 											  <div class="carousel-inner">
 											    <div class="carousel-item active">
-											    	<div style="width:600px; height:400px; text-align:left; margin:auto;">
+											    	<div style="width:100%; height:300px; text-align:left; margin:auto;">
 												    <h4>dominate <i class="fa-solid fa-volume-high"></i></h4><br>
 												    <span style="line-height:200%;">
 												    
 												    	1. 동사  (특히 불쾌한 방식으로) 지배하다.<br>
 														2. 타동사  (...의) 가장 중요한[두드러지는] 특징이되다.<br>
-														3. 타동사  (어떤 장소에서) 가장 크다<br><hr>
-														He tended to dominate the conversation.
-														그는 대화를 지배하는 경향이 있었다.<br>
-														The train crash dominated the news.
-														 그 열차 사고가 가장 중요한 뉴스가 되었다.<br>
-														The cathedral dominates the city
-														 그 성당이 그 시에서는 가장 높이 솟아 있다.
+														3. 타동사  (어떤 장소에서) 가장 크다
+														
 												    </span>
 												    </div>
 											    </div>
 											    <div class="carousel-item">
-											    
+											    	<div style="width:100%; height:300px; text-align:left; margin:auto;">
+												    <h4>hearten <i class="fa-solid fa-volume-high"></i></h4><br>
+												    <span style="line-height:200%;">
+												    
+												    	  1. 동사 타동사 [VN 주로 수동태로] <br> ...에게 용기[희망]을 북돋우다.
+														
+												    </span>
+												    </div>
 											    </div>
 											    <div class="carousel-item">
-											    
+											    	<div style="width:100%; height:300px; text-align:left; margin:auto;">
+												    <h4>awful <i class="fa-solid fa-volume-high"></i></h4><br>
+												    <span style="line-height:200%;">
+												    
+												    	  1. 형용사 비격식<br>   끔직한, 지독한<br>
+														  2. 형용사 비격식<br>  (특히 양적으로 많음을 강조하는 의미로) 엄청<br>
+														  3. 부사 비격식 특히 美<br>   되게, 굉장히
+														
+												    </span>
+												    </div>
 											    </div>
 											  </div>
-											  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-											    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-											    <span class="visually-hidden">Previous</span>
+											  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev" style="color:black;">
+											    <span class="carousel-control-prev-icon" aria-hidden="true" style="color:black;"></span>
+											    <span class="visually-hidden"">Previous</span>
 											  </button>
-											  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-											    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+											  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next" >
+											    <span class="carousel-control-next-icon" aria-hidden="true" style="color:black;"></span>
 											    <span class="visually-hidden">Next</span>
 											  </button>
 											</div>
@@ -193,37 +204,38 @@
 										</div>
 										
 										<div class="col-6">
+											<button type="button" class="btn btn-outline-secondary"style="float:right"><i class="fa-solid fa-trash-can"></i> Delete My Word</button>
 											<table class="table">
 												<thead>
 													<tr>
-														<td><input type="checkbox"></td>
+														<td><input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"></td>
 														<td>Word</td>
 														<td>Date</td>
 													</tr>
 												</thead>
 												<tbody>
 													<tr>
-														<td><input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked></td>
+														<td><input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"></td>
 														<td>awful</td>
 														<td>2022.07.20</td>
 													</tr>
 													<tr>
-														<td><input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked></td>
+														<td><input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"></td>
 														<td>powerful</td>
 														<td>2022.07.18</td>
 													</tr>
 													<tr>
-														<td><input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked></td>
+														<td><input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"></td>
 														<td>abide</td>
 														<td>2022.07.18</td>
 													</tr>
 													<tr>
-														<td><input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked></td>
+														<td><input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"></td>
 														<td>avoid</td>
 														<td>2022.07.16</td>
 													</tr>
 													<tr>
-														<td><input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked></td>
+														<td><input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"></td>
 														<td>happened</td>
 														<td>2022.07.16</td>
 													</tr>

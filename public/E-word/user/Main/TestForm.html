@@ -97,8 +97,8 @@ body {
 								<ul>
 									<li><a href="TestForm.html">Exam</a></li>
 									<li><a href="RankingForm.html">Ranking</a></li>
-									<li><a href="contact.html">Translate</a></li>
 									<li><a href="../Mypage/ProfileForm.html">Mypage</a></li>
+									<li><a href="contact.html">Translate</a></li>
 									<li>
 										<a href="#">Word</a>
 										<ul>
@@ -141,6 +141,8 @@ body {
 								   </div>
 								</div>
 							</section>
+							<input class="form-control" id="answer" value="">
+							<button onclick="Action2();">ddd</button>
 						</div>
 					</div>
 					
@@ -174,6 +176,17 @@ body {
 			<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
 			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
 			<script type="text/javascript">
+			
+			function Action2 ()
+			{
+				var answer = document.getElementById('answer').value;
+				if(answer == "happend") {
+					alert('정답입니다.');
+				}else {
+					alert('틀렸습니다! 정답은' + quiz.questions[quiz.questionIndex].answer + '입니다!');
+				}
+			}
+			
 			
 			 const submitBtn = document.getElementById('submit');
 			 const previousBtn = document.getElementById('previous');

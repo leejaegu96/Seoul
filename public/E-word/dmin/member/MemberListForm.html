@@ -3,844 +3,949 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Mazer Admin Dashboard</title>
 
-  <title>Dashboard - NiceAdmin Bootstrap Template</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
 
-  <!-- Favicons -->
-  <link href="../assets/img/favicon.png" rel="icon">
-  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link rel="stylesheet" href="../assets/vendors/iconly/bold.css">
+    <link rel="stylesheet" href="../assets/vendors/simple-datatables/style.css">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.gstatic.com" rel="preconnect">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="../assets/vendor/quill/quill.snow.css" rel="stylesheet">
-  <link href="../assets/vendor/quill/quill.bubble.css" rel="stylesheet">
-  <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="../assets/vendor/simple-datatables/style.css" rel="stylesheet">
-  
-
-  <!-- Template Main CSS File -->
-  
-  <link href="../assets/css/style.css" rel="stylesheet">
-  
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"crossorigin="anonymous"></script>
-  
-        
-
-  <!-- =======================================================
-  * Template Name: NiceAdmin - v2.3.1
-  * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+    <link rel="stylesheet" href="../assets/vendors/perfect-scrollbar/perfect-scrollbar.css">
+    <link rel="stylesheet" href="../assets/vendors/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="../assets/css/app.css">
+    <link rel="shortcut icon" href="../assets/images/favicon.svg" type="image/x-icon">
 </head>
 
 <body>
+    <div id="app">
+        <div id="sidebar" class="active">
+            <div class="sidebar-wrapper active">
+                <div class="sidebar-header">
+                    <div class="d-flex justify-content-between">
+                        <div class="logo">
+                            <a href="index.html"><img src="assets/images/logo/logo.png" alt="Logo" srcset=""></a>
+                        </div>
+                        <div class="toggler">
+                            <a href="#" class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-menu">
+                    <ul class="menu">
+                        <li class="sidebar-title">Menu</li>
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="header fixed-top d-flex align-items-center">
+                        <li class="sidebar-item active ">
+                            <a href="index.html" class='sidebar-link'>
+                                <i class="bi bi-grid-fill"></i>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
 
-    <div class="d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center">
-        <img src="../assets/img/logo.png" alt="">
-        <span class="d-none d-lg-block">NiceAdmin</span>
-      </a>
-      <i class="bi bi-list toggle-sidebar-btn"></i>
-    </div><!-- End Logo -->
+                        <li class="sidebar-item  has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <i class="bi bi-stack"></i>
+                                <span>Components</span>
+                            </a>
+                            <ul class="submenu ">
+                                <li class="submenu-item ">
+                                    <a href="component-alert.html">Alert</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="component-badge.html">Badge</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="component-breadcrumb.html">Breadcrumb</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="component-button.html">Button</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="component-card.html">Card</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="component-carousel.html">Carousel</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="component-dropdown.html">Dropdown</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="component-list-group.html">List Group</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="component-modal.html">Modal</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="component-navs.html">Navs</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="component-pagination.html">Pagination</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="component-progress.html">Progress</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="component-spinner.html">Spinner</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="component-tooltip.html">Tooltip</a>
+                                </li>
+                            </ul>
+                        </li>
 
-    <div class="search-bar">
-      <form class="search-form d-flex align-items-center" method="POST" action="#">
-        <input type="text" name="query" placeholder="Search" title="Enter search keyword">
-        <button type="submit" title="Search"><i class="bi bi-search"></i></button>
-      </form>
-    </div><!-- End Search Bar -->
+                        <li class="sidebar-item  has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <i class="bi bi-collection-fill"></i>
+                                <span>Extra Components</span>
+                            </a>
+                            <ul class="submenu ">
+                                <li class="submenu-item ">
+                                    <a href="extra-component-avatar.html">Avatar</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="extra-component-sweetalert.html">Sweet Alert</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="extra-component-toastify.html">Toastify</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="extra-component-rating.html">Rating</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="extra-component-divider.html">Divider</a>
+                                </li>
+                            </ul>
+                        </li>
 
+                        <li class="sidebar-item  has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <i class="bi bi-grid-1x2-fill"></i>
+                                <span>Layouts</span>
+                            </a>
+                            <ul class="submenu ">
+                                <li class="submenu-item ">
+                                    <a href="layout-default.html">Default Layout</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="layout-vertical-1-column.html">1 Column</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="layout-vertical-navbar.html">Vertical with Navbar</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="layout-horizontal.html">Horizontal Menu</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="sidebar-title">Forms &amp; Tables</li>
+
+                        <li class="sidebar-item  has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <i class="bi bi-hexagon-fill"></i>
+                                <span>Form Elements</span>
+                            </a>
+                            <ul class="submenu ">
+                                <li class="submenu-item ">
+                                    <a href="form-element-input.html">Input</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="form-element-input-group.html">Input Group</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="form-element-select.html">Select</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="form-element-radio.html">Radio</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="form-element-checkbox.html">Checkbox</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="form-element-textarea.html">Textarea</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="sidebar-item  ">
+                            <a href="form-layout.html" class='sidebar-link'>
+                                <i class="bi bi-file-earmark-medical-fill"></i>
+                                <span>Form Layout</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item  has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <i class="bi bi-pen-fill"></i>
+                                <span>Form Editor</span>
+                            </a>
+                            <ul class="submenu ">
+                                <li class="submenu-item ">
+                                    <a href="form-editor-quill.html">Quill</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="form-editor-ckeditor.html">CKEditor</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="form-editor-summernote.html">Summernote</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="form-editor-tinymce.html">TinyMCE</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="sidebar-item  ">
+                            <a href="table.html" class='sidebar-link'>
+                                <i class="bi bi-grid-1x2-fill"></i>
+                                <span>Table</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item  ">
+                            <a href="table-datatable.html" class='sidebar-link'>
+                                <i class="bi bi-file-earmark-spreadsheet-fill"></i>
+                                <span>Datatable</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-title">Extra UI</li>
+
+                        <li class="sidebar-item  has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <i class="bi bi-pentagon-fill"></i>
+                                <span>Widgets</span>
+                            </a>
+                            <ul class="submenu ">
+                                <li class="submenu-item ">
+                                    <a href="ui-widgets-chatbox.html">Chatbox</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="ui-widgets-pricing.html">Pricing</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="ui-widgets-todolist.html">To-do List</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="sidebar-item  has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <i class="bi bi-egg-fill"></i>
+                                <span>Icons</span>
+                            </a>
+                            <ul class="submenu ">
+                                <li class="submenu-item ">
+                                    <a href="ui-icons-bootstrap-icons.html">Bootstrap Icons </a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="ui-icons-fontawesome.html">Fontawesome</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="ui-icons-dripicons.html">Dripicons</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="sidebar-item  has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <i class="bi bi-bar-chart-fill"></i>
+                                <span>Charts</span>
+                            </a>
+                            <ul class="submenu ">
+                                <li class="submenu-item ">
+                                    <a href="ui-chart-chartjs.html">ChartJS</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="ui-chart-apexcharts.html">Apexcharts</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="sidebar-item  ">
+                            <a href="ui-file-uploader.html" class='sidebar-link'>
+                                <i class="bi bi-cloud-arrow-up-fill"></i>
+                                <span>File Uploader</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item  has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <i class="bi bi-map-fill"></i>
+                                <span>Maps</span>
+                            </a>
+                            <ul class="submenu ">
+                                <li class="submenu-item ">
+                                    <a href="ui-map-google-map.html">Google Map</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="ui-map-jsvectormap.html">JS Vector Map</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="sidebar-title">Pages</li>
+
+                        <li class="sidebar-item  ">
+                            <a href="application-email.html" class='sidebar-link'>
+                                <i class="bi bi-envelope-fill"></i>
+                                <span>Email Application</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item  ">
+                            <a href="application-chat.html" class='sidebar-link'>
+                                <i class="bi bi-chat-dots-fill"></i>
+                                <span>Chat Application</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item  ">
+                            <a href="application-gallery.html" class='sidebar-link'>
+                                <i class="bi bi-image-fill"></i>
+                                <span>Photo Gallery</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item  ">
+                            <a href="application-checkout.html" class='sidebar-link'>
+                                <i class="bi bi-basket-fill"></i>
+                                <span>Checkout Page</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item  has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <i class="bi bi-person-badge-fill"></i>
+                                <span>Authentication</span>
+                            </a>
+                            <ul class="submenu ">
+                                <li class="submenu-item ">
+                                    <a href="auth-login.html">Login</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="auth-register.html">Register</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="auth-forgot-password.html">Forgot Password</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="sidebar-item  has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <i class="bi bi-x-octagon-fill"></i>
+                                <span>Errors</span>
+                            </a>
+                            <ul class="submenu ">
+                                <li class="submenu-item ">
+                                    <a href="error-403.html">403</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="error-404.html">404</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="error-500.html">500</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="sidebar-title">Raise Support</li>
+
+                        <li class="sidebar-item  ">
+                            <a href="https://zuramai.github.io/mazer/docs" class='sidebar-link'>
+                                <i class="bi bi-life-preserver"></i>
+                                <span>Documentation</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item  ">
+                            <a href="https://github.com/zuramai/mazer/blob/main/CONTRIBUTING.md" class='sidebar-link'>
+                                <i class="bi bi-puzzle"></i>
+                                <span>Contribute</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item  ">
+                            <a href="https://github.com/zuramai/mazer#donate" class='sidebar-link'>
+                                <i class="bi bi-cash"></i>
+                                <span>Donate</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <button class="sidebar-toggler btn x"><i data-feather="x"></i></button>
+            </div>
+        </div>
+        <div id="main">
+            <header class="mb-3">
+                <a href="#" class="burger-btn d-block d-xl-none">
+                    <i class="bi bi-justify fs-3"></i>
+                </a>
+            </header>
+
+            <div class="page-heading">
+                <h3>Profile Statistics</h3>
+            </div>
+            <div class="page-content">
+                <section class="row">
+                    <div class="col-12 col-lg-9">
+                        <div class="row">
+                            <div class="col-6 col-lg-3 col-md-6">
+                                <div class="card">
+                                    <div class="card-body px-3 py-4-5">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="stats-icon purple">
+                                                    <i class="iconly-boldShow"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <h6 class="text-muted font-semibold">Profile Views</h6>
+                                                <h6 class="font-extrabold mb-0">112.000</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3 col-md-6">
+                                <div class="card">
+                                    <div class="card-body px-3 py-4-5">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="stats-icon blue">
+                                                    <i class="iconly-boldProfile"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <h6 class="text-muted font-semibold">Followers</h6>
+                                                <h6 class="font-extrabold mb-0">183.000</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3 col-md-6">
+                                <div class="card">
+                                    <div class="card-body px-3 py-4-5">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="stats-icon green">
+                                                    <i class="iconly-boldAdd-User"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <h6 class="text-muted font-semibold">Following</h6>
+                                                <h6 class="font-extrabold mb-0">80.000</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3 col-md-6">
+                                <div class="card">
+                                    <div class="card-body px-3 py-4-5">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="stats-icon red">
+                                                    <i class="iconly-boldBookmark"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <h6 class="text-muted font-semibold">Saved Post</h6>
+                                                <h6 class="font-extrabold mb-0">112</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                         <section class="section">
+		                    <div class="card">
+		                        <div class="card-header">
+		                            Simple Datatable
+		                        </div>
+		                        <div class="card-body">
+		                            
+		                            <div class="dataTable-wrapper dataTable-loading no-footer sortable searchable fixed-columns">
+		                            	<div class="dataTable-top">
+		                            		<!-- 
+		                            		<div class="dataTable-dropdown">
+		                            			<select class="dataTable-selector form-select" onchange = "results(this)">
+		                            				<option value="5">5</option>
+		                            				<option value="10" selected="">10</option>
+		                            				<option value="15">15</option>
+		                            				<option value="20">20</option>
+		                            				<option value="25">25</option>
+		                            				<option value="any">any</option>
+		                            			</select>
+		                            			<label>entries per page</label>
+		                            		</div>
+		                            		<div class="dataTable-search">
+		                            			<input class="dataTable-input" placeholder="Search..." type="text">
+		                            		</div>
+		                            		 -->
+		                            	</div>
+		                            	<div class="dataTable-container">
+		                            		<table class="table table-striped" id="table1">
+				                                <thead>
+				                                    <tr>
+				                                        <th>Name</th>
+				                                        <th>Email</th>
+				                                        <th>Phone</th>
+				                                        <th>City</th>
+				                                        <th>Status</th>
+				                                    </tr>
+				                                </thead>
+				                                <tbody>
+				                                    <tr>
+				                                        <td>Graiden</td>
+				                                        <td>vehicula.aliquet@semconsequat.co.uk</td>
+				                                        <td>076 4820 8838</td>
+				                                        <td>Offenburg</td>
+				                                        <td>
+				                                            <span class="badge bg-success">Active</span>
+				                                        </td>
+				                                    </tr>
+				                                    <tr>
+				                                        <td>Dale</td>
+				                                        <td>fringilla.euismod.enim@quam.ca</td>
+				                                        <td>0500 527693</td>
+				                                        <td>New Quay</td>
+				                                        <td>
+				                                            <span class="badge bg-success">Active</span>
+				                                        </td>
+				                                    </tr>
+				                                    <tr>
+				                                        <td>Nathaniel</td>
+				                                        <td>mi.Duis@diam.edu</td>
+				                                        <td>(012165) 76278</td>
+				                                        <td>Grumo Appula</td>
+				                                        <td>
+				                                            <span class="badge bg-danger">Inactive</span>
+				                                        </td>
+				                                    </tr>
+				                                    <tr>
+				                                        <td>Darius</td>
+				                                        <td>velit@nec.com</td>
+				                                        <td>0309 690 7871</td>
+				                                        <td>Ways</td>
+				                                        <td>
+				                                            <span class="badge bg-success">Active</span>
+				                                        </td>
+				                                    </tr>
+				                                    <tr>
+				                                        <td>Oleg</td>
+				                                        <td>rhoncus.id@Aliquamauctorvelit.net</td>
+				                                        <td>0500 441046</td>
+				                                        <td>Rossignol</td>
+				                                        <td>
+				                                            <span class="badge bg-success">Active</span>
+				                                        </td>
+				                                    </tr>
+				                                    <tr>
+				                                        <td>Kermit</td>
+				                                        <td>diam.Sed.diam@anteVivamusnon.org</td>
+				                                        <td>(01653) 27844</td>
+				                                        <td>Patna</td>
+				                                        <td>
+				                                            <span class="badge bg-success">Active</span>
+				                                        </td>
+				                                    </tr>
+				                                    <tr>
+				                                        <td>Jermaine</td>
+				                                        <td>sodales@nuncsit.org</td>
+				                                        <td>0800 528324</td>
+				                                        <td>Mold</td>
+				                                        <td>
+				                                            <span class="badge bg-success">Active</span>
+				                                        </td>
+				                                    </tr>
+				                                    <tr>
+				                                        <td>Ferdinand</td>
+				                                        <td>gravida.molestie@tinciduntadipiscing.org</td>
+				                                        <td>(016977) 4107</td>
+				                                        <td>Marlborough</td>
+				                                        <td>
+				                                            <span class="badge bg-danger">Inactive</span>
+				                                        </td>
+				                                    </tr>
+				                                    <tr>
+				                                        <td>Kuame</td>
+				                                        <td>Quisque.purus@mauris.org</td>
+				                                        <td>(0151) 561 8896</td>
+				                                        <td>Tresigallo</td>
+				                                        <td>
+				                                            <span class="badge bg-success">Active</span>
+				                                        </td>
+				                                    </tr>
+				                                    <tr>
+				                                        <td>Deacon</td>
+				                                        <td>Duis.a.mi@sociisnatoquepenatibus.com</td>
+				                                        <td>07740 599321</td>
+				                                        <td>Karapınar</td>
+				                                        <td>
+				                                            <span class="badge bg-success">Active</span>
+				                                        </td>
+				                                    </tr>
+				                                    <tr>
+				                                        <td>Channing</td>
+				                                        <td>tempor.bibendum.Donec@ornarelectusante.ca</td>
+				                                        <td>0845 46 49</td>
+				                                        <td>Warrnambool</td>
+				                                        <td>
+				                                            <span class="badge bg-success">Active</span>
+				                                        </td>
+				                                    </tr>
+				                                    <tr>
+				                                        <td>Aladdin</td>
+				                                        <td>sem.ut@pellentesqueafacilisis.ca</td>
+				                                        <td>0800 1111</td>
+				                                        <td>Bothey</td>
+				                                        <td>
+				                                            <span class="badge bg-success">Active</span>
+				                                        </td>
+				                                    </tr>
+				                                    <tr>
+				                                        <td>Cruz</td>
+				                                        <td>non@quisturpisvitae.ca</td>
+				                                        <td>07624 944915</td>
+				                                        <td>Shikarpur</td>
+				                                        <td>
+				                                            <span class="badge bg-success">Active</span>
+				                                        </td>
+				                                    </tr>
+				                                    <tr>
+				                                        <td>Keegan</td>
+				                                        <td>molestie.dapibus@condimentumDonecat.edu</td>
+				                                        <td>0800 200103</td>
+				                                        <td>Assen</td>
+				                                        <td>
+				                                            <span class="badge bg-success">Active</span>
+				                                        </td>
+				                                    </tr>
+				                                    <tr>
+				                                        <td>Ray</td>
+				                                        <td>placerat.eget@sagittislobortis.edu</td>
+				                                        <td>(0112) 896 6829</td>
+				                                        <td>Hofors</td>
+				                                        <td>
+				                                            <span class="badge bg-success">Active</span>
+				                                        </td>
+				                                    </tr>
+				                                    <tr>
+				                                        <td>Maxwell</td>
+				                                        <td>diam@dapibus.org</td>
+				                                        <td>0334 836 4028</td>
+				                                        <td>Thane</td>
+				                                        <td>
+				                                            <span class="badge bg-success">Active</span>
+				                                        </td>
+				                                    </tr>
+				                                    <tr>
+				                                        <td>Carter</td>
+				                                        <td>urna.justo.faucibus@orci.com</td>
+				                                        <td>07079 826350</td>
+				                                        <td>Biez</td>
+				                                        <td>
+				                                            <span class="badge bg-success">Active</span>
+				                                        </td>
+				                                    </tr>
+				                                    <tr>
+				                                        <td>Stone</td>
+				                                        <td>velit.Aliquam.nisl@sitametrisus.com</td>
+				                                        <td>0800 1111</td>
+				                                        <td>Olivar</td>
+				                                        <td>
+				                                            <span class="badge bg-success">Active</span>
+				                                        </td>
+				                                    </tr>
+				                                    <tr>
+				                                        <td>Berk</td>
+				                                        <td>fringilla.porttitor.vulputate@taciti.edu</td>
+				                                        <td>(0101) 043 2822</td>
+				                                        <td>Sanquhar</td>
+				                                        <td>
+				                                            <span class="badge bg-success">Active</span>
+				                                        </td>
+				                                    </tr>
+				                                    <tr>
+				                                        <td>Philip</td>
+				                                        <td>turpis@euenimEtiam.org</td>
+				                                        <td>0500 571108</td>
+				                                        <td>Okara</td>
+				                                        <td>
+				                                            <span class="badge bg-success">Active</span>
+				                                        </td>
+				                                    </tr>
+				                                    <tr>
+				                                        <td>Kibo</td>
+				                                        <td>feugiat@urnajustofaucibus.co.uk</td>
+				                                        <td>07624 682306</td>
+				                                        <td>La Cisterna</td>
+				                                        <td>
+				                                            <span class="badge bg-success">Active</span>
+				                                        </td>
+				                                    </tr>
+				                                    <tr>
+				                                        <td>Bruno</td>
+				                                        <td>elit.Etiam.laoreet@luctuslobortisClass.edu</td>
+				                                        <td>07624 869434</td>
+				                                        <td>Rocca d"Arce</td>
+				                                        <td>
+				                                            <span class="badge bg-success">Active</span>
+				                                        </td>
+				                                    </tr>
+				                                    <tr>
+				                                        <td>Leonard</td>
+				                                        <td>blandit.enim.consequat@mollislectuspede.net</td>
+				                                        <td>0800 1111</td>
+				                                        <td>Lobbes</td>
+				                                        <td>
+				                                            <span class="badge bg-success">Active</span>
+				                                        </td>
+				                                    </tr>
+				                                    <tr>
+				                                        <td>Hamilton</td>
+				                                        <td>mauris@diam.org</td>
+				                                        <td>0800 256 8788</td>
+				                                        <td>Sanzeno</td>
+				                                        <td>
+				                                            <span class="badge bg-success">Active</span>
+				                                        </td>
+				                                    </tr>
+				                                    <tr>
+				                                        <td>Harding</td>
+				                                        <td>Lorem.ipsum.dolor@etnetuset.com</td>
+				                                        <td>0800 1111</td>
+				                                        <td>Obaix</td>
+				                                        <td>
+				                                            <span class="badge bg-success">Active</span>
+				                                        </td>
+				                                    </tr>
+				                                    <tr>
+				                                        <td>Emmanuel</td>
+				                                        <td>eget.lacus.Mauris@feugiatSednec.org</td>
+				                                        <td>(016977) 8208</td>
+				                                        <td>Saint-Remy-Geest</td>
+				                                        <td>
+				                                            <span class="badge bg-success">Active</span>
+				                                        </td>
+				                                    </tr>
+				                                </tbody>
+				                            </table>
+                            			</div>
+                            			<div class="dataTable-bottom">
+                            				<!-- <div class="dataTable-info">
+                            					Showing 1 to 10 of 26 entries 
+                            				</div>
+                            				<ul class="pagination pagination-primary float-end dataTable-pagination">
+                            					<li class="page-item pager">
+                            						<a href="#" class="page-link" data-page="1">‹</a>
+                            					</li>
+                            					<li class="page-item active">
+                            						<a href="#" class="page-link" data-page="1">1</a>
+                            					</li>
+                            					<li class="page-item">
+                            						<a href="#" class="page-link" data-page="2">2</a>
+                            					</li>
+                            					<li class="page-item">
+                            						<a href="#" class="page-link" data-page="3">3</a>
+                            					</li>
+                            					<li class="page-item pager">
+                            						<a href="#" class="page-link" data-page="2">›</a>
+                            					</li>
+                            				</ul> -->
+                            			</div>
+                            		</div>
+		                        </div>
+		                    </div>
+		
+		                </section>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4>Profile Visit</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <div id="chart-profile-visit"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-xl-4">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4>Profile Visit</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="d-flex align-items-center">
+                                                    <svg class="bi text-primary" width="32" height="32" fill="blue"
+                                                        style="width:10px">
+                                                        <use
+                                                            xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#circle-fill" />
+                                                    </svg>
+                                                    <h5 class="mb-0 ms-3">Europe</h5>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <h5 class="mb-0">862</h5>
+                                            </div>
+                                            <div class="col-12">
+                                                <div id="chart-europe"></div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="d-flex align-items-center">
+                                                    <svg class="bi text-success" width="32" height="32" fill="blue"
+                                                        style="width:10px">
+                                                        <use
+                                                            xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#circle-fill" />
+                                                    </svg>
+                                                    <h5 class="mb-0 ms-3">America</h5>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <h5 class="mb-0">375</h5>
+                                            </div>
+                                            <div class="col-12">
+                                                <div id="chart-america"></div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="d-flex align-items-center">
+                                                    <svg class="bi text-danger" width="32" height="32" fill="blue"
+                                                        style="width:10px">
+                                                        <use
+                                                            xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#circle-fill" />
+                                                    </svg>
+                                                    <h5 class="mb-0 ms-3">Indonesia</h5>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <h5 class="mb-0">1025</h5>
+                                            </div>
+                                            <div class="col-12">
+                                                <div id="chart-indonesia"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-xl-8">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4>Latest Comments</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="table-responsive">
+                                            <table class="table table-hover table-lg">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Name</th>
+                                                        <th>Comment</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="col-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <div class="avatar avatar-md">
+                                                                    <img src="assets/images/faces/5.jpg">
+                                                                </div>
+                                                                <p class="font-bold ms-3 mb-0">Si Cantik</p>
+                                                            </div>
+                                                        </td>
+                                                        <td class="col-auto">
+                                                            <p class=" mb-0">Congratulations on your graduation!</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="col-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <div class="avatar avatar-md">
+                                                                    <img src="assets/images/faces/2.jpg">
+                                                                </div>
+                                                                <p class="font-bold ms-3 mb-0">Si Ganteng</p>
+                                                            </div>
+                                                        </td>
+                                                        <td class="col-auto">
+                                                            <p class=" mb-0">Wow amazing design! Can you make another
+                                                                tutorial for
+                                                                this design?</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="col-12 col-lg-3">
+                        <div class="card">
+                            <div class="card-body py-4 px-5">
+                                <div class="d-flex align-items-center">
+                                    <div class="avatar avatar-xl">
+                                        <img src="assets/images/faces/1.jpg" alt="Face 1">
+                                    </div>
+                                    <div class="ms-3 name">
+                                        <h5 class="font-bold">John Duck</h5>
+                                        <h6 class="text-muted mb-0">@johnducky</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </section>
+            </div>
+
+            <footer>
+                <div class="footer clearfix mb-0 text-muted">
+                    <div class="float-start">
+                        <p>2021 &copy; Mazer</p>
+                    </div>
+                    <div class="float-end">
+                        <p>Crafted with <span class="text-danger"><i class="bi bi-heart"></i></span> by <a
+                                href="http://ahmadsaugi.com">A. Saugi</a></p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="../assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+	
+	<script src="../assets/vendors/simple-datatables/simple-datatables.js"></script>
+	
+    <script src="../assets/vendors/apexcharts/apexcharts.js"></script>
+    <script src="../assets/js/pages/dashboard.js"></script>
+
+	
+	<script>
+        // Simple Datatable
+        let table1 = document.querySelector('#table1');
+        let dataTable = new simpleDatatables.DataTable(table1);
+    </script>
+
+    <script src="../assets/js/main.js"></script>
     
-
-  </header><!-- End Header -->
-
-  <!-- ======= Sidebar ======= -->
-  <aside id="sidebar" class="sidebar">
-
-    <ul class="sidebar-nav" id="sidebar-nav">
-
-      <li class="nav-item">
-        <a class="nav-link " href="index.html">
-          <i class="bi bi-grid"></i>
-          <span>Dashboard</span>
-        </a>
-      </li><!-- End Dashboard Nav -->
-
-      <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-menu-button-wide"></i><span>Components</span><i class="bi bi-chevron-down ms-auto"></i>
-        </a>
-        <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-          <li>
-            <a href="components-alerts.html">
-              <i class="bi bi-circle"></i><span>Alerts</span>
-            </a>
-          </li>
-          <li>
-            <a href="components-accordion.html">
-              <i class="bi bi-circle"></i><span>Accordion</span>
-            </a>
-          </li>
-          <li>
-            <a href="components-badges.html">
-              <i class="bi bi-circle"></i><span>Badges</span>
-            </a>
-          </li>
-          <li>
-            <a href="components-breadcrumbs.html">
-              <i class="bi bi-circle"></i><span>Breadcrumbs</span>
-            </a>
-          </li>
-          <li>
-            <a href="components-buttons.html">
-              <i class="bi bi-circle"></i><span>Buttons</span>
-            </a>
-          </li>
-          <li>
-            <a href="components-cards.html">
-              <i class="bi bi-circle"></i><span>Cards</span>
-            </a>
-          </li>
-          <li>
-            <a href="components-carousel.html">
-              <i class="bi bi-circle"></i><span>Carousel</span>
-            </a>
-          </li>
-          <li>
-            <a href="components-list-group.html">
-              <i class="bi bi-circle"></i><span>List group</span>
-            </a>
-          </li>
-          <li>
-            <a href="components-modal.html">
-              <i class="bi bi-circle"></i><span>Modal</span>
-            </a>
-          </li>
-          <li>
-            <a href="components-tabs.html">
-              <i class="bi bi-circle"></i><span>Tabs</span>
-            </a>
-          </li>
-          <li>
-            <a href="components-pagination.html">
-              <i class="bi bi-circle"></i><span>Pagination</span>
-            </a>
-          </li>
-          <li>
-            <a href="components-progress.html">
-              <i class="bi bi-circle"></i><span>Progress</span>
-            </a>
-          </li>
-          <li>
-            <a href="components-spinners.html">
-              <i class="bi bi-circle"></i><span>Spinners</span>
-            </a>
-          </li>
-          <li>
-            <a href="components-tooltips.html">
-              <i class="bi bi-circle"></i><span>Tooltips</span>
-            </a>
-          </li>
-        </ul>
-      </li><!-- End Components Nav -->
-
-      <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-journal-text"></i><span>Forms</span><i class="bi bi-chevron-down ms-auto"></i>
-        </a>
-        <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-          <li>
-            <a href="forms-elements.html">
-              <i class="bi bi-circle"></i><span>Form Elements</span>
-            </a>
-          </li>
-          <li>
-            <a href="forms-layouts.html">
-              <i class="bi bi-circle"></i><span>Form Layouts</span>
-            </a>
-          </li>
-          <li>
-            <a href="forms-editors.html">
-              <i class="bi bi-circle"></i><span>Form Editors</span>
-            </a>
-          </li>
-          <li>
-            <a href="forms-validation.html">
-              <i class="bi bi-circle"></i><span>Form Validation</span>
-            </a>
-          </li>
-        </ul>
-      </li><!-- End Forms Nav -->
-
-      <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-layout-text-window-reverse"></i><span>Tables</span><i class="bi bi-chevron-down ms-auto"></i>
-        </a>
-        <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-          <li>
-            <a href="tables-general.html">
-              <i class="bi bi-circle"></i><span>General Tables</span>
-            </a>
-          </li>
-          <li>
-            <a href="tables-data.html">
-              <i class="bi bi-circle"></i><span>Data Tables</span>
-            </a>
-          </li>
-        </ul>
-      </li><!-- End Tables Nav -->
-
-      <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-bar-chart"></i><span>Charts</span><i class="bi bi-chevron-down ms-auto"></i>
-        </a>
-        <ul id="charts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-          <li>
-            <a href="charts-chartjs.html">
-              <i class="bi bi-circle"></i><span>Chart.js</span>
-            </a>
-          </li>
-          <li>
-            <a href="charts-apexcharts.html">
-              <i class="bi bi-circle"></i><span>ApexCharts</span>
-            </a>
-          </li>
-          <li>
-            <a href="charts-echarts.html">
-              <i class="bi bi-circle"></i><span>ECharts</span>
-            </a>
-          </li>
-        </ul>
-      </li><!-- End Charts Nav -->
-
-      <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#icons-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-gem"></i><span>Icons</span><i class="bi bi-chevron-down ms-auto"></i>
-        </a>
-        <ul id="icons-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-          <li>
-            <a href="icons-bootstrap.html">
-              <i class="bi bi-circle"></i><span>Bootstrap Icons</span>
-            </a>
-          </li>
-          <li>
-            <a href="icons-remix.html">
-              <i class="bi bi-circle"></i><span>Remix Icons</span>
-            </a>
-          </li>
-          <li>
-            <a href="icons-boxicons.html">
-              <i class="bi bi-circle"></i><span>Boxicons</span>
-            </a>
-          </li>
-        </ul>
-      </li><!-- End Icons Nav -->
-
-      <li class="nav-heading">Pages</li>
-
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="users-profile.html">
-          <i class="bi bi-person"></i>
-          <span>Profile</span>
-        </a>
-      </li><!-- End Profile Page Nav -->
-
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="pages-faq.html">
-          <i class="bi bi-question-circle"></i>
-          <span>F.A.Q</span>
-        </a>
-      </li><!-- End F.A.Q Page Nav -->
-
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="pages-contact.html">
-          <i class="bi bi-envelope"></i>
-          <span>Contact</span>
-        </a>
-      </li><!-- End Contact Page Nav -->
-
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="pages-register.html">
-          <i class="bi bi-card-list"></i>
-          <span>Register</span>
-        </a>
-      </li><!-- End Register Page Nav -->
-
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="pages-login.html">
-          <i class="bi bi-box-arrow-in-right"></i>
-          <span>Login</span>
-        </a>
-      </li><!-- End Login Page Nav -->
-
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="pages-error-404.html">
-          <i class="bi bi-dash-circle"></i>
-          <span>Error 404</span>
-        </a>
-      </li><!-- End Error 404 Page Nav -->
-
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="pages-blank.html">
-          <i class="bi bi-file-earmark"></i>
-          <span>Blank</span>
-        </a>
-      </li><!-- End Blank Page Nav -->
-
-    </ul>
-
-  </aside><!-- End Sidebar-->
-
-  <main id="main" class="main">
-
-    <div class="pagetitle">
-      <h1>Dashboard</h1>
-      <nav>
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-          <li class="breadcrumb-item active">Dashboard</li>
-        </ol>
-      </nav>
-    </div><!-- End Page Title -->
-
-    <section class="section dashboard">
-      <div class="row">
-
-        <!-- Left side columns -->
-        <div class="col">
-          <div class="row">
-
-            <!-- Customers Card -->
-            <div class="col-xxl-4 col-xl-12">
-
-              <div class="card info-card customers-card">
-
-                <div class="filter">
-                  <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
-                  <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                    <li class="dropdown-header text-start">
-                      <h6>Filter</h6>
-                    </li>
-
-                    <li><a class="dropdown-item" href="#">Today</a></li>
-                    <li><a class="dropdown-item" href="#">This Month</a></li>
-                    <li><a class="dropdown-item" href="#">This Year</a></li>
-                  </ul>
-                </div>
-
-                <div class="card-body">
-                  <h5 class="card-title">Users <span>| This Month</span></h5>
-
-                  <div class="d-flex align-items-center">
-                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                      <i class="bi bi-people"></i>
-                    </div>
-                    <div class="ps-3">
-                      <h6>354</h6>
-                      <span class="text-danger small pt-1 fw-bold">12%</span> <span class="text-muted small pt-2 ps-1">decrease</span>
-
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-
-            </div><!-- End Customers Card -->
-
-            <!-- Reports -->
-            
-            <div class="col-12">
-	            <div class="card">
-	            	<div class="card-body">
-		            	<h5 class="card-title">Datatables</h5>
-		            	<div class="dataTable-wrapper dataTable-loading no-footer sortable searchable fixed-columns">
-	            			<div class="row g-2">
-								<div class="col-3">
-									<select class="form-select" aria-label="Default select example">
-										<option selected>성별</option>
-										<option value="1">남</option>
-										<option value="2">여</option>
-									</select>
-								</div>
-								<div class="col-3">
-									<select class="form-select" aria-label="Default select example">
-										<option selected>지원분야</option>
-										<option value="1">백엔드 개발자</option>
-										<option value="2">프론트엔드 개발자</option>
-										<option value="3">ios 개발자</option>
-										<option value="4">안드로이드 개발자</option>
-									</select>
-								</div>
-								<div class="col-3">
-									<select class="form-select" aria-label="Default select example">
-										<option selected>경력</option>
-										<option value="1">신입</option>
-										<option value="2">경력</option>
-									</select>
-								</div>
-								<div class="col-3">
-									<select class="form-select" aria-label="Default select example">
-										<option selected>전공</option>
-										<option value="1">컴퓨터공학과</option>
-										<option value="2">정보통신공학과</option>
-										<option value="3">소프트웨어공학과</option>
-										<option value="4">기타</option>
-									</select>
-								</div>
-								<div class="col-4">
-									<select class="form-select" aria-label="Default select example" >
-										<option selected>선택</option>
-										<option value="1">--</option>
-										<option value="2">--</option>
-										<option value="3">--</option>
-										<option value="4">--</option>
-									</select>
-								</div>
-								<div class="col-4">
-									<select class="form-select" aria-label="Default select example">
-										<option selected>선택</option>
-										<option value="1">--</option>
-										<option value="2">--</option>
-										<option value="3">--</option>
-										<option value="4">--</option>
-									</select>
-								</div>
-								<div class="col-4">
-									<form class="d-flex" role="search">
-										
-										<input class="form-control me-2" type="text" id="searchInput" onkeyup="myFunction()" title="Type in a name">
-										<button class="btn btn-outline-success" type="submit">Search</button>
-									</form>
-								</div>
-							</div>
-		            		<div class="dataTable-container">
-		            			<!-- <table class="table datatable dataTable-table"> -->
-		            			<table class="table table-striped" id="userTable">
-				
-									<thead>
-										<tr class="header">
-											<th>
-												<div class="form-check">
-							  						<input class="form-check-input" type="checkbox" name="chk_box" onclick="allcheck();" value="" id="flexCheckDefault">
-							  					</div>
-											</th>
-											<th>이름</th>
-											<th>성별</th>
-											<th>이메일주소</th>
-											<th>휴대폰번호</th>
-											<th>주소</th>
-											<th>지원분야</th>
-											<th>경력</th>
-											<th>희망연봉</th>
-											<th>전공</th>
-											<th>접수일자</th>
-										</tr>
-									</thead>
-									<tbody id="my_tbody">
-										<tr>
-											<td>
-												<div class="form-check" id="my-tbody">
-							  						<input class="form-check-input" type="checkbox" name="chk_box" onclick="check();" value="" id="flexCheckDefault">
-							  					</div>
-							  				</td>
-							  				<td onClick="location.href='memberModForm.html'" style="cursor:pointer;">이가나</td>
-							  				<td onClick="location.href='memberModForm.html'" style="cursor:pointer;">남</td>
-							  				<td onClick="location.href='memberModForm.html'" style="cursor:pointer;">gana@naver.com</td>
-							  				<td onClick="location.href='memberModForm.html'" style="cursor:pointer;">010-0000-0000</td>
-							  				<td onClick="location.href='memberModForm.html'" style="cursor:pointer;">서울시 광진구</td>
-							  				<td onClick="location.href='memberModForm.html'" style="cursor:pointer;">백엔드 개발자</td>
-							  				<td onClick="location.href='memberModForm.html'" style="cursor:pointer;">신입</td>
-							  				<td onClick="location.href='memberModForm.html'" style="cursor:pointer;">3,400만원</td>
-							  				<td onClick="location.href='memberModForm.html'" style="cursor:pointer;">산업경영학과</td>
-							  				<td onClick="location.href='memberModForm.html'" style="cursor:pointer;">2022.07.15</td>
-						  				</tr> 
-						  				<tr>
-											<td>
-												<div class="form-check">
-							  						<input class="form-check-input" type="checkbox" name="chk_box" onclick="check();" value="" id="flexCheckDefault">
-							  					</div>
-							  				</td>
-							  				<td>이다라</td>
-							  				<td>여</td>
-							  				<td>dara@naver.com</td>
-							  				<td>010-1111-1111</td>
-							  				<td>서울시 은평구</td>
-							  				<td>ios 개발자</td>
-							  				<td>신입</td>
-							  				<td>3,800만원</td>
-							  				<td>컴퓨터공학과</td>
-							  				<td>2022.07.15</td>
-						  				</tr>
-						  				<tr>
-											<td>
-												<div class="form-check">
-							  						<input class="form-check-input" type="checkbox" name="chk_box" onclick="check();" value="" id="flexCheckDefault">
-							  					</div>
-							  				</td>
-							  				<td>이마바</td>
-							  				<td>남</td>
-							  				<td>maba@naver.com</td>
-							  				<td>010-2222-2222</td>
-							  				<td>서울시 서대문구</td>
-							  				<td>안드로이드 개발자</td>
-							  				<td>경력</td>
-							  				<td>5,000만원</td>
-							  				<td>컴퓨터공학과</td>
-							  				<td>2022.07.15</td>
-						  				</tr>
-						  				<tr>
-											<td>
-												<div class="form-check">
-							  						<input class="form-check-input" type="checkbox" name="chk_box" onclick="check();" value="" id="flexCheckDefault">
-							  					</div>
-							  				</td>
-							  				<td>이사아</td>
-							  				<td>여</td>
-							  				<td>saa@naver.com</td>
-							  				<td>010-3333-3333</td>
-							  				<td>서울시 마포구</td>
-							  				<td>프론트엔드 개발자</td>
-							  				<td>신입</td>
-							  				<td>3,900만원</td>
-							  				<td>소프트웨어공학과</td>
-							  				<td>2022.07.15</td>
-						  				</tr>
-						  				<tr>
-											<td>
-												<div class="form-check">
-							  						<input class="form-check-input" type="checkbox" name="chk_box" onclick="check();" value="" id="flexCheckDefault">
-							  					</div>
-							  				</td>
-							  				<td>이자차</td>
-							  				<td>남</td>
-							  				<td>jacha@naver.com</td>
-							  				<td>010-4444-4444</td>
-							  				<td>서울시 용산구</td>
-							  				<td>백엔드 개발자</td>
-							  				<td>경력</td>
-							  				<td>5,500만원</td>
-							  				<td>컴퓨터공학과</td>
-							  				<td>2022.07.15</td>
-						  				</tr>
-						  				<tr>
-											<td>
-												<div class="form-check">
-							  						<input class="form-check-input" type="checkbox" name="chk_box" onclick="check();" value="" id="flexCheckDefault">
-							  					</div>
-							  				</td>
-							  				<td>이카타</td>
-							  				<td>여</td>
-							  				<td>kata@naver.com</td>
-							  				<td>010-5555-5555</td>
-							  				<td>서울시 은평구</td>
-							  				<td>ios 개발자</td>
-							  				<td>신입</td>
-							  				<td>3,800만원</td>
-							  				<td>소프트웨어공학과</td>
-							  				<td>2022.07.15</td>
-						  				</tr>
-						  				<tr>
-											<td>
-												<div class="form-check">
-							  						<input class="form-check-input" type="checkbox" name="chk_box" onclick="check();" value="" id="flexCheckDefault">
-							  					</div>
-							  				</td>
-							  				<td>이파하</td>
-							  				<td>여</td>
-							  				<td>paha@naver.com</td>
-							  				<td>010-6666-6666</td>
-							  				<td>서울시 중구</td>
-							  				<td>백엔드 개발자</td>
-							  				<td>신입</td>
-							  				<td>3,400만원</td>
-							  				<td>정보통신공학과</td>
-							  				<td>2022.07.15</td>
-						  				</tr>
-						  				<tr>
-											<td>
-												<div class="form-check">
-							  						<input class="form-check-input" type="checkbox" name="chk_box" onclick="check();" value="" id="flexCheckDefault">
-							  					</div>
-							  				</td>
-							  				<td>이기니</td>
-							  				<td>남</td>
-							  				<td>gini@naver.com</td>
-							  				<td>010-7777-7777</td>
-							  				<td>서울시 종로구</td>
-							  				<td>프론트엔드 개발자</td>
-							  				<td>신입</td>
-							  				<td>3,700만원</td>
-							  				<td>컴퓨터공학과</td>
-							  				<td>2022.07.15</td>
-						  				</tr>
-						  				<tr>
-											<td>
-												<div class="form-check">
-							  						<input class="form-check-input" type="checkbox" name="chk_box" onclick="check();" value="" id="flexCheckDefault">
-							  					</div>
-							  				</td>
-							  				<td>이디리</td>
-							  				<td>남</td>
-							  				<td>diri@naver.com</td>
-							  				<td>010-8888-8888</td>
-							  				<td>서울시 성북구</td>
-							  				<td>안드로이드 개발자</td>
-							  				<td>신입</td>
-							  				<td>4,000만원</td>
-							  				<td>컴퓨터공학과</td>
-							  				<td>2022.07.15</td>
-						  				</tr>
-						  				<tr>
-											<td>
-												<div class="form-check">
-							  						<input class="form-check-input" type="checkbox" name="chk_box" onclick="check();" value="" id="flexCheckDefault">
-							  					</div>
-							  				</td>
-							  				<td>이미비</td>
-							  				<td>남</td>
-							  				<td>mibi@naver.com</td>
-							  				<td>010-9999-9999</td>
-							  				<td>서울시 강북구</td>
-							  				<td>ios 개발자</td>
-							  				<td>신입</td>
-							  				<td>3,500만원</td>
-							  				<td>컴퓨터공학과</td>
-							  				<td>2022.07.15</td>
-						  				</tr>
-									</tbody>
-								</table>
-		            			<div class="row">
-									<div class="col">
-										<nav aria-label="Page navigation example">
-											<ul class="pagination justify-content-center">
-												<li class="page-item">
-													<a class="page-link" href="#">Previous</a>
-												</li>
-												<li class="page-item active"><a class="page-link" href="#">1</a></li>
-												<li class="page-item"><a class="page-link" href="#">2</a></li>
-												<li class="page-item"><a class="page-link" href="#">3</a></li>
-												<li class="page-item"><a class="page-link" href="#">┅</a></li>
-												<li class="page-item">
-													<a class="page-link" href="#">Next</a>
-												</li>
-											</ul>
-										</nav>
-									</div>
-								</div>
-									
-								<div class="row">
-									<div class="col-6" style="text-align:left;">
-										<button type="button" class="btn btn-primary" onClick="location.href='memberRegForm.html'"><i class="fa-solid fa-square-plus"></i></button>
-										<button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-square-minus"></i></button>
-										<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-											<div class="modal-dialog">
-												<div class="modal-content">
-													<div class="modal-header">
-														<h5 class="modal-title" id="exampleModalLabel">삭제</h5>
-														<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-													</div>
-													<div class="modal-body">
-													  정말 삭제하시겠습니까?
-													</div>
-													<div class="modal-footer">
-														<button type="button" class="btn btn-danger" data-bs-dismiss="modal" onClick="delete_row();">삭제하기</button>
-														<button type="button" class="btn btn-primary" data-bs-dismiss="modal">취소하기</button>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-6" style="text-align:right;">
-										<div class="btn-group dropstart">
-											<button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-												보기
-											</button>
-											<ul class="dropdown-menu">
-												<li><button class="dropdown-item" type="button">5개</button></li>
-												<li><button class="dropdown-item" type="button">10개</button></li>
-												<li><button class="dropdown-item" type="button">15개</button></li>
-												<li><button class="dropdown-item" type="button">20개</button></li>
-											</ul>
-										</div>
-										<button type="button" class="btn btn-success"><i class="fa-solid fa-file-csv"></i></button>
-									</div>
-								</div>
-								
-		            		</div>
-		            		<div class="dataTable-bottom">
-		            			<div class="dataTable-info">Showing 1 to 5 of 5 entries</div>
-		            			<nav class="dataTable-pagination">
-		            				<ul class="dataTable-pagination-list"></ul>
-		            			</nav>
-		            		</div>
-		            	</div>
-		            </div>
-	            </div>
-	        </div>
-            
-            <div class="col-12">
-              <div class="card">
-
-                <div class="filter">
-                  <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
-                  <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                    <li class="dropdown-header text-start">
-                      <h6>Filter</h6>
-                    </li>
-
-                    <li><a class="dropdown-item" href="#">Today</a></li>
-                    <li><a class="dropdown-item" href="#">This Month</a></li>
-                    <li><a class="dropdown-item" href="#">This Year</a></li>
-                  </ul>
-                </div>
-
-                <div class="card-body">
-                  <h5 class="card-title">Reports <span>/Today</span></h5>
-
-                  <!-- Line Chart -->
-                  <div id="reportsChart"></div>
-
-                  <script>
-                    document.addEventListener("DOMContentLoaded", () => {
-                      new ApexCharts(document.querySelector("#reportsChart"), {
-                        series: [{
-                          name: 'Sales',
-                          data: [31, 40, 28, 51, 42, 82, 56],
-                        }, {
-                          name: 'Revenue',
-                          data: [11, 32, 45, 32, 34, 52, 41]
-                        }, {
-                          name: 'Customers',
-                          data: [15, 11, 32, 18, 9, 24, 11]
-                        }],
-                        chart: {
-                          height: 350,
-                          type: 'area',
-                          toolbar: {
-                            show: false
-                          },
-                        },
-                        markers: {
-                          size: 4
-                        },
-                        colors: ['#4154f1', '#2eca6a', '#ff771d'],
-                        fill: {
-                          type: "gradient",
-                          gradient: {
-                            shadeIntensity: 1,
-                            opacityFrom: 0.3,
-                            opacityTo: 0.4,
-                            stops: [0, 90, 100]
-                          }
-                        },
-                        dataLabels: {
-                          enabled: false
-                        },
-                        stroke: {
-                          curve: 'smooth',
-                          width: 2
-                        },
-                        xaxis: {
-                          type: 'datetime',
-                          categories: ["2018-09-19T00:00:00.000Z", "2018-09-19T01:30:00.000Z", "2018-09-19T02:30:00.000Z", "2018-09-19T03:30:00.000Z", "2018-09-19T04:30:00.000Z", "2018-09-19T05:30:00.000Z", "2018-09-19T06:30:00.000Z"]
-                        },
-                        tooltip: {
-                          x: {
-                            format: 'dd/MM/yy HH:mm'
-                          },
-                        }
-                      }).render();
-                    });
-                  </script>
-                  <!-- End Line Chart -->
-
-                </div>
-
-              </div>
-            </div><!-- End Reports -->
-          </div>
-        </div><!-- End Left side columns -->
-
-        <!-- Right side columns -->
-
-      </div>
-    </section>
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer" class="footer">
-    <div class="copyright">
-      &copy; Copyright <strong><span>NiceAdmin</span></strong>. All Rights Reserved
-    </div>
-    <div class="credits">
-      <!-- All the links in the footer should remain intact. -->
-      <!-- You can delete the links only if you purchased the pro version. -->
-      <!-- Licensing information: https://bootstrapmade.com/license/ -->
-      <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
-      Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-    </div>
-  </footer><!-- End Footer -->
-
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="../assets/vendor/apexcharts/apexcharts.min.js"></script>
-  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="../assets/vendor/chart.js/chart.min.js"></script>
-  <script src="../assets/vendor/echarts/echarts.min.js"></script>
-  <script src="../assets/vendor/quill/quill.min.js"></script>
-  <script src="../assets/vendor/simple-datatables/simple-datatables.js"></script>
-  <script src="../assets/vendor/tinymce/tinymce.min.js"></script>
-  <script src="../assets/vendor/php-email-form/validate.js"></script>
-  
-  
-
-  <!-- Template Main JS File -->
-  
-  <script src="../assets/js/main.js"></script>
-  
-  
-<script src="https://kit.fontawesome.com/20c294a34b.js" crossorigin="anonymous"></script>
-  <script type="text/javascript">
-  
-  
-  function myFunction() {
-	  var input, filter, table, tr, td, cell, i, j;
-	  filter = document.getElementById("searchInput").value.toLowerCase();
-	  table = document.getElementById("userTable");
-	  tr = table.getElementsByTagName("tr");
-	  for (i = 1; i < tr.length; i++) {
-	    tr[i].style.display = "none";
-	    const tdArray = tr[i].getElementsByTagName("td");
-	    for (var j = 0; j < tdArray.length; j++) {
-	      const cellValue = tdArray[j];
-	      if (cellValue && cellValue.innerHTML.toLowerCase().indexOf(filter) > -1) {
-	        tr[i].style.display = "";
-	        break;
-	      }
-	    }
-	  }
-	}
-  </script>
-  
-
+    
+    
 </body>
 
 </html>

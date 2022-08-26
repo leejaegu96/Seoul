@@ -404,102 +404,111 @@
 		                            Simple Datatable
 		                        </div>
 		                        <div class="card-body">
-		                            <form class="needs-validation" novalidate>
-							            <div class="row">
-							              <div class="col-md-6 mb-3">
-							                <label for="username">Name</label>
-							                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
-							                <div class="invalid-feedback">
-							                  Valid name is required.
-							                </div>
-							              </div>
-							              <div class="col-md-6 mb-3">
-							                <label for="user_nickname">Nickname</label>
-							                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
-							                <div class="invalid-feedback">
-							                  Valid last nickname is required.
-							                </div>
-							              </div>
-							            </div>
-										
-										<div class="row">
-							              <div class="col-md-6 mb-3">
-							                <label for="username">Password</label>
-							                <input type="password" class="form-control" id="Password" placeholder="" value="" required>
-							                <div class="invalid-feedback">
-							                  Valid password is required.
-							                </div>
-							              </div>
-							              <div class="col-md-6 mb-3">
-							                <label for="username">Password Check</label>
-							                <input type="password" class="form-control" id="Password" placeholder="" value="" required>
-							                <div class="invalid-feedback">
-							                  Valid password is required.
-							                </div>
-							              </div>
+		                            <form>
+										<div class="row mb-3">
+										  <label for="profileImage" class="col-md-4 col-lg-3 col-form-label">Profile Image</label>
+										  <div class="col-md-8 col-lg-9">
+											<!-- <div class="input-group mb-3"> -->
+                                                <!-- <div class="input-group mb-3"> -->
+                                                    <!-- <label class="input-group-text" for="inputGroupFile01"><i class="bi bi-upload"></i></label>
+                                                    <input type="file" class="form-control" id="inputGroupFile01"> -->
+                                                    
+                                                    
+                                                    <div class="row" style="padding:5px;">
+														<div class="col-9" >
+															<input type="file" class="form-control" id="upload_file" accept="image/*" required=true>
+														</div>
+														<div class="d-gird col-3 " >
+															<button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#exampleModal" >미리보기</button>
+															
+														</div>
+													</div>
+													<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+														<div class="modal-dialog">
+															<div class="modal-content">
+																<div class="modal-body">
+																	<form>
+																		<div class="mb-3" style="text-align:center;">
+																			<img src="" id="img_section" style="width: 300px; height: 350px;">
+																	    </div>
+																	</form>
+																</div>
+																<div class="modal-footer">
+																	<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+																</div>
+															</div>
+														</div>
+													</div>
+                                                    
+                                                    
+                                                <!-- </div> -->
+                                           <!--  </div> -->
+										  </div>
 										</div>
 										
-										<div class="row">
-							              <div class="col-md-6 mb-3">
-							                <label for="username">Gender</label>
-							                <select class="form-select" id="validationCustom04">
-												<option selected value="">Male</option>
-												<option>
-													<span>Female</span>
-												</option>
-												<option>
-													<span>etc..</span>
-												</option>
-											</select>
-							                <div class="invalid-feedback">
-							                  Valid password is required.
-							                </div>
-							              </div>
-							              <div class="col-md-6 mb-3">
-							                <label for="username">Date Of Birth</label>
-							                <input type="date" class="form-control" id="Password" placeholder="" value="" required>
-							                <div class="invalid-feedback">
-							                  Valid password is required.
-							                </div>
-							              </div>
+										<div class="row mb-3">
+										  <label for="about" class="col-md-4 col-lg-3 col-form-label">About</label>
+										  <div class="col-md-8 col-lg-9">
+											<textarea name="about" class="form-control" id="about" style="height: 100px">Be Brave</textarea>
+										  </div>
+										</div>
+					
+										<div class="row mb-3">
+										  <label for="Name" class="col-md-4 col-lg-3 col-form-label">Name</label>
+										  <div class="col-md-8 col-lg-9">
+											<input name="Name" type="text" class="form-control" id="Name" value="Lee Jaegu">
+										  </div>
 										</div>
 										
-										
-							            <div class="mb-3">
-							              <label for="user_email">User email</label>
-							              <div class="input-group">
-							                <input type="text" id="inputEmail" class="form-control" placeholder="User email" aria-label="Username" required>
-											<span class="input-group-text">@</span>
-											<select class="form-select" id="validationCustom04">
-												<option selected value="">naver.com</option>
-												<option>
-													<span>google.com</span>
-												</option>
-												<option>
-													<span>hanmail.net</span>
-												</option>
-											</select>
-							              </div>
-							              <input class="form-text" type="checkbox" id="autoSizingCheck_1">
-										  <label class="form-text" for="autoSizingCheck_1">
-											E-mail을 통한 소식/정보 수신을 동의하시겠습니까? 
-										  </label>
-							            </div>
-							
-					<!-- 
-							            <div class="mb-3">
-							              <label for="email">Email <span class="text-muted">(Optional)</span></label>
-							              <input type="email" class="form-control" id="email" placeholder="you@example.com">
-							              <div class="invalid-feedback">
-							                Please enter a valid email address for shipping updates.
-							              </div>
-							            </div>
-					 -->
-							            
-							            <div class="mb-3">
-							            	<label for="user_email">User Phone</label>
-								            <div class="input-group">
-								            	<select class="form-select" id="inputPhone" required>
+										<div class="row mb-3">
+										  <label for="NickName" class="col-md-4 col-lg-3 col-form-label">NickName</label>
+										  <div class="col-md-8 col-lg-9">
+											<input name="NickName" type="text" class="form-control" id="NickName" value="Jaeng">
+										  </div>
+										</div>
+					
+										<div class="row mb-3">
+										  <label for="Gender" class="col-md-4 col-lg-3 col-form-label">Gender</label>
+										  <div class="col-md-8 col-lg-9">
+											<select class="form-select" id="basicSelect">
+                                                <option>Male</option>
+                                                <option>Female</option>
+                                                <option>etc..</option>
+                                            </select>
+										  </div>
+										</div>
+					
+										<div class="row mb-3">
+										  <label for="date" class="col-md-4 col-lg-3 col-form-label">Date Of Birth</label>
+										  <div class="col-md-8 col-lg-9">
+											<input type="date" class="form-control" id="date" value="1996-12-11">
+										  </div>
+										</div>
+					
+										<div class="row mb-3">
+										  <label for="Country" class="col-md-4 col-lg-3 col-form-label">Email</label>
+										  <div class="col-md-8 col-lg-9">
+											<div class="input-group">
+												<input type="text" id="inputEmail" class="form-control" value="worncjfrn" aria-label="Username" required="">
+												<span class="input-group-text">@</span>
+												<select class="form-select" id="validationCustom04">
+													<option selected="" value="">naver.com</option>
+													<option>
+														google.com
+													</option>
+													<option>
+														hanmail.net
+													</option>
+												</select>
+											 </div>
+										  </div>
+										</div>
+					
+										<div class="row mb-3">
+										  <label for="Address" class="col-md-4 col-lg-3 col-form-label">Phone</label>
+										  <div class="col-md-8 col-lg-9">
+											<div class="input-group">
+												<select class="form-select" name="category" id="category">
 													<option selected value="">SKT</option>
 													<option>
 														<span>KT</span>
@@ -508,7 +517,7 @@
 														<span>LG</span>
 													</option>
 												</select>
-												<select class="form-select" id="inputPhone" required>
+												<select class="form-select" name="category" id="category">
 													<option selected value="">010</option>
 													<option>
 														<span>011</span>
@@ -518,87 +527,36 @@
 													</option>
 												</select>
 												<span class="input-group-text">-</span>
-												<input type="text" id="inputPhone" class="form-control"  required>
+												<input type="text" id="inputPhone" class="form-control" value="3505"  required>
 												<span class="input-group-text">-</span>
-												<input type="text" id="inputPhone" class="form-control"  required>
-												<button class="btn btn-outline-secondary" type="button" id="button-addon2">인증번호 요청</button>
+												<input type="text" id="inputPhone" class="form-control" value="0443" required>
 											</div>
-											<div class="col-6">
-												<div class="input-group md-3" style="padding-top: 5px;">
-													<input type="text" class="form-control" placeholder="Code Number" aria-label="Recipient's username" aria-describedby="button-addon2" required>
-													<button class="btn btn-outline-secondary" type="button" id="button-addon2">인증번호 확인</button>
-												</div>
-											</div>
-											<input class="form-text" type="checkbox" id="autoSizingCheck_1">
-										    <label class="form-text" for="autoSizingCheck_1">
-										  	  SMS을 통한 소식/정보 수신을 동의하시겠습니까? 
-										    </label>
+										  </div>
 										</div>
-							
-							            <div class="mb-3">
-							              <label for="address">Address</label>
-							              <div class="input-group">
-											<div class="col-6">
-												<div class="input-group">
-													<input type="text" id="inputAdress" class="form-control" placeholder="Zip code" aria-label="Recipient's username" aria-describedby="button-addon2" required>
-													<button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
-												</div>
-											</div>
-											<div class="input-group" style="padding-top: 5px;">
-												<input type="text" class="form-control" placeholder="Detailed Address" aria-label="Recipient's username" aria-describedby="button-addon2" required>
-											</div>
-											<div class="input-group" style="padding-top: 5px;">
-												<input type="text" class="form-control" placeholder="Detailed Address" aria-label="Recipient's username" aria-describedby="button-addon2" required>
-											</div>
-									  	  </div>
-							              <div class="invalid-feedback">
-							                Please enter your shipping address.
-							              </div>
-							            </div>
-							            
-							            <div class="mb-3">
-							              <label for="address">Profile</label>
-							              <div class="row">
-								              <div class="col-10">
-									              <div class="input-group mb-3">
-													  <input type="file" class="form-control" id="upload_file" accept="image/*" required=true>
-													  <label class="input-group-text" for="inputGroupFile02">Upload</label>
-												  </div>
-											  </div>
-											  <div class="col-2">
-											  	<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" >미리보기 </button>
-											  </div>
-										  </div>
-										  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-											<div class="modal-dialog">
-												<div class="modal-content">
-													<div class="modal-body">
-														<form>
-															<div class="mb-3" style="text-align:center;">
-																<img src="" id="img_section" style="width: 300px; height: 350px;">
-														    </div>
-														</form>
-													</div>
-													<div class="modal-footer">
-														<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+					
+										<div class="row mb-3">
+										  <label for="Address" class="col-md-4 col-lg-3 col-form-label">Address</label>
+										  <div class="col-md-8 col-lg-9">
+											<div class="input-group">
+												<div class="col-6">
+													<div class="input-group">
+														<input type="text" id="inputAdress" class="form-control" value="04990" aria-label="Recipient's username" aria-describedby="button-addon2" required>
+														<button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
 													</div>
 												</div>
-											</div>
+												<div class="input-group" style="padding-top: 5px;">
+													<input type="text" class="form-control" value="30, Neungdong-ro 26-gil, Gwangjin-gu, Seoul, Republic of Korea" aria-label="Recipient's username" aria-describedby="button-addon2" required>
+												</div>
+												<div class="input-group" style="padding-top: 5px;">
+													<input type="text" class="form-control" value="Building 102, Room 302" aria-label="Recipient's username" aria-describedby="button-addon2" required>
+												</div>
+												</div>
 										  </div>
-							              <div class="invalid-feedback">
-							                Please enter your shipping address.
-							              </div>
-							            </div>
-							
-							            <hr class="mb-4">
-							            
-							            <div class="px-4">
-		                                    <button class="btn btn-block btn-xl btn-light-primary font-bold mt-3">Save and change</button>
-		                                </div>
-							            
-					   					
-							            
-									</form>
+										</div>
+										<div class="text-center">
+										  <button type="submit" class="btn btn-primary">Save Changes</button>
+										</div>
+									  </form>
 		                            
 		                        </div>
 		                    </div>

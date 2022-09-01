@@ -104,8 +104,8 @@
 										<div class="col-3">
 											<select class="form-select" aria-label="Default select example">
 												<option selected>사용여부</option>
-												<option value="1">N</option>
-												<option value="2">Y</option>
+												<option value="1">Y</option>
+												<option value="2">N</option>
 											</select>
 										</div>
 										<div class="col-3">
@@ -118,20 +118,10 @@
 											</select>
 										</div>
 										<div class="col-3">
-											<select class="form-select" aria-label="Default select example">
-												<option selected>시작일</option>
-												<option value="1"></option>
-												<option value="2"></option>
-											</select>
+											<input type="text" class="form-control" placeholder="시작일">
 										</div>
 										<div class="col-3">
-											<select class="form-select" aria-label="Default select example">
-												<option selected>종료일</option>
-												<option value="1"></option>
-												<option value="2"></option>
-												<option value="3"></option>
-												<option value="4"></option>
-											</select>
+											<input type="text" class="form-control" placeholder="종료일">
 										</div>
 										<div class="col-3">
 											<select class="form-select" aria-label="Default select example" >
@@ -144,10 +134,13 @@
 										</div>
 										<div class="col-3">
 											<form class="d-flex" role="search">
-												
-												<input class="form-control me-2" type="text" id="searchInput" placeholder="검색어" onkeyup="myFunction()" title="Type in a name">
-												
-												<button class="btn btn-outline-success" type="submit">Search</button>
+												<input class="form-control" type="text" id="searchInput" placeholder="검색어" onkeyup="myFunction()" title="Type in a name">
+											</form>
+										</div>
+										<div class="col-3">
+											<form class="d-flex" role="search">
+												<button class="btn btn-outline-primary" type="submit" style="margin-right:5px;"><i class="fa-solid fa-magnifying-glass"></i></button>
+												<button class="btn btn-outline-danger" type="submit" ><i class="fa-solid fa-arrow-rotate-left"></i></button>
 											</form>
 										</div>
 									</div>

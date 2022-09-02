@@ -41,35 +41,35 @@
                         <li class="sidebar-title">Menu</li>
 
                         <li class="sidebar-item ">
-                            <a href="MemberListForm.html" class='sidebar-link'>
+                            <a href="../member/MemberListForm.html" class='sidebar-link'>
                                 <i class="bi bi-person-badge-fill"></i>
                                 <span>MemberList</span>
                             </a>
                         </li>
                         
-                        <li class="sidebar-item ">
-                            <a href="CodeList.html" class='sidebar-link'>
-                                <i class="bi bi-grid-fill"></i>
-                                <span>Code</span>
-                            </a>
-                        </li>
-                        
-                        <li class="sidebar-item active ">
-                            <a href="CodeGroupList.html" class='sidebar-link'>
+                        <li class="sidebar-item  ">
+                            <a href="../member/CodeGroupList.html" class='sidebar-link'>
                                 <i class="bi bi-grid-fill"></i>
                                 <span>CodeGroup</span>
                             </a>
                         </li>
                         
-                        <li class="sidebar-item">
-                            <a href="index.html" class='sidebar-link'>
+                        <li class="sidebar-item ">
+                            <a href="../member/CodeList.html" class='sidebar-link'>
+                                <i class="bi bi-grid-fill"></i>
+                                <span>Code</span>
+                            </a>
+                        </li>
+                        
+                        <li class="sidebar-item ">
+                            <a href="WordList.html" class='sidebar-link'>
                                 <i class="fa fa-book"></i>
                                 <span>Word</span>
                             </a>
                         </li>
                         
-                        <li class="sidebar-item">
-                            <a href="index.html" class='sidebar-link'>
+                        <li class="sidebar-item active">
+                            <a href="TestList.html" class='sidebar-link'>
                                 <i class="fa fa-chalkboard"></i>
                                 <span>Test</span>
                             </a>
@@ -90,7 +90,7 @@
             </header>
 
             <div class="page-heading">
-                <h3>Word List</h3>
+                <h3>Test List</h3>
             </div>
             <div class="page-content">
                 <section class="row">
@@ -157,10 +157,11 @@
 										  					</div>
 														</th>
 														<th>#</th>
-				                                        <th>Word</th>
-				                                        <th>Word Mean</th>
-				                                        <th>Word Example</th>
-				                                        <th>Word Date</th>
+				                                        <th>Test Num</th>
+				                                        <th>Question Sentence(KO)</th>
+				                                        <th>Question Sentence(ENG)</th>
+				                                        <th>Question Answer</th>
+				                                        <th>Test Date</th>
 				                                    </tr>
 				                                </thead>
 				                                <tbody id="my_tbody">
@@ -171,17 +172,15 @@
 										  					</div>
 										  				</td>
 				                                        <td>1</td>
-				                                        <td>awful</td>
+				                                        <td>1</td>
 				                                        <td>   
-				                                        	1. 형용사 비격식   끔직한, 지독한 <br>
-													 		2. 형용사 비격식  (특히 양적으로 많음을 강조하는 의미로) 엄청 <br>
-													 		3. 부사 비격식 특히 美   되게, 굉장히
+				                                        	얼굴이 왜 그래?
 													 	</td>
 				                                        <td>
-				                                        	What blooming awful weather! <br>
-															정말 날씨 짜증나게 안좋군! <br>
-															Slowly the awful truth dawned. <br>
-															서서히 그 끔찍한 진실이 분명해졌다.
+				                                        	What _________ to your face?
+				                                        </td>
+				                                        <td>
+				                                        	happened
 				                                        </td>
 				                                        <td>2022-07-25</td>
 				                                    </tr>
@@ -192,15 +191,15 @@
 										  					</div>
 										  				</td>
 				                                        <td>2</td>
-				                                        <td>hearten</td>
+				                                        <td>2</td>
 				                                        <td>   
-				                                        	1. 동사 타동사 [VN 주로 수동태로]  ...에게 용기[희망]을 북돋우다.
+				                                        	충치 치료했어.
 													 	</td>
 				                                        <td>
-				                                        	This news will hearten them. <br>
-													 		그 소식은 그들을 고무할 것이다. <br>
-													 		It should hearten us that they are in disarray. <br>
-													 		그들이 혼난소에 있다는 것은 우리에게 희망을 줄 것이다.
+				                                        	I had to ____ a cavity filled today.
+				                                        </td>
+				                                        <td>
+				                                        	get
 				                                        </td>
 				                                        <td>2022-07-25</td>
 				                                    </tr>
@@ -211,19 +210,34 @@
 										  					</div>
 										  				</td>
 				                                        <td>3</td>
-				                                        <td>awful</td>
+				                                        <td>3</td>
 				                                        <td>   
-				                                        	1. 동사  (특히 불쾌한 방식으로) 지배하다. <br>
-													 		2. 타동사  (...의) 가장 중요한[두드러지는] 특징이되다. <br>
-													 		3. 타동사  (어떤 장소에서) 가장 크다
+				                                        	아팠어?
 													 	</td>
 				                                        <td>
-				                                        	He tended to dominate the conversation. <br>
-													        그는 대화를 지배하는 경향이 있었다. <br> 
-													        The train crash dominated the news. <br>
-													         그 열차 사고가 가장 중요한 뉴스가 되었다. <br>
-													        The cathedral dominates the city <br>
-													         그 성당이 그 시에서는 가장 높이 솟아 있다.
+				                                        	Did it _____?
+				                                        </td>
+				                                        <td>
+				                                        	hurt
+				                                        </td>
+				                                        <td>2022-07-25</td>
+				                                    </tr>
+				                                    <tr>
+				                                    	<td>
+															<div class="form-check">
+										  						<input class="form-check-input" type="checkbox" name="chk_box" onclick="check();" value="" id="flexCheckDefault">
+										  					</div>
+										  				</td>
+				                                        <td>1</td>
+				                                        <td>1</td>
+				                                        <td>   
+				                                        	말도 마.
+													 	</td>
+				                                        <td>
+				                                        	I don't _____ want to talk about it.
+				                                        </td>
+				                                        <td>
+				                                        	even
 				                                        </td>
 				                                        <td>2022-07-25</td>
 				                                    </tr>

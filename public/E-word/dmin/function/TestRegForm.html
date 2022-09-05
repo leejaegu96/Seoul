@@ -28,7 +28,7 @@
                     <div class="d-flex justify-content-between">
                         <div class="row" style="text-align: center; width:300px;">
 	                        <div class="logo">
-	                            <a href="MemberListForm.html"><span style="font-size: 30px;"><i class="fa-solid fa-book-open"></i>&nbsp E-Word</span><br><span style="font-size: 19px;">Administrator</span></a>
+	                            <a href="../member/MemberListForm.html"><span style="font-size: 30px;"><i class="fa-solid fa-book-open"></i>&nbsp E-Word</span><br><span style="font-size: 19px;">Administrator</span></a>
 	                        </div>
                         </div>
                         <div class="toggler">
@@ -40,22 +40,22 @@
                     <ul class="menu">
                         <li class="sidebar-title">Menu</li>
 
-                        <li class="sidebar-item active ">
-                            <a href="MemberListForm.html" class='sidebar-link'>
+                        <li class="sidebar-item ">
+                            <a href="../member/MemberListForm.html" class='sidebar-link'>
                                 <i class="bi bi-person-badge-fill"></i>
                                 <span>MemberList</span>
                             </a>
                         </li>
                         
                         <li class="sidebar-item">
-                            <a href="CodeGroupList.html" class='sidebar-link'>
+                            <a href="../member/CodeGroupList.html" class='sidebar-link'>
                                 <i class="bi bi-grid-fill"></i>
                                 <span>CodeGroup</span>
                             </a>
                         </li>
                         
                         <li class="sidebar-item ">
-                            <a href="CodeList.html" class='sidebar-link'>
+                            <a href="../member/CodeList.html" class='sidebar-link'>
                                 <i class="bi bi-grid-fill"></i>
                                 <span>Code</span>
                             </a>
@@ -68,7 +68,7 @@
                             </a>
                         </li>
                         
-                        <li class="sidebar-item">
+                        <li class="sidebar-item  active">
                             <a href="../function/TestList.html" class='sidebar-link'>
                                 <i class="fa fa-chalkboard"></i>
                                 <span>Test</span>
@@ -90,7 +90,7 @@
             </header>
 
             <div class="page-heading">
-                <h3>Profile</h3>
+                <h3>Test Register</h3>
             </div>
             <div class="page-content">
                 <section class="row">
@@ -103,154 +103,42 @@
 		                        </div> -->
 		                        <div class="card-body">
 		                            <form>
+					
 										<div class="row mb-3">
-										  <label for="profileImage" class="col-md-4 col-lg-3 col-form-label">Profile Image</label>
+										  <label for="Name" class="col-md-4 col-lg-3 col-form-label">Test Number</label>
 										  <div class="col-md-8 col-lg-9">
-											<!-- <div class="input-group mb-3"> -->
-                                                <!-- <div class="input-group mb-3"> -->
-                                                    <!-- <label class="input-group-text" for="inputGroupFile01"><i class="bi bi-upload"></i></label>
-                                                    <input type="file" class="form-control" id="inputGroupFile01"> -->
-                                                    
-                                                    
-                                                    <div class="row" style="padding:5px;">
-														<div class="col-9" >
-															<input type="file" class="form-control" id="upload_file" accept="image/*" required=true>
-														</div>
-														<div class="d-gird col-3 " >
-															<button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#exampleModal" >미리보기</button>
-															
-														</div>
-													</div>
-													<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-														<div class="modal-dialog">
-															<div class="modal-content">
-																<div class="modal-body">
-																	<form>
-																		<div class="mb-3" style="text-align:center;">
-																			<img src="" id="img_section" style="width: 300px; height: 350px;">
-																	    </div>
-																	</form>
-																</div>
-																<div class="modal-footer">
-																	<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-																</div>
-															</div>
-														</div>
-													</div>
-                                                    
-                                                    
-                                                <!-- </div> -->
-                                           <!--  </div> -->
+											<input name="number" type="number" class="form-control" id="Name" min="1" max="4">
 										  </div>
 										</div>
 										
 										<div class="row mb-3">
-										  <label for="about" class="col-md-4 col-lg-3 col-form-label">About</label>
+										  <label for="Question_Ko" class="col-md-4 col-lg-3 col-form-label">Question Sentence(Ko)</label>
 										  <div class="col-md-8 col-lg-9">
-											<textarea name="about" class="form-control" id="about" style="height: 100px">Be Brave</textarea>
-										  </div>
-										</div>
-					
-										<div class="row mb-3">
-										  <label for="Name" class="col-md-4 col-lg-3 col-form-label">Name</label>
-										  <div class="col-md-8 col-lg-9">
-											<input name="Name" type="text" class="form-control" id="Name" value="Lee Jaegu">
+											<textarea name="Question_Ko" class="form-control" id="Question_Ko" style="height: 100px"></textarea>
 										  </div>
 										</div>
 										
 										<div class="row mb-3">
-										  <label for="NickName" class="col-md-4 col-lg-3 col-form-label">NickName</label>
+										  <label for="Question_Eng" class="col-md-4 col-lg-3 col-form-label">Question Sentence(Eng)</label>
 										  <div class="col-md-8 col-lg-9">
-											<input name="NickName" type="text" class="form-control" id="NickName" value="Jaeng">
+											<textarea name="Question_Eng" class="form-control" id="Question_Eng" style="height: 100px"></textarea>
 										  </div>
 										</div>
-					
+										
 										<div class="row mb-3">
-										  <label for="Gender" class="col-md-4 col-lg-3 col-form-label">Gender</label>
+										  <label for="Question_Answer" class="col-md-4 col-lg-3 col-form-label">Question Answer</label>
 										  <div class="col-md-8 col-lg-9">
-											<select class="form-select" id="basicSelect">
-                                                <option>Male</option>
-                                                <option>Female</option>
-                                                <option>etc..</option>
-                                            </select>
+											<input name="Question_Answer" type="text" class="form-control" id="Question_Answer" value="">
 										  </div>
 										</div>
-					
+										
 										<div class="row mb-3">
-										  <label for="date" class="col-md-4 col-lg-3 col-form-label">Date Of Birth</label>
+										  <label for="date" class="col-md-4 col-lg-3 col-form-label">Test Date</label>
 										  <div class="col-md-8 col-lg-9">
-											<input type="date" class="form-control" id="date" value="1996-12-11">
+											<input type="date" class="form-control" id="date" value="">
 										  </div>
 										</div>
-					
-										<div class="row mb-3">
-										  <label for="Country" class="col-md-4 col-lg-3 col-form-label">Email</label>
-										  <div class="col-md-8 col-lg-9">
-											<div class="input-group">
-												<input type="text" id="inputEmail" class="form-control" value="worncjfrn" aria-label="Username" required="">
-												<span class="input-group-text">@</span>
-												<select class="form-select" id="validationCustom04">
-													<option selected="" value="">naver.com</option>
-													<option>
-														google.com
-													</option>
-													<option>
-														hanmail.net
-													</option>
-												</select>
-											 </div>
-										  </div>
-										</div>
-					
-										<div class="row mb-3">
-										  <label for="Address" class="col-md-4 col-lg-3 col-form-label">Phone</label>
-										  <div class="col-md-8 col-lg-9">
-											<div class="input-group">
-												<select class="form-select" name="category" id="category">
-													<option selected value="">SKT</option>
-													<option>
-														<span>KT</span>
-													</option>
-													<option>
-														<span>LG</span>
-													</option>
-												</select>
-												<select class="form-select" name="category" id="category">
-													<option selected value="">010</option>
-													<option>
-														<span>011</span>
-													</option>
-													<option>
-														<span>019</span>
-													</option>
-												</select>
-												<span class="input-group-text">-</span>
-												<input type="text" id="inputPhone" class="form-control" value="3505"  required>
-												<span class="input-group-text">-</span>
-												<input type="text" id="inputPhone" class="form-control" value="0443" required>
-											</div>
-										  </div>
-										</div>
-					
-										<div class="row mb-3">
-										  <label for="Address" class="col-md-4 col-lg-3 col-form-label">Address</label>
-										  <div class="col-md-8 col-lg-9">
-											<div class="input-group">
-												<div class="col-6">
-													<div class="input-group">
-														<input type="text" id="inputAdress" class="form-control" value="04990" aria-label="Recipient's username" aria-describedby="button-addon2" required>
-														<button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
-													</div>
-												</div>
-												<div class="input-group" style="padding-top: 5px;">
-													<input type="text" class="form-control" value="30, Neungdong-ro 26-gil, Gwangjin-gu, Seoul, Republic of Korea" aria-label="Recipient's username" aria-describedby="button-addon2" required>
-												</div>
-												<div class="input-group" style="padding-top: 5px;">
-													<input type="text" class="form-control" value="Building 102, Room 302" aria-label="Recipient's username" aria-describedby="button-addon2" required>
-												</div>
-												</div>
-										  </div>
-										</div>
+										
 										<div class="text-center">
 										  <button type="submit" class="btn btn-primary">Save Changes</button>
 										</div>
@@ -328,6 +216,7 @@
     })
     
     </script>
+    
     
     
 </body>

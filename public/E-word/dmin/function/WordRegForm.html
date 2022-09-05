@@ -1,18 +1,230 @@
-<!doctype html>
-<html lang="ko">
+
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Bootstrap demo</title>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Word Administrator</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+
+    <link rel="stylesheet" href="../assets/vendors/iconly/bold.css">
+    <link rel="stylesheet" href="../assets/vendors/simple-datatables/style.css">
+
+    <link rel="stylesheet" href="../assets/vendors/perfect-scrollbar/perfect-scrollbar.css">
+    <link rel="stylesheet" href="../assets/vendors/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="../assets/css/app.css">
+    <link rel="shortcut icon" href="../assets/images/favicon.svg" type="image/x-icon">
 </head>
+
 <body>
-<!-- start -->
+    <div id="app">
+        <div id="sidebar" class="active">
+            <div class="sidebar-wrapper active">
+                <div class="sidebar-header">
+                    <div class="d-flex justify-content-between">
+                        <div class="row" style="text-align: center; width:300px;">
+	                        <div class="logo">
+	                            <a href="../member/MemberListForm.html"><span style="font-size: 30px;"><i class="fa-solid fa-book-open"></i>&nbsp E-Word</span><br><span style="font-size: 19px;">Administrator</span></a>
+	                        </div>
+                        </div>
+                        <div class="toggler">
+                            <a href="#" class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></a>
+                        </div>
+                    </div>
+                </div>
+               <div class="sidebar-menu">
+                    <ul class="menu">
+                        <li class="sidebar-title">Menu</li>
+
+                        <li class="sidebar-item ">
+                            <a href="../member/MemberListForm.html" class='sidebar-link'>
+                                <i class="bi bi-person-badge-fill"></i>
+                                <span>MemberList</span>
+                            </a>
+                        </li>
+                        
+                        <li class="sidebar-item">
+                            <a href="../member/CodeGroupList.html" class='sidebar-link'>
+                                <i class="bi bi-grid-fill"></i>
+                                <span>CodeGroup</span>
+                            </a>
+                        </li>
+                        
+                        <li class="sidebar-item ">
+                            <a href="../member/CodeList.html" class='sidebar-link'>
+                                <i class="bi bi-grid-fill"></i>
+                                <span>Code</span>
+                            </a>
+                        </li>
+                        
+                        <li class="sidebar-item active">
+                            <a href="../function/WordList.html" class='sidebar-link'>
+                                <i class="fa fa-book"></i>
+                                <span>Word</span>
+                            </a>
+                        </li>
+                        
+                        <li class="sidebar-item  ">
+                            <a href="../function/TestList.html" class='sidebar-link'>
+                                <i class="fa fa-chalkboard"></i>
+                                <span>Test</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="sidebar-toggler btn x"><i data-feather="x"></i></button>
+            </div>
+        </div>
+        
+        <!-- =========================================================================================== -->
+        
+        <div id="main">
+            <header class="mb-3">
+                <a href="#" class="burger-btn d-block d-xl-none">
+                    <i class="bi bi-justify fs-3"></i>
+                </a>
+            </header>
+
+            <div class="page-heading">
+                <h3>Word Register</h3>
+            </div>
+            <div class="page-content">
+                <section class="row">
+                    <div class="col-12">
+                        <div class="row">
+                         <section class="section">
+		                    <div class="card">
+		                        <!-- <div class="card-header">
+		                            Simple Datatable
+		                        </div> -->
+		                        <div class="card-body">
+		                            <form method="post" action="test.jsp">
+					
+										<div class="row mb-3">
+										  <label for="Word" class="col-md-4 col-lg-3 col-form-label">Word</label>
+										  <div class="col-md-8 col-lg-9">
+											<input name="Word" type="text" class="form-control" id="Word">
+										  </div>
+										</div>
+										
+										<div class="row mb-3">
+										  <label for="Word_Mean" class="col-md-4 col-lg-3 col-form-label">Word Mean</label>
+										  <div class="col-md-8 col-lg-9">
+											<div class="input-group mb-3">
+                                                 <select class="form-select" id="inputGroupSelect01" style="width:30%">
+                                                     <option selected disabled>Part Of Speech</option>
+                                                     <option value="1">형용사</option>
+                                                     <option value="2">부사</option>
+                                                     <option value="3">동사</option>
+                                                 </select>
+                                                 <input type="text" class="form-control" aria-label="Text input with dropdown button" style="width:60%">
+                                             </div>
+										  </div>
+										</div>
+										
+										<div class="row mb-3">
+										  <label for="Question_Eng" class="col-md-4 col-lg-3 col-form-label">Word Example</label>
+										  <div class="col-md-8 col-lg-9">
+											<div class="input-group mb-3">
+												<div class="input-group-text">Eng</div>
+                                                <input name="Word" type="text" class="form-control" id="Word">
+                                                <div class="input-group-text">Ko</div>
+                                                <input name="Word" type="text" class="form-control" id="Word">
+                                             </div>
+										  </div>
+										</div>
+										
+										<div class="row mb-3">
+										  <label for="date" class="col-md-4 col-lg-3 col-form-label">Word Date</label>
+										  <div class="col-md-8 col-lg-9">
+											<input type="date" class="form-control" id="date" value="">
+										  </div>
+										</div>
+										
+										<div class="text-center">
+										  <button type="submit" class="btn btn-primary">Save Changes</button>
+										</div>
+									  </form>
+		                            
+		                        </div>
+		                    </div>
+		
+		                </section>
+                      </div>
+                       
+                    </div>
+                    
+                </section>
+            </div>
+
+            <footer>
+                <div class="footer clearfix mb-0 text-muted">
+                    <div class="float-start">
+                        <p>2021 &copy; Mazer</p>
+                    </div>
+                    <div class="float-end">
+                        <p>Crafted with <span class="text-danger"><i class="bi bi-heart"></i></span> by <a
+                                href="http://ahmadsaugi.com">A. Saugi</a></p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="../assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
 	
-	<h1>Hello, world!</h1>
 	
-<!-- end -->
+	<script src="https://kit.fontawesome.com/20c294a34b.js" crossorigin="anonymous"></script>
 	
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="../assets/vendors/apexcharts/apexcharts.js"></script>
+    <script src="../assets/js/pages/dashboard.js"></script>
+
+	
+
+    <script src="../assets/js/main.js"></script>
+    
+    <script type="text/javascript">
+    
+    const reader = new FileReader();
+
+    reader.onload = (readerEvent) => {
+        document.querySelector("#img_section").setAttribute("src", readerEvent.target.result);
+        //파일을 읽는 이벤트가 발생하면 img_section의 src 속성을 readerEvent의 결과물로 대체함
+    };
+
+    document.querySelector("#upload_file").addEventListener("change", (changeEvent) => {
+        //upload_file 에 이벤트리스너를 장착
+
+        const imgFile = changeEvent.target.files[0];
+        reader.readAsDataURL(imgFile);
+        //업로드한 이미지의 URL을 reader에 등록
+    })
+
+    const exampleModal = document.getElementById('exampleModal')
+    	exampleModal.addEventListener('show.bs.modal', event => {
+    	// Button that triggered the modal
+    const button = event.relatedTarget
+    	// Extract info from data-bs-* attributes
+    const recipient = button.getAttribute('data-bs-whatever')
+    	// If necessary, you could initiate an AJAX request here
+    	// and then do the updating in a callback.
+    	//
+    	// Update the modal's content.
+    const modalTitle = exampleModal.querySelector('.modal-title')
+    const modalBodyInput = exampleModal.querySelector('.modal-body input')
+    	
+    	modalTitle.textContent = `New message to ${recipient}`
+    	modalBodyInput.value = recipient
+    })
+    
+    </script>
+    
+    
+    
 </body>
+
 </html>

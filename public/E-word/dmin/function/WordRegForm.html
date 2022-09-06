@@ -115,14 +115,17 @@
 										  <label for="Word_Mean" class="col-md-4 col-lg-3 col-form-label">Word Mean</label>
 										  <div class="col-md-8 col-lg-9">
 											<div class="input-group mb-3">
-                                                 <select class="form-select" id="inputGroupSelect01" style="width:30%">
-                                                     <option selected disabled>Part Of Speech</option>
-                                                     <option value="1">형용사</option>
-                                                     <option value="2">부사</option>
-                                                     <option value="3">동사</option>
-                                                 </select>
-                                                 <input type="text" class="form-control" aria-label="Text input with dropdown button" style="width:60%">
-                                             </div>
+                                                <select class="form-select" id="inputGroupSelect01" style="width:30%">
+                                                    <option selected disabled>Part Of Speech</option>
+                                                    <option value="1">형용사</option>
+                                                    <option value="2">부사</option>
+                                                    <option value="3">동사</option>
+                                                </select>
+                                                <input type="text" class="form-control" aria-label="Text input with dropdown button" style="width:50%">
+                                                <div class="input-group-text"><a href="#" ><i class="fa fa-plus"></i></a></div>
+                                            	<div class="input-group-text"><a href="#" ><i class="fa fa-minus"></i></a></div>
+                                            </div>
+                                            
 										  </div>
 										</div>
 										
@@ -131,10 +134,10 @@
 										  <div class="col-md-8 col-lg-9">
 											<div class="input-group mb-3">
 												<div class="input-group-text">Eng</div>
-                                                <input name="Word" type="text" class="form-control" id="Word">
-                                                <div class="input-group-text">Ko</div>
-                                                <input name="Word" type="text" class="form-control" id="Word">
-                                             </div>
+                                               	<textarea name="Word" type="text" class="form-control" id="Word"></textarea>
+												<div class="input-group-text">Ko</div>
+                                               	<textarea name="Word" type="text" class="form-control" id="Word"></textarea>
+                                            </div>
 										  </div>
 										</div>
 										
@@ -221,6 +224,7 @@
     	modalBodyInput.value = recipient
     })
     
+       
     </script>
     
     

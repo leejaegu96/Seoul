@@ -180,8 +180,8 @@
 										<div class="col-3">
 											<select class="form-select" aria-label="Default select example">
 												<option selected>사용여부</option>
-												<option value="1">N</option>
-												<option value="2">Y</option>
+												<option value="1">Y</option>
+												<option value="2">N</option>
 											</select>
 										</div>
 										<div class="col-3">
@@ -194,20 +194,10 @@
 											</select>
 										</div>
 										<div class="col-3">
-											<select class="form-select" aria-label="Default select example">
-												<option selected>시작일</option>
-												<option value="1"></option>
-												<option value="2"></option>
-											</select>
+											<input type="text" class="form-control" placeholder="시작일">
 										</div>
 										<div class="col-3">
-											<select class="form-select" aria-label="Default select example">
-												<option selected>종료일</option>
-												<option value="1"></option>
-												<option value="2"></option>
-												<option value="3"></option>
-												<option value="4"></option>
-											</select>
+											<input type="text" class="form-control" placeholder="종료일">
 										</div>
 										<div class="col-3">
 											<select class="form-select" aria-label="Default select example" >
@@ -220,10 +210,13 @@
 										</div>
 										<div class="col-3">
 											<form class="d-flex" role="search">
-												
-												<input class="form-control me-2" type="text" id="searchInput" placeholder="검색어" onkeyup="myFunction()" title="Type in a name">
-												
-												<button class="btn btn-outline-success" type="submit">Search</button>
+												<input class="form-control" type="text" id="searchInput" placeholder="검색어" onkeyup="myFunction()" title="Type in a name">
+											</form>
+										</div>
+										<div class="col-3">
+											<form class="d-flex" role="search">
+												<button class="btn btn-outline-primary" type="submit" style="margin-right:5px;"><i class="fa-solid fa-magnifying-glass"></i></button>
+												<button class="btn btn-outline-danger" type="submit" ><i class="fa-solid fa-arrow-rotate-left"></i></button>
 											</form>
 										</div>
 									</div>
@@ -239,405 +232,443 @@
 										  						<input class="form-check-input" type="checkbox" name="chk_box" onclick="allcheck();" value="" id="flexCheckDefault">
 										  					</div>
 														</th>
+														<th>#</th>
 				                                        <th>Name</th>
 				                                        <th>NickName</th>
 				                                        <th>Email</th>
-				                                        <th>Phone</th>
-				                                        <th>City</th>
-				                                        <th>Status</th>
+				                                        <th>EmailDomail</th>
+				                                        <th>Gender</th>
+				                                        <th>Dob</th>
+				                                        <th>PhoneCarrier</th>
+				                                        <th>PhoneNumber</th>
+				                                        <th>MailNY</th>
+				                                        <th>SmsNY</th>
 				                                    </tr>
 				                                </thead>
 				                                <tbody id="my_tbody">
-				                                    <tr>
-				                                    	<td>
+				                                    
+				                                	
+													<tr>
+														<td>
 															<div class="form-check">
 										  						<input class="form-check-input" type="checkbox" name="chk_box" onclick="check();" value="" id="flexCheckDefault">
 										  					</div>
-										  				</td>
-				                                        <td onClick="location.href='MemberModForm.html'" style="cursor: pointer;">Leejaegu</td>
-				                                        <td onClick="location.href='MemberModForm.html'" style="cursor: pointer;">jaeng</td>
-				                                        <td onClick="location.href='MemberModForm.html'" style="cursor: pointer;">vehicula.aliquet@semconsequat.co.uk</td>
-				                                        <td onClick="location.href='MemberModForm.html'" style="cursor: pointer;">076 4820 8838</td>
-				                                        <td onClick="location.href='MemberModForm.html'" style="cursor: pointer;">Offenburg</td>
-				                                        <td>
-				                                            <span class="badge bg-success">Active</span>
-				                                        </td>
-				                                    </tr>
-				                                    <tr>
-				                                    	<td>
+														</td>
+														<td>
+															1
+														</td>
+														<td>
+															Leejaegu
+														</td>
+														<td>
+															Jaeng
+														</td>
+														<td>
+															worncjfrn@naver.com
+														</td>
+														<td>
+															8
+															
+														</td>
+														<td>
+															1
+														</td>
+														<td>
+															1996-12-11
+														</td>
+														<td>
+															4
+														</td>
+														<td>
+															01000000000
+														</td>
+														<td>
+															1
+														</td>
+														<td>
+															1
+														</td>
+													</tr>
+													
+													<tr>
+														<td>
 															<div class="form-check">
 										  						<input class="form-check-input" type="checkbox" name="chk_box" onclick="check();" value="" id="flexCheckDefault">
 										  					</div>
-										  				</td>
-				                                        <td>Dale</td>
-				                                        <td>Dale</td>
-				                                        <td>fringilla.euismod.enim@quam.ca</td>
-				                                        <td>0500 527693</td>
-				                                        <td>New Quay</td>
-				                                        <td>
-				                                            <span class="badge bg-success">Active</span>
-				                                        </td>
-				                                    </tr>
-				                                    <tr>
-				                                    	<td>
+														</td>
+														<td>
+															2
+														</td>
+														<td>
+															Leegana
+														</td>
+														<td>
+															gana
+														</td>
+														<td>
+															123@naver.com
+														</td>
+														<td>
+															8
+															
+														</td>
+														<td>
+															1
+														</td>
+														<td>
+															1996-01-01
+														</td>
+														<td>
+															6
+														</td>
+														<td>
+															01011111111
+														</td>
+														<td>
+															1
+														</td>
+														<td>
+															1
+														</td>
+													</tr>
+													
+													<tr>
+														<td>
 															<div class="form-check">
 										  						<input class="form-check-input" type="checkbox" name="chk_box" onclick="check();" value="" id="flexCheckDefault">
 										  					</div>
-										  				</td>
-				                                        <td>Nathaniel</td>
-				                                        <td>Nathaniel</td>
-				                                        <td>mi.Duis@diam.edu</td>
-				                                        <td>(012165) 76278</td>
-				                                        <td>Grumo Appula</td>
-				                                        <td>
-				                                            <span class="badge bg-danger">Inactive</span>
-				                                        </td>
-				                                    </tr>
-				                                    <tr>
-				                                    	<td>
+														</td>
+														<td>
+															3
+														</td>
+														<td>
+															Leedara
+														</td>
+														<td>
+															dara
+														</td>
+														<td>
+															234@gmail.com
+														</td>
+														<td>
+															9
+															
+														</td>
+														<td>
+															1
+														</td>
+														<td>
+															1995-01-01
+														</td>
+														<td>
+															5
+														</td>
+														<td>
+															01022222222
+														</td>
+														<td>
+															1
+														</td>
+														<td>
+															1
+														</td>
+													</tr>
+													
+													<tr>
+														<td>
 															<div class="form-check">
 										  						<input class="form-check-input" type="checkbox" name="chk_box" onclick="check();" value="" id="flexCheckDefault">
 										  					</div>
-										  				</td>
-				                                        <td>Darius</td>
-				                                        <td>Darius</td>
-				                                        <td>velit@nec.com</td>
-				                                        <td>0309 690 7871</td>
-				                                        <td>Ways</td>
-				                                        <td>
-				                                            <span class="badge bg-success">Active</span>
-				                                        </td>
-				                                    </tr>
-				                                    <tr>
-				                                    	<td>
+														</td>
+														<td>
+															4
+														</td>
+														<td>
+															Leemaba
+														</td>
+														<td>
+															maba
+														</td>
+														<td>
+															345@daum.net
+														</td>
+														<td>
+															10
+															
+														</td>
+														<td>
+															2
+														</td>
+														<td>
+															1994-01-01
+														</td>
+														<td>
+															5
+														</td>
+														<td>
+															01033333333
+														</td>
+														<td>
+															0
+														</td>
+														<td>
+															1
+														</td>
+													</tr>
+													
+													<tr>
+														<td>
 															<div class="form-check">
 										  						<input class="form-check-input" type="checkbox" name="chk_box" onclick="check();" value="" id="flexCheckDefault">
 										  					</div>
-										  				</td>
-				                                        <td>Oleg</td>
-				                                        <td>Oleg</td>
-				                                        <td>rhoncus.id@Aliquamauctorvelit.net</td>
-				                                        <td>0500 441046</td>
-				                                        <td>Rossignol</td>
-				                                        <td>
-				                                            <span class="badge bg-success">Active</span>
-				                                        </td>
-				                                    </tr>
-				                                    <tr>
-				                                    	<td>
+														</td>
+														<td>
+															5
+														</td>
+														<td>
+															Leesaa
+														</td>
+														<td>
+															saa
+														</td>
+														<td>
+															456@gmail.com
+														</td>
+														<td>
+															9
+															
+														</td>
+														<td>
+															2
+														</td>
+														<td>
+															1993-01-01
+														</td>
+														<td>
+															6
+														</td>
+														<td>
+															01044444444
+														</td>
+														<td>
+															1
+														</td>
+														<td>
+															1
+														</td>
+													</tr>
+													
+													<tr>
+														<td>
 															<div class="form-check">
 										  						<input class="form-check-input" type="checkbox" name="chk_box" onclick="check();" value="" id="flexCheckDefault">
 										  					</div>
-										  				</td>
-				                                        <td>Kermit</td>
-				                                        <td>Kermit</td>
-				                                        <td>diam.Sed.diam@anteVivamusnon.org</td>
-				                                        <td>(01653) 27844</td>
-				                                        <td>Patna</td>
-				                                        <td>
-				                                            <span class="badge bg-success">Active</span>
-				                                        </td>
-				                                    </tr>
-				                                    <tr>
-				                                    	<td>
+														</td>
+														<td>
+															6
+														</td>
+														<td>
+															Leejacha
+														</td>
+														<td>
+															jacha
+														</td>
+														<td>
+															101010@gmail.com
+														</td>
+														<td>
+															9
+															
+														</td>
+														<td>
+															1
+														</td>
+														<td>
+															1992-01-01
+														</td>
+														<td>
+															4
+														</td>
+														<td>
+															01066666666
+														</td>
+														<td>
+															1
+														</td>
+														<td>
+															1
+														</td>
+													</tr>
+													
+													<tr>
+														<td>
 															<div class="form-check">
 										  						<input class="form-check-input" type="checkbox" name="chk_box" onclick="check();" value="" id="flexCheckDefault">
 										  					</div>
-										  				</td>
-				                                        <td>Kermit</td>
-				                                        <td>Kermit</td>
-				                                        <td>sodales@nuncsit.org</td>
-				                                        <td>0800 528324</td>
-				                                        <td>Mold</td>
-				                                        <td>
-				                                            <span class="badge bg-success">Active</span>
-				                                        </td>
-				                                    </tr>
-				                                    <tr>
-				                                    	<td>
+														</td>
+														<td>
+															7
+														</td>
+														<td>
+															Leekata
+														</td>
+														<td>
+															kata
+														</td>
+														<td>
+															678@naver.com
+														</td>
+														<td>
+															8
+															
+														</td>
+														<td>
+															2
+														</td>
+														<td>
+															1991-01-01
+														</td>
+														<td>
+															4
+														</td>
+														<td>
+															01077777777
+														</td>
+														<td>
+															1
+														</td>
+														<td>
+															0
+														</td>
+													</tr>
+													
+													<tr>
+														<td>
 															<div class="form-check">
 										  						<input class="form-check-input" type="checkbox" name="chk_box" onclick="check();" value="" id="flexCheckDefault">
 										  					</div>
-										  				</td>
-				                                        <td>Ferdinand</td>
-				                                        <td>Ferdinand</td>
-				                                        <td>gravida.molestie@tinciduntadipiscing.org</td>
-				                                        <td>(016977) 4107</td>
-				                                        <td>Marlborough</td>
-				                                        <td>
-				                                            <span class="badge bg-danger">Inactive</span>
-				                                        </td>
-				                                    </tr>
-				                                    <tr>
-				                                    	<td>
+														</td>
+														<td>
+															8
+														</td>
+														<td>
+															Leepaha
+														</td>
+														<td>
+															paha
+														</td>
+														<td>
+															789@naver.com
+														</td>
+														<td>
+															8
+															
+														</td>
+														<td>
+															1
+														</td>
+														<td>
+															1991-01-01
+														</td>
+														<td>
+															5
+														</td>
+														<td>
+															01088888888
+														</td>
+														<td>
+															1
+														</td>
+														<td>
+															1
+														</td>
+													</tr>
+													
+													<tr>
+														<td>
 															<div class="form-check">
 										  						<input class="form-check-input" type="checkbox" name="chk_box" onclick="check();" value="" id="flexCheckDefault">
 										  					</div>
-										  				</td>
-				                                        <td>Kuame</td>
-				                                        <td>Kuame</td>
-				                                        <td>Quisque.purus@mauris.org</td>
-				                                        <td>(0151) 561 8896</td>
-				                                        <td>Tresigallo</td>
-				                                        <td>
-				                                            <span class="badge bg-success">Active</span>
-				                                        </td>
-				                                    </tr>
-				                                    <tr>
-				                                    	<td>
+														</td>
+														<td>
+															9
+														</td>
+														<td>
+															Leebada
+														</td>
+														<td>
+															bada
+														</td>
+														<td>
+															8910@daum.net
+														</td>
+														<td>
+															10
+															
+														</td>
+														<td>
+															2
+														</td>
+														<td>
+															1990-01-01
+														</td>
+														<td>
+															6
+														</td>
+														<td>
+															01099999999
+														</td>
+														<td>
+															1
+														</td>
+														<td>
+															1
+														</td>
+													</tr>
+													
+													<tr>
+														<td>
 															<div class="form-check">
 										  						<input class="form-check-input" type="checkbox" name="chk_box" onclick="check();" value="" id="flexCheckDefault">
 										  					</div>
-										  				</td>
-				                                        <td>Deacon</td>
-				                                        <td>Deacon</td>
-				                                        <td>Duis.a.mi@sociisnatoquepenatibus.com</td>
-				                                        <td>07740 599321</td>
-				                                        <td>Karapınar</td>
-				                                        <td>
-				                                            <span class="badge bg-success">Active</span>
-				                                        </td>
-				                                    </tr>
-				                                    <tr>
-				                                    	<td>
-															<div class="form-check">
-										  						<input class="form-check-input" type="checkbox" name="chk_box" onclick="check();" value="" id="flexCheckDefault">
-										  					</div>
-										  				</td>
-				                                        <td>Channing</td>
-				                                        <td>Channing</td>
-				                                        <td>tempor.bibendum.Donec@ornarelectusante.ca</td>
-				                                        <td>0845 46 49</td>
-				                                        <td>Warrnambool</td>
-				                                        <td>
-				                                            <span class="badge bg-success">Active</span>
-				                                        </td>
-				                                    </tr>
-				                                    <tr>
-				                                    	<td>
-															<div class="form-check">
-										  						<input class="form-check-input" type="checkbox" name="chk_box" onclick="check();" value="" id="flexCheckDefault">
-										  					</div>
-										  				</td>
-				                                        <td>Aladdin</td>
-				                                        <td>Aladdin</td>
-				                                        <td>sem.ut@pellentesqueafacilisis.ca</td>
-				                                        <td>0800 1111</td>
-				                                        <td>Bothey</td>
-				                                        <td>
-				                                            <span class="badge bg-success">Active</span>
-				                                        </td>
-				                                    </tr>
-				                                    <tr>
-				                                    	<td>
-															<div class="form-check">
-										  						<input class="form-check-input" type="checkbox" name="chk_box" onclick="check();" value="" id="flexCheckDefault">
-										  					</div>
-										  				</td>
-				                                        <td>Cruz</td>
-				                                        <td>Cruz</td>
-				                                        <td>non@quisturpisvitae.ca</td>
-				                                        <td>07624 944915</td>
-				                                        <td>Shikarpur</td>
-				                                        <td>
-				                                            <span class="badge bg-success">Active</span>
-				                                        </td>
-				                                    </tr>
-				                                    <tr>
-				                                    	<td>
-															<div class="form-check">
-										  						<input class="form-check-input" type="checkbox" name="chk_box" onclick="check();" value="" id="flexCheckDefault">
-										  					</div>
-										  				</td>
-				                                        <td>Keegan</td>
-				                                        <td>Keegan</td>
-				                                        <td>molestie.dapibus@condimentumDonecat.edu</td>
-				                                        <td>0800 200103</td>
-				                                        <td>Assen</td>
-				                                        <td>
-				                                            <span class="badge bg-success">Active</span>
-				                                        </td>
-				                                    </tr>
-				                                    <tr>
-				                                    	<td>
-															<div class="form-check">
-										  						<input class="form-check-input" type="checkbox" name="chk_box" onclick="check();" value="" id="flexCheckDefault">
-										  					</div>
-										  				</td>
-				                                        <td>Ray</td>
-				                                        <td>Ray</td>
-				                                        <td>placerat.eget@sagittislobortis.edu</td>
-				                                        <td>(0112) 896 6829</td>
-				                                        <td>Hofors</td>
-				                                        <td>
-				                                            <span class="badge bg-success">Active</span>
-				                                        </td>
-				                                    </tr>
-				                                    <tr>
-				                                    	<td>
-															<div class="form-check">
-										  						<input class="form-check-input" type="checkbox" name="chk_box" onclick="check();" value="" id="flexCheckDefault">
-										  					</div>
-										  				</td>
-				                                        <td>Maxwell</td>
-				                                        <td>Maxwell</td>
-				                                        <td>diam@dapibus.org</td>
-				                                        <td>0334 836 4028</td>
-				                                        <td>Thane</td>
-				                                        <td>
-				                                            <span class="badge bg-success">Active</span>
-				                                        </td>
-				                                    </tr>
-				                                    <tr>
-				                                    	<td>
-															<div class="form-check">
-										  						<input class="form-check-input" type="checkbox" name="chk_box" onclick="check();" value="" id="flexCheckDefault">
-										  					</div>
-										  				</td>
-				                                        <td>Carter</td>
-				                                        <td>Carter</td>
-				                                        <td>urna.justo.faucibus@orci.com</td>
-				                                        <td>07079 826350</td>
-				                                        <td>Biez</td>
-				                                        <td>
-				                                            <span class="badge bg-success">Active</span>
-				                                        </td>
-				                                    </tr>
-				                                    <tr>
-				                                    	<td>
-															<div class="form-check">
-										  						<input class="form-check-input" type="checkbox" name="chk_box" onclick="check();" value="" id="flexCheckDefault">
-										  					</div>
-										  				</td>
-				                                        <td>Stone</td>
-				                                        <td>Stone</td>
-				                                        <td>velit.Aliquam.nisl@sitametrisus.com</td>
-				                                        <td>0800 1111</td>
-				                                        <td>Olivar</td>
-				                                        <td>
-				                                            <span class="badge bg-success">Active</span>
-				                                        </td>
-				                                    </tr>
-				                                    <tr>
-				                                    	<td>
-															<div class="form-check">
-										  						<input class="form-check-input" type="checkbox" name="chk_box" onclick="check();" value="" id="flexCheckDefault">
-										  					</div>
-										  				</td>
-				                                        <td>Berk</td>
-				                                        <td>Berk</td>
-				                                        <td>fringilla.porttitor.vulputate@taciti.edu</td>
-				                                        <td>(0101) 043 2822</td>
-				                                        <td>Sanquhar</td>
-				                                        <td>
-				                                            <span class="badge bg-success">Active</span>
-				                                        </td>
-				                                    </tr>
-				                                    <tr>
-				                                    	<td>
-															<div class="form-check">
-										  						<input class="form-check-input" type="checkbox" name="chk_box" onclick="check();" value="" id="flexCheckDefault">
-										  					</div>
-										  				</td>
-				                                        <td>Philip</td>
-				                                        <td>Philip</td>
-				                                        <td>turpis@euenimEtiam.org</td>
-				                                        <td>0500 571108</td>
-				                                        <td>Okara</td>
-				                                        <td>
-				                                            <span class="badge bg-success">Active</span>
-				                                        </td>
-				                                    </tr>
-				                                    <tr>
-				                                    	<td>
-															<div class="form-check">
-										  						<input class="form-check-input" type="checkbox" name="chk_box" onclick="check();" value="" id="flexCheckDefault">
-										  					</div>
-										  				</td>
-				                                        <td>Kibo</td>
-				                                        <td>Kibo</td>
-				                                        <td>feugiat@urnajustofaucibus.co.uk</td>
-				                                        <td>07624 682306</td>
-				                                        <td>La Cisterna</td>
-				                                        <td>
-				                                            <span class="badge bg-success">Active</span>
-				                                        </td>
-				                                    </tr>
-				                                    <tr>
-				                                    	<td>
-															<div class="form-check">
-										  						<input class="form-check-input" type="checkbox" name="chk_box" onclick="check();" value="" id="flexCheckDefault">
-										  					</div>
-										  				</td>
-				                                        <td>Bruno</td>
-				                                        <td>Bruno</td>
-				                                        <td>elit.Etiam.laoreet@luctuslobortisClass.edu</td>
-				                                        <td>07624 869434</td>
-				                                        <td>Rocca d"Arce</td>
-				                                        <td>
-				                                            <span class="badge bg-success">Active</span>
-				                                        </td>
-				                                    </tr>
-				                                    <tr>
-				                                    	<td>
-															<div class="form-check">
-										  						<input class="form-check-input" type="checkbox" name="chk_box" onclick="check();" value="" id="flexCheckDefault">
-										  					</div>
-										  				</td>
-				                                        <td>Leonard</td>
-				                                        <td>Leonard</td>
-				                                        <td>blandit.enim.consequat@mollislectuspede.net</td>
-				                                        <td>0800 1111</td>
-				                                        <td>Lobbes</td>
-				                                        <td>
-				                                            <span class="badge bg-success">Active</span>
-				                                        </td>
-				                                    </tr>
-				                                    <tr>
-				                                    	<td>
-															<div class="form-check">
-										  						<input class="form-check-input" type="checkbox" name="chk_box" onclick="check();" value="" id="flexCheckDefault">
-										  					</div>
-										  				</td>
-				                                        <td>Hamilton</td>
-				                                        <td>Hamilton</td>
-				                                        <td>mauris@diam.org</td>
-				                                        <td>0800 256 8788</td>
-				                                        <td>Sanzeno</td>
-				                                        <td>
-				                                            <span class="badge bg-success">Active</span>
-				                                        </td>
-				                                    </tr>
-				                                    <tr>
-				                                    	<td>
-															<div class="form-check">
-										  						<input class="form-check-input" type="checkbox" name="chk_box" onclick="check();" value="" id="flexCheckDefault">
-										  					</div>
-										  				</td>
-				                                        <td>Harding</td>
-				                                        <td>Harding</td>
-				                                        <td>Lorem.ipsum.dolor@etnetuset.com</td>
-				                                        <td>0800 1111</td>
-				                                        <td>Obaix</td>
-				                                        <td>
-				                                            <span class="badge bg-success">Active</span>
-				                                        </td>
-				                                    </tr>
-				                                    <tr>
-				                                    	<td>
-															<div class="form-check">
-										  						<input class="form-check-input" type="checkbox" name="chk_box" onclick="check();" value="" id="flexCheckDefault">
-										  					</div>
-										  				</td>
-				                                        <td>Emmanuel</td>
-				                                        <td>Emmanuel</td>
-				                                        <td>eget.lacus.Mauris@feugiatSednec.org</td>
-				                                        <td>(016977) 8208</td>
-				                                        <td>Saint-Remy-Geest</td>
-				                                        <td>
-				                                            <span class="badge bg-success">Active</span>
-				                                        </td>
-				                                    </tr>
+														</td>
+														<td>
+															10
+														</td>
+														<td>
+															Leesaja
+														</td>
+														<td>
+															saja
+														</td>
+														<td>
+															101112@naver.com
+														</td>
+														<td>
+															8
+															
+														</td>
+														<td>
+															2
+														</td>
+														<td>
+															1989-01-01
+														</td>
+														<td>
+															4
+														</td>
+														<td>
+															01012341234
+														</td>
+														<td>
+															1
+														</td>
+														<td>
+															1
+														</td>
+													</tr>
+													
+															
 				                                </tbody>
 				                            </table>
                             			</div>
